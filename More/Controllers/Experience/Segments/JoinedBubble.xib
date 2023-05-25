@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinedBubble" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="blur" destination="d5E-gt-TEG" id="RM1-c1-sOA"/>
+                <outlet property="title" destination="XYF-et-pBB" id="zBD-mg-y5b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-gt-TEG">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="189"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jng-ym-a4C">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="189"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <blurEffect style="systemMaterial"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-et-pBB">
+                    <rect key="frame" x="50" y="25" width="299" height="139"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XYF-et-pBB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="10m-sq-wWw"/>
+                <constraint firstAttribute="bottom" secondItem="XYF-et-pBB" secondAttribute="bottom" constant="25" id="8VB-2j-IE9"/>
+                <constraint firstAttribute="trailing" secondItem="d5E-gt-TEG" secondAttribute="trailing" id="BZe-Ng-amn"/>
+                <constraint firstItem="XYF-et-pBB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Bds-wt-Yym"/>
+                <constraint firstItem="d5E-gt-TEG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R3i-da-kzi"/>
+                <constraint firstItem="d5E-gt-TEG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UqJ-RN-zvK"/>
+                <constraint firstAttribute="bottom" secondItem="d5E-gt-TEG" secondAttribute="bottom" id="ao7-xf-kqo"/>
+                <constraint firstAttribute="trailing" secondItem="XYF-et-pBB" secondAttribute="trailing" constant="50" id="eHr-AZ-jtI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="126.81159420289856" y="296.31696428571428"/>
+        </view>
+    </objects>
+</document>

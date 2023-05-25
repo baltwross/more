@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="MessagingViewIncomingCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jfe-4Z-bsz" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="16" y="6" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="DJU-bD-I9Y"/>
+                            <constraint firstAttribute="height" constant="44" id="f9h-Og-Pfi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tC7-ww-8cj" customClass="MessageBubble" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="76" y="8" width="47.5" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKx-OX-CJj">
+                                <rect key="frame" x="8" y="8" width="31.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jKx-OX-CJj" secondAttribute="bottom" constant="8" id="BrZ-Mp-sSh"/>
+                            <constraint firstAttribute="trailing" secondItem="jKx-OX-CJj" secondAttribute="trailing" constant="8" id="bcf-oF-YcQ"/>
+                            <constraint firstItem="jKx-OX-CJj" firstAttribute="top" secondItem="tC7-ww-8cj" secondAttribute="top" constant="8" id="heB-mw-EZe"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="sdT-IK-Q7I"/>
+                            <constraint firstItem="jKx-OX-CJj" firstAttribute="leading" secondItem="tC7-ww-8cj" secondAttribute="leading" constant="8" id="uZi-gi-IzT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="7:06PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKZ-eB-3iy">
+                        <rect key="frame" x="76" y="58" width="36.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960784313726" green="0.76470588235294112" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tC7-ww-8cj" secondAttribute="trailing" constant="60" id="2ew-kT-SF3"/>
+                    <constraint firstItem="tC7-ww-8cj" firstAttribute="leading" secondItem="Jfe-4Z-bsz" secondAttribute="trailing" constant="16" id="FQ8-pT-PBb"/>
+                    <constraint firstItem="HKZ-eB-3iy" firstAttribute="top" secondItem="tC7-ww-8cj" secondAttribute="bottom" constant="12" id="FVX-Yf-zDu"/>
+                    <constraint firstItem="Jfe-4Z-bsz" firstAttribute="bottom" secondItem="tC7-ww-8cj" secondAttribute="bottom" constant="4" id="Oxm-C2-nLC"/>
+                    <constraint firstItem="Jfe-4Z-bsz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="R7I-et-1zI"/>
+                    <constraint firstItem="tC7-ww-8cj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="awa-YH-hQF"/>
+                    <constraint firstItem="HKZ-eB-3iy" firstAttribute="leading" secondItem="tC7-ww-8cj" secondAttribute="leading" id="u54-ve-mBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatar" destination="Jfe-4Z-bsz" id="Wyp-js-hNW"/>
+                <outlet property="message" destination="jKx-OX-CJj" id="zns-SP-ofM"/>
+                <outlet property="time" destination="HKZ-eB-3iy" id="0er-1C-63U"/>
+            </connections>
+            <point key="canvasLocation" x="164" y="181.25937031484258"/>
+        </tableViewCell>
+    </objects>
+</document>

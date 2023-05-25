@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN-Bold.ttf">
+            <string>DIN-Bold</string>
+        </array>
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceRequestGroupBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="additional" destination="yjn-wV-Wd9" id="kbv-zC-Bed"/>
+                <outlet property="additionalWidth" destination="ynW-fa-KFc" id="PCI-eY-ywZ"/>
+                <outlet property="avatarStack" destination="Wff-yY-tNV" id="W4l-tv-trb"/>
+                <outlet property="button" destination="bNc-zb-pKU" id="cqg-uy-VyG"/>
+                <outlet property="names" destination="JhU-6Q-bMo" id="xqJ-dp-WKC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jyo-vu-tuC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNc-zb-pKU" customClass="PurpleGradientButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="278" y="11" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fa9-Uf-fTG"/>
+                        <constraint firstAttribute="width" constant="120" id="wpK-eh-4Oh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="JOIN"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="zO9-OW-qaN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-wV-Wd9">
+                    <rect key="frame" x="90" y="18.5" width="35" height="35"/>
+                    <color key="backgroundColor" red="0.73333333329999995" green="0.79215686269999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="ynW-fa-KFc"/>
+                        <constraint firstAttribute="height" constant="35" id="z50-QG-Dnk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DIN-Bold" family="DIN" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wff-yY-tNV" customClass="AvatarStackView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="18" y="14" width="76" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XIL-ac-bJb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Gemma" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhU-6Q-bMo" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="145" y="28.5" width="55.5" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="14"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Wff-yY-tNV" firstAttribute="leading" secondItem="jyo-vu-tuC" secondAttribute="leading" constant="18" id="5qX-P5-Jtl"/>
+                <constraint firstItem="bNc-zb-pKU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JhU-6Q-bMo" secondAttribute="trailing" constant="12" id="Eec-3f-tqM"/>
+                <constraint firstAttribute="trailing" secondItem="bNc-zb-pKU" secondAttribute="trailing" constant="16" id="MUf-Iz-HlC"/>
+                <constraint firstItem="JhU-6Q-bMo" firstAttribute="leading" secondItem="yjn-wV-Wd9" secondAttribute="trailing" constant="20" id="X4Y-Jl-MDo"/>
+                <constraint firstItem="JhU-6Q-bMo" firstAttribute="centerY" secondItem="bNc-zb-pKU" secondAttribute="centerY" id="e98-eJ-uVU"/>
+                <constraint firstItem="yjn-wV-Wd9" firstAttribute="centerY" secondItem="Wff-yY-tNV" secondAttribute="centerY" id="eGa-9r-yey"/>
+                <constraint firstItem="bNc-zb-pKU" firstAttribute="top" secondItem="jyo-vu-tuC" secondAttribute="top" constant="11" id="hDT-xh-BvW"/>
+                <constraint firstItem="yjn-wV-Wd9" firstAttribute="leading" secondItem="Wff-yY-tNV" secondAttribute="trailing" constant="-4" id="hNa-FL-eJP"/>
+                <constraint firstItem="Wff-yY-tNV" firstAttribute="centerY" secondItem="bNc-zb-pKU" secondAttribute="centerY" id="kvm-dL-XZG"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-6.0267857142857144"/>
+        </view>
+    </objects>
+</document>

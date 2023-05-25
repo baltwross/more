@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalQuoteToolbar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="characterCount" destination="Faf-hB-Vb6" id="hly-D2-oHL"/>
+                <outlet property="doneButton" destination="wMj-Kx-Wbk" id="aPk-3l-xcj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-hB-Vb6">
+                    <rect key="frame" x="336" y="8" width="23" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="11a-v9-Ymm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="11"/>
+                    <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMj-Kx-Wbk">
+                    <rect key="frame" x="0.0" y="58" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="cm7-Dm-kEx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                    <state key="normal" title="DONE">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneTouch:" destination="-1" eventType="touchUpInside" id="aqG-ak-i21"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wMj-Kx-Wbk" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="LRM-3e-HeZ"/>
+                <constraint firstItem="wMj-Kx-Wbk" firstAttribute="top" secondItem="Faf-hB-Vb6" secondAttribute="bottom" constant="24" id="Ta8-v7-0Hb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Faf-hB-Vb6" secondAttribute="trailing" constant="16" id="Yky-85-5Uu"/>
+                <constraint firstItem="wMj-Kx-Wbk" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jZK-Q4-7PZ"/>
+                <constraint firstItem="wMj-Kx-Wbk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nQC-0s-iEk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="400.29985007496254"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteMeetupBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Acl-Dy-49c" id="lnd-qS-LX7"/>
+                <outlet property="icon" destination="pQ2-ku-Ejp" id="5Zt-gr-OIf"/>
+                <outlet property="label" destination="ibQ-3p-rIK" id="bvP-od-h8C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="did-you-meet" translatesAutoresizingMaskIntoConstraints="NO" id="pQ2-ku-Ejp">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pQ2-ku-Ejp" secondAttribute="height" id="835-H0-5Cw"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv1-1f-7PM">
+                    <rect key="frame" x="0.0" y="44" width="44" height="16"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.070588235289999995" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-3p-rIK">
+                    <rect key="frame" x="64" y="14.5" width="291" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acl-Dy-49c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="my3-1O-8dx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.58431372549019611" green="0.71372549019607845" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Acl-Dy-49c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5eG-bm-4hT"/>
+                <constraint firstAttribute="bottom" secondItem="Acl-Dy-49c" secondAttribute="bottom" id="9V8-kd-cmZ"/>
+                <constraint firstAttribute="bottom" secondItem="Vv1-1f-7PM" secondAttribute="bottom" id="9os-Td-UKA"/>
+                <constraint firstItem="Vv1-1f-7PM" firstAttribute="top" secondItem="pQ2-ku-Ejp" secondAttribute="bottom" id="E16-QZ-Sb5"/>
+                <constraint firstItem="Vv1-1f-7PM" firstAttribute="leading" secondItem="pQ2-ku-Ejp" secondAttribute="leading" id="GSd-En-gHS"/>
+                <constraint firstItem="Acl-Dy-49c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IlP-PV-rtB"/>
+                <constraint firstAttribute="trailing" secondItem="ibQ-3p-rIK" secondAttribute="trailing" constant="20" id="NgK-Oa-Hu9"/>
+                <constraint firstItem="pQ2-ku-Ejp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yh7-Gd-e00"/>
+                <constraint firstItem="ibQ-3p-rIK" firstAttribute="centerY" secondItem="pQ2-ku-Ejp" secondAttribute="centerY" id="aoV-bx-YQ1"/>
+                <constraint firstItem="pQ2-ku-Ejp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bdc-z0-MbD"/>
+                <constraint firstAttribute="bottom" secondItem="pQ2-ku-Ejp" secondAttribute="bottom" constant="16" id="sbp-fC-3h0"/>
+                <constraint firstItem="ibQ-3p-rIK" firstAttribute="leading" secondItem="pQ2-ku-Ejp" secondAttribute="trailing" constant="20" id="tN3-Wq-Nk0"/>
+                <constraint firstItem="Vv1-1f-7PM" firstAttribute="trailing" secondItem="pQ2-ku-Ejp" secondAttribute="trailing" id="tsJ-xh-J6n"/>
+                <constraint firstAttribute="trailing" secondItem="Acl-Dy-49c" secondAttribute="trailing" id="wZo-ek-xYI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="117.59999999999999" y="431.78410794602701"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="did-you-meet" width="177" height="177"/>
+    </resources>
+</document>

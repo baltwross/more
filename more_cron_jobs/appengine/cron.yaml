@@ -1,0 +1,29 @@
+cron:
+- description: Push a "tick" onto pubsub every 5 minutes
+  url: /publish/fivemin-tick
+  schedule: every 5 minutes
+
+- description: Push a "tick" onto pubsub every 10 minutes
+  url: /publish/tenmin-tick
+  schedule: every 10 minutes
+
+- description: Push a "tick" onto pubsub every day
+  url: /publish/hourly-tick
+  schedule: every 1 hours
+
+- description: Push a "tick" onto pubsub every day
+  url: /publish/hourly1-4-tick
+  schedule: every 1 hours from 00:15 to 23:45
+
+- description: Push a "tick" onto pubsub every day
+  url: /publish/hourly1-2-tick
+  schedule: every 1 hours from 00:30 to 23:30
+
+- description: Push a "tick" onto pubsub every day
+  url: /publish/hourly3-4-tick
+  schedule: every 1 hours from 00:45 to 23:45
+
+- description: Push a "tick" onto pubsub every day
+  url: /publish/daily-tick
+  schedule: every 24 hours
+

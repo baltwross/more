@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalDetailsTransitionQuoteView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="7GA-wl-SIb" id="z4x-RG-qT5"/>
+                <outlet property="titleView" destination="JCS-ZD-Oxu" id="QTI-kn-Y8I"/>
+                <outlet property="typeLabel" destination="fta-zt-6zA" id="ULe-J1-dwm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cIV-GG-rVa">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-9y-sxS">
+                    <rect key="frame" x="28" y="2" width="358" height="255"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fta-zt-6zA" customClass="HorizontalGradientLabel" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="38.5" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="qHi-Yr-CZZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" text="Secret Rooftop" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCS-ZD-Oxu">
+                            <rect key="frame" x="0.0" y="26" width="358" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.26274511220000002" green="0.29019609089999998" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GA-wl-SIb">
+                            <rect key="frame" x="0.0" y="63" width="358" height="87.5"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">The best vantage point in Manhattan is at a building on the corner of 94th and Amesterd. On a nice night, grab a bottle of your favorite alcohol and sneak up there.</string>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                            <color key="textColor" red="0.48627451059999999" green="0.54509806630000002" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fta-zt-6zA" secondAttribute="trailing" id="0yo-TJ-o7H"/>
+                        <constraint firstItem="7GA-wl-SIb" firstAttribute="leading" secondItem="Pdd-9y-sxS" secondAttribute="leading" id="9nU-ih-2Wy"/>
+                        <constraint firstAttribute="trailing" secondItem="7GA-wl-SIb" secondAttribute="trailing" id="HhJ-HJ-z2w"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7GA-wl-SIb" secondAttribute="bottom" id="ISZ-P6-kbn"/>
+                        <constraint firstItem="7GA-wl-SIb" firstAttribute="top" secondItem="JCS-ZD-Oxu" secondAttribute="bottom" constant="7" id="S1S-OU-fW2"/>
+                        <constraint firstItem="JCS-ZD-Oxu" firstAttribute="top" secondItem="fta-zt-6zA" secondAttribute="bottom" constant="11" id="aAI-da-D90"/>
+                        <constraint firstItem="fta-zt-6zA" firstAttribute="leading" secondItem="Pdd-9y-sxS" secondAttribute="leading" id="bpZ-BH-Iqg"/>
+                        <constraint firstAttribute="trailing" secondItem="JCS-ZD-Oxu" secondAttribute="trailing" id="exA-RV-RKb"/>
+                        <constraint firstItem="fta-zt-6zA" firstAttribute="top" secondItem="Pdd-9y-sxS" secondAttribute="top" id="llt-hp-R3A"/>
+                        <constraint firstItem="JCS-ZD-Oxu" firstAttribute="leading" secondItem="Pdd-9y-sxS" secondAttribute="leading" id="t2l-pO-e7G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pdd-9y-sxS" firstAttribute="top" secondItem="cIV-GG-rVa" secondAttribute="top" constant="2" id="4Em-Ho-hPv"/>
+                <constraint firstAttribute="trailing" secondItem="Pdd-9y-sxS" secondAttribute="trailing" constant="28" id="CFM-Pj-Wdg"/>
+                <constraint firstAttribute="bottom" secondItem="Pdd-9y-sxS" secondAttribute="bottom" constant="70" id="jkK-ku-NA2"/>
+                <constraint firstItem="Pdd-9y-sxS" firstAttribute="leading" secondItem="cIV-GG-rVa" secondAttribute="leading" constant="28" id="zZe-HS-Dm9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="97.101449275362327" y="-300.33482142857139"/>
+        </view>
+    </objects>
+</document>

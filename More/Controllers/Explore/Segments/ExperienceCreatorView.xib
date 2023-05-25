@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceCreatorView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="J49-Jv-qkF" id="7xQ-7T-yoS"/>
+                <outlet property="button" destination="vMu-7M-hQU" id="VCP-SF-FzN"/>
+                <outlet property="name" destination="Tjv-df-dPv" id="yyc-EA-Rlo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J49-Jv-qkF" customClass="TimeAvatarView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="92" y="0.0" width="322" height="322"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="J49-Jv-qkF" secondAttribute="height" id="csH-M7-x6g"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZJ-1Y-lju">
+                    <rect key="frame" x="0.0" y="63.5" width="81" height="30.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUGGESTED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcY-l3-Dax">
+                            <rect key="frame" x="0.0" y="0.0" width="81" height="11"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-df-dPv">
+                            <rect key="frame" x="31" y="15" width="50" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Tjv-df-dPv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5ZJ-1Y-lju" secondAttribute="leading" id="0us-mR-n1g"/>
+                        <constraint firstItem="FcY-l3-Dax" firstAttribute="top" secondItem="5ZJ-1Y-lju" secondAttribute="top" id="CpZ-ya-kI5"/>
+                        <constraint firstAttribute="trailing" secondItem="Tjv-df-dPv" secondAttribute="trailing" id="IXQ-UB-Qfu"/>
+                        <constraint firstItem="FcY-l3-Dax" firstAttribute="leading" secondItem="5ZJ-1Y-lju" secondAttribute="leading" priority="250" id="eKw-Pf-33R"/>
+                        <constraint firstAttribute="bottom" secondItem="Tjv-df-dPv" secondAttribute="bottom" id="gmR-GO-WC8"/>
+                        <constraint firstItem="FcY-l3-Dax" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5ZJ-1Y-lju" secondAttribute="leading" id="q8P-22-qjR"/>
+                        <constraint firstItem="Tjv-df-dPv" firstAttribute="top" secondItem="FcY-l3-Dax" secondAttribute="bottom" constant="4" id="taW-GZ-7g0"/>
+                        <constraint firstAttribute="trailing" secondItem="FcY-l3-Dax" secondAttribute="trailing" id="vMz-3K-k1d"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMu-7M-hQU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                    <connections>
+                        <action selector="profileTouch:" destination="-1" eventType="touchUpInside" id="C4V-Dm-uEi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5ZJ-1Y-lju" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2x7-fD-DzK"/>
+                <constraint firstAttribute="bottom" secondItem="5ZJ-1Y-lju" secondAttribute="bottom" constant="2" id="Du6-Dy-xss"/>
+                <constraint firstItem="J49-Jv-qkF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qib-en-eow"/>
+                <constraint firstAttribute="trailing" secondItem="vMu-7M-hQU" secondAttribute="trailing" id="Vyt-2A-n0l"/>
+                <constraint firstItem="J49-Jv-qkF" firstAttribute="leading" secondItem="5ZJ-1Y-lju" secondAttribute="trailing" constant="11" id="ZOb-JU-7Le"/>
+                <constraint firstAttribute="bottom" secondItem="vMu-7M-hQU" secondAttribute="bottom" id="bUr-sU-877"/>
+                <constraint firstItem="vMu-7M-hQU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="baN-vX-tWc"/>
+                <constraint firstAttribute="trailing" secondItem="J49-Jv-qkF" secondAttribute="trailing" id="glV-x4-der"/>
+                <constraint firstItem="vMu-7M-hQU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="siT-ua-lg9"/>
+                <constraint firstAttribute="bottom" secondItem="J49-Jv-qkF" secondAttribute="bottom" id="w1n-Tb-X7B"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="340.84821428571428"/>
+        </view>
+    </objects>
+</document>

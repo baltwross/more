@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteCancelledViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="eaa-QK-sa4" id="P9E-PZ-qbK"/>
+                <outlet property="messageView" destination="8Qp-ch-njh" id="5bq-Ao-h1b"/>
+                <outlet property="messageViewHeight" destination="MUW-zg-7Nl" id="xgZ-7O-ixQ"/>
+                <outlet property="titleLabel" destination="1L0-Zb-7Qk" id="maD-Df-5ea"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg4-uQ-MrV">
+                    <rect key="frame" x="0.0" y="331" width="375" height="336"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XY Had to cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-Zb-7Qk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="48M-tT-esQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="15"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-Jr-65q">
+                            <rect key="frame" x="0.0" y="60" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="453-pj-ccR"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qp-ch-njh" customClass="MessagingTableView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="61" width="375" height="201"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="500" constant="201" id="MUW-zg-7Nl"/>
+                            </constraints>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaa-QK-sa4">
+                            <rect key="frame" x="0.0" y="262" width="375" height="134"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="134" id="teU-7h-9ft"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="60"/>
+                            <state key="normal" title="KEEP EXPLORING">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="JGg-2I-rgR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8Qp-ch-njh" firstAttribute="leading" secondItem="wg4-uQ-MrV" secondAttribute="leading" id="FRi-Ox-LK8"/>
+                        <constraint firstAttribute="trailing" secondItem="eaa-QK-sa4" secondAttribute="trailing" id="G6d-Lq-Umm"/>
+                        <constraint firstItem="iW0-Jr-65q" firstAttribute="top" secondItem="1L0-Zb-7Qk" secondAttribute="bottom" id="I2b-hh-b5v"/>
+                        <constraint firstItem="8Qp-ch-njh" firstAttribute="top" secondItem="iW0-Jr-65q" secondAttribute="bottom" id="LBp-9m-YnJ"/>
+                        <constraint firstAttribute="trailing" secondItem="iW0-Jr-65q" secondAttribute="trailing" id="Lrg-8G-OXQ"/>
+                        <constraint firstItem="eaa-QK-sa4" firstAttribute="leading" secondItem="wg4-uQ-MrV" secondAttribute="leading" id="OdM-NS-kKM"/>
+                        <constraint firstItem="1L0-Zb-7Qk" firstAttribute="top" secondItem="wg4-uQ-MrV" secondAttribute="top" id="dw9-xw-6Ov"/>
+                        <constraint firstAttribute="trailing" secondItem="8Qp-ch-njh" secondAttribute="trailing" id="eCb-jN-Cm8"/>
+                        <constraint firstItem="eaa-QK-sa4" firstAttribute="top" secondItem="8Qp-ch-njh" secondAttribute="bottom" id="kjk-Cw-c4Y"/>
+                        <constraint firstAttribute="trailing" secondItem="1L0-Zb-7Qk" secondAttribute="trailing" id="lmE-1s-TyP"/>
+                        <constraint firstItem="1L0-Zb-7Qk" firstAttribute="leading" secondItem="wg4-uQ-MrV" secondAttribute="leading" id="pSk-Ii-Db5"/>
+                        <constraint firstItem="iW0-Jr-65q" firstAttribute="leading" secondItem="wg4-uQ-MrV" secondAttribute="leading" id="qWm-AO-IXX"/>
+                        <constraint firstAttribute="bottom" secondItem="eaa-QK-sa4" secondAttribute="bottom" constant="-60" id="tup-5x-8kB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wg4-uQ-MrV" secondAttribute="bottom" id="1dY-Re-cAt"/>
+                <constraint firstItem="wg4-uQ-MrV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C26-6w-ebb"/>
+                <constraint firstItem="wg4-uQ-MrV" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="hKZ-ar-sum"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="cad-zp-eN9"/>
+        </view>
+    </objects>
+</document>

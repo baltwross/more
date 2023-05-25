@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileContentView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="birthdayView" destination="EVu-qM-bLe" id="6pX-xz-om3"/>
+                <outlet property="emailView" destination="XvU-ui-aYt" id="mfw-fH-hRU"/>
+                <outlet property="genderView" destination="ch1-2W-xwz" id="Loc-av-m2h"/>
+                <outlet property="momentView" destination="982-kk-E9g" id="LJT-1H-44n"/>
+                <outlet property="nameView" destination="Vsk-yu-m70" id="3Kx-HG-vvM"/>
+                <outlet property="phoneView" destination="ixn-7w-21b" id="AEf-pz-CEB"/>
+                <outlet property="photosView" destination="9oT-So-Epg" id="36F-5F-4tR"/>
+                <outlet property="quoteView" destination="8s7-Ev-0vw" id="yr3-Y9-RiF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1283"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oT-So-Epg" customClass="EditProfilePhotosView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="bMm-a7-x7l"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8s7-Ev-0vw" customClass="EditProfileQuoteView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="260" width="375" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" placeholder="YES" id="SxR-iw-eSu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsk-yu-m70" customClass="EditProfileItemView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="388" width="375" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Tej-dK-96q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="NAME"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-2W-xwz" customClass="EditProfileItemView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="464" width="375" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="ET0-Bk-MAf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="GENDER"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVu-qM-bLe" customClass="EditProfileItemView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="540" width="375" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="9lA-lo-4Z6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="BIRTHDAY"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixn-7w-21b" customClass="EditProfileItemView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="616" width="375" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Zra-WS-MBF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="PHONE"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvU-ui-aYt" customClass="EditProfileItemView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="692" width="375" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="3nh-Bh-jbP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="EMAIL"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="982-kk-E9g" customClass="EditProfileMomentView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="768" width="375" height="415"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ixn-7w-21b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3oD-YN-LWR"/>
+                <constraint firstItem="ch1-2W-xwz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="889-U6-pF5"/>
+                <constraint firstItem="8s7-Ev-0vw" firstAttribute="top" secondItem="9oT-So-Epg" secondAttribute="bottom" constant="20" id="Atg-f8-Rz2"/>
+                <constraint firstItem="ixn-7w-21b" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="BbI-rA-YdL"/>
+                <constraint firstItem="ixn-7w-21b" firstAttribute="top" secondItem="EVu-qM-bLe" secondAttribute="bottom" id="J8m-E3-TCF"/>
+                <constraint firstAttribute="trailing" secondItem="982-kk-E9g" secondAttribute="trailing" id="JQ3-gN-fV8"/>
+                <constraint firstItem="EVu-qM-bLe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KGd-ug-oXO"/>
+                <constraint firstItem="Vsk-yu-m70" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LyG-Fs-1yf"/>
+                <constraint firstAttribute="trailing" secondItem="9oT-So-Epg" secondAttribute="trailing" id="MFF-PF-jrL"/>
+                <constraint firstAttribute="trailing" secondItem="ch1-2W-xwz" secondAttribute="trailing" id="MkZ-wb-M3f"/>
+                <constraint firstItem="ch1-2W-xwz" firstAttribute="top" secondItem="Vsk-yu-m70" secondAttribute="bottom" id="UJK-pJ-erj"/>
+                <constraint firstAttribute="trailing" secondItem="Vsk-yu-m70" secondAttribute="trailing" id="Uk3-ou-0fi"/>
+                <constraint firstItem="8s7-Ev-0vw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XLg-jL-8WL"/>
+                <constraint firstItem="9oT-So-Epg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dyq-bq-KdD"/>
+                <constraint firstItem="XvU-ui-aYt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eCI-HA-fx4"/>
+                <constraint firstItem="EVu-qM-bLe" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ewy-Ba-sBc"/>
+                <constraint firstItem="XvU-ui-aYt" firstAttribute="top" secondItem="ixn-7w-21b" secondAttribute="bottom" id="fFj-Bu-K96"/>
+                <constraint firstItem="XvU-ui-aYt" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="gPY-sy-evz"/>
+                <constraint firstItem="982-kk-E9g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hIz-5T-R7L"/>
+                <constraint firstAttribute="bottom" secondItem="982-kk-E9g" secondAttribute="bottom" constant="100" id="qjJ-zU-qYn"/>
+                <constraint firstAttribute="trailing" secondItem="8s7-Ev-0vw" secondAttribute="trailing" id="qrN-vl-Wvb"/>
+                <constraint firstItem="EVu-qM-bLe" firstAttribute="top" secondItem="ch1-2W-xwz" secondAttribute="bottom" id="sY7-Ct-XhF"/>
+                <constraint firstItem="982-kk-E9g" firstAttribute="top" secondItem="XvU-ui-aYt" secondAttribute="bottom" id="uTi-8K-uhA"/>
+                <constraint firstItem="9oT-So-Epg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ueL-Xd-ioF"/>
+                <constraint firstItem="Vsk-yu-m70" firstAttribute="top" secondItem="8s7-Ev-0vw" secondAttribute="bottom" id="wW6-HP-fRU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="575.26236881559225"/>
+        </view>
+    </objects>
+</document>

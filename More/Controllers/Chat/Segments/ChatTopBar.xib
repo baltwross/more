@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN-Bold.ttf">
+            <string>DIN-Bold</string>
+        </array>
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatTopBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="yHI-cO-qYl" id="oFe-Nk-OPm"/>
+                <outlet property="countdown" destination="QBo-zF-SlD" id="i2O-S4-vdI"/>
+                <outlet property="eta" destination="8ao-7M-A1c" id="dnu-Mc-ncs"/>
+                <outlet property="etaLabel" destination="Bhs-Vr-RRl" id="tir-K9-vN3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GtQ-cK-pZ9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBo-zF-SlD" customClass="CountdownLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="186.5" y="19" width="41" height="15"/>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="15"/>
+                    <color key="textColor" red="0.01176470588" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHI-cO-qYl">
+                    <rect key="frame" x="295" y="8.5" width="109" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="TT8-YJ-LSF"/>
+                        <constraint firstAttribute="width" constant="109" id="ikJ-7Q-jbh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="ACCEPT" backgroundImage="request_button"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="LO1-V1-Jex"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZD-nZ-8kw">
+                    <rect key="frame" x="17" y="14.5" width="74" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:15PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ao-7M-A1c">
+                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="tcF-WV-tAD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DIN-Bold" family="DIN" pointSize="14"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhs-Vr-RRl">
+                            <rect key="frame" x="57.5" y="1" width="16.5" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="E0r-dc-cMS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="13"/>
+                            <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8ao-7M-A1c" secondAttribute="bottom" id="7zU-2X-n8Z"/>
+                        <constraint firstItem="8ao-7M-A1c" firstAttribute="leading" secondItem="CZD-nZ-8kw" secondAttribute="leading" id="94v-ZI-ewu"/>
+                        <constraint firstItem="8ao-7M-A1c" firstAttribute="top" secondItem="CZD-nZ-8kw" secondAttribute="top" id="Jh7-J9-9sU"/>
+                        <constraint firstItem="Bhs-Vr-RRl" firstAttribute="leading" secondItem="8ao-7M-A1c" secondAttribute="trailing" constant="10" id="Qvc-UP-LIP"/>
+                        <constraint firstAttribute="trailing" secondItem="Bhs-Vr-RRl" secondAttribute="trailing" id="eYg-H0-xTA"/>
+                        <constraint firstItem="Bhs-Vr-RRl" firstAttribute="centerY" secondItem="CZD-nZ-8kw" secondAttribute="centerY" constant="1" id="seQ-4w-5ct"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QBo-zF-SlD" firstAttribute="centerY" secondItem="GtQ-cK-pZ9" secondAttribute="centerY" id="Aec-pa-ZLS"/>
+                <constraint firstItem="CZD-nZ-8kw" firstAttribute="leading" secondItem="GtQ-cK-pZ9" secondAttribute="leading" constant="17" id="BgL-BM-9oG"/>
+                <constraint firstItem="CZD-nZ-8kw" firstAttribute="centerY" secondItem="GtQ-cK-pZ9" secondAttribute="centerY" id="G8r-We-QZA"/>
+                <constraint firstItem="yHI-cO-qYl" firstAttribute="centerY" secondItem="GtQ-cK-pZ9" secondAttribute="centerY" id="eIw-g9-PaT"/>
+                <constraint firstAttribute="trailing" secondItem="yHI-cO-qYl" secondAttribute="trailing" constant="10" id="qHe-bw-rgU"/>
+                <constraint firstItem="QBo-zF-SlD" firstAttribute="centerX" secondItem="GtQ-cK-pZ9" secondAttribute="centerX" id="xSh-MO-YCE"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="request_button" width="158" height="55"/>
+    </resources>
+</document>

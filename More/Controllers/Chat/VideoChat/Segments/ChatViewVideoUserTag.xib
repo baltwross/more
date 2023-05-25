@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewVideoUserTag" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="Opf-91-PKU" id="ASm-Vh-r5X"/>
+                <outlet property="name" destination="elz-hy-Y0Z" id="2p3-S5-i0f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opf-91-PKU" customClass="TimeAvatarView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Opf-91-PKU" secondAttribute="height" id="seb-U9-9vJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Becca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elz-hy-Y0Z">
+                    <rect key="frame" x="108" y="36.5" width="43" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-4E-fmz">
+                    <rect key="frame" x="0.0" y="0.0" width="151" height="88"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="MXG-5p-9jP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2hn-4E-fmz" firstAttribute="trailing" secondItem="elz-hy-Y0Z" secondAttribute="trailing" id="6ba-kO-CRu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="elz-hy-Y0Z" secondAttribute="trailing" id="8pR-jg-jzn"/>
+                <constraint firstItem="Opf-91-PKU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9rX-q5-c83"/>
+                <constraint firstItem="elz-hy-Y0Z" firstAttribute="leading" secondItem="Opf-91-PKU" secondAttribute="trailing" constant="20" id="C2E-mZ-Gb5"/>
+                <constraint firstAttribute="bottom" secondItem="Opf-91-PKU" secondAttribute="bottom" id="Gqp-ra-lvU"/>
+                <constraint firstItem="2hn-4E-fmz" firstAttribute="leading" secondItem="Opf-91-PKU" secondAttribute="leading" id="Mlm-RL-QXY"/>
+                <constraint firstItem="Opf-91-PKU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NgM-cX-a8f"/>
+                <constraint firstItem="2hn-4E-fmz" firstAttribute="bottom" secondItem="Opf-91-PKU" secondAttribute="bottom" id="V7S-Gy-543"/>
+                <constraint firstItem="elz-hy-Y0Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f0d-cA-WFX"/>
+                <constraint firstItem="2hn-4E-fmz" firstAttribute="top" secondItem="Opf-91-PKU" secondAttribute="top" id="oCX-Em-ZIE"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="263.16964285714283"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalPlaceItemView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="vaf-g2-bXi" id="asE-A2-5mL"/>
+                <outlet property="subtitle" destination="hNe-8j-i7F" id="EhV-A5-BJj"/>
+                <outlet property="title" destination="N93-hU-Lb2" id="4Ze-l1-kLG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hYt-ck-jnp">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaf-g2-bXi">
+                    <rect key="frame" x="25" y="30" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="7j2-Sx-A5y"/>
+                        <constraint firstAttribute="width" constant="22" id="cpD-Fp-ZW9"/>
+                    </constraints>
+                </button>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9E-7M-PPr">
+                    <rect key="frame" x="63" y="19" width="53" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ashley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N93-hU-Lb2">
+                            <rect key="frame" x="0.0" y="0.0" width="53" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-8j-i7F">
+                            <rect key="frame" x="0.0" y="31.5" width="53" height="12.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="11"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hNe-8j-i7F" firstAttribute="leading" secondItem="s9E-7M-PPr" secondAttribute="leading" id="7pV-CV-k9Z"/>
+                        <constraint firstItem="hNe-8j-i7F" firstAttribute="top" secondItem="N93-hU-Lb2" secondAttribute="bottom" constant="8" id="AzS-fz-nFE"/>
+                        <constraint firstAttribute="bottom" secondItem="hNe-8j-i7F" secondAttribute="bottom" id="R0P-1w-bzE"/>
+                        <constraint firstItem="N93-hU-Lb2" firstAttribute="leading" secondItem="s9E-7M-PPr" secondAttribute="leading" id="RVs-gc-d3b"/>
+                        <constraint firstItem="N93-hU-Lb2" firstAttribute="top" secondItem="s9E-7M-PPr" secondAttribute="top" id="XOE-ED-d9r"/>
+                        <constraint firstAttribute="trailing" secondItem="hNe-8j-i7F" secondAttribute="trailing" id="b9M-za-iGg"/>
+                        <constraint firstAttribute="trailing" secondItem="N93-hU-Lb2" secondAttribute="trailing" id="lLv-Xe-YXW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-nj-RgD">
+                    <rect key="frame" x="334" y="35" width="16" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Wxo-po-3e5"/>
+                        <constraint firstAttribute="height" constant="12" id="yyj-vR-tHv"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gh6-nj-RgD" secondAttribute="trailing" constant="25" id="9eJ-29-6Qd"/>
+                <constraint firstItem="gh6-nj-RgD" firstAttribute="centerY" secondItem="hYt-ck-jnp" secondAttribute="centerY" id="I4s-bc-Baj"/>
+                <constraint firstItem="s9E-7M-PPr" firstAttribute="leading" secondItem="vaf-g2-bXi" secondAttribute="trailing" constant="16" id="emO-16-dtW"/>
+                <constraint firstItem="vaf-g2-bXi" firstAttribute="leading" secondItem="hYt-ck-jnp" secondAttribute="leading" constant="25" id="fme-pu-F5K"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s9E-7M-PPr" secondAttribute="trailing" constant="28" id="rEa-Vs-Plf"/>
+                <constraint firstItem="vaf-g2-bXi" firstAttribute="centerY" secondItem="hYt-ck-jnp" secondAttribute="centerY" id="vK2-ui-VXE"/>
+                <constraint firstItem="s9E-7M-PPr" firstAttribute="centerY" secondItem="hYt-ck-jnp" secondAttribute="centerY" id="yx4-hH-32k"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="100.72463768115942" y="108.48214285714285"/>
+        </view>
+    </objects>
+</document>

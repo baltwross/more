@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertContentView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="Amg-52-RqY" id="k59-Gh-eXt"/>
+                <outlet property="button" destination="pOE-Wm-ATY" id="qzP-gY-6f8"/>
+                <outlet property="buttonWidth" destination="ngr-WQ-VY8" id="8Un-DO-wZu"/>
+                <outlet property="label" destination="qy6-p3-SfJ" id="qnk-af-jFS"/>
+                <outlet property="rate" destination="k9Q-1G-Uk9" id="Wde-0K-3tW"/>
+                <outlet property="smallAvatar" destination="DJS-pc-OIj" id="feC-AY-ML5"/>
+                <outlet property="timeAvatar" destination="CYW-we-WkT" id="uCV-Yf-HwM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="617" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DJS-pc-OIj" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="15" y="9" width="26" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="PlK-2h-7fO"/>
+                        <constraint firstAttribute="height" constant="26" id="TAw-nU-Axx"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Amg-52-RqY" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="25" y="19" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="AYq-gT-n4h"/>
+                        <constraint firstAttribute="width" constant="42" id="bJD-9N-QX4"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYW-we-WkT" customClass="TimeAvatarView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="21" y="15" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4mx-4S-e4A"/>
+                        <constraint firstAttribute="width" constant="50" id="4s7-cN-B8k"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-p3-SfJ">
+                    <rect key="frame" x="79" y="30" width="397" height="20"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-Wm-ATY">
+                    <rect key="frame" x="492" y="25" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="S8K-HA-oC9"/>
+                        <constraint firstAttribute="width" constant="100" id="ngr-WQ-VY8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9Q-1G-Uk9" customClass="StarsView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="502" y="35" width="90" height="10"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="4ot-Ip-xdm"/>
+                        <constraint firstAttribute="height" constant="10" id="bf2-dG-Kaa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qy6-p3-SfJ" firstAttribute="leading" secondItem="CYW-we-WkT" secondAttribute="trailing" constant="8" id="17A-W3-K89"/>
+                <constraint firstAttribute="trailing" secondItem="pOE-Wm-ATY" secondAttribute="trailing" constant="25" id="2Og-9J-Xtw"/>
+                <constraint firstItem="k9Q-1G-Uk9" firstAttribute="centerY" secondItem="pOE-Wm-ATY" secondAttribute="centerY" id="4oc-IF-w7A"/>
+                <constraint firstItem="CYW-we-WkT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="59a-Ux-VTf"/>
+                <constraint firstItem="Amg-52-RqY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I54-6Q-62R"/>
+                <constraint firstItem="qy6-p3-SfJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JCx-Tr-YXi"/>
+                <constraint firstItem="pOE-Wm-ATY" firstAttribute="leading" secondItem="qy6-p3-SfJ" secondAttribute="trailing" constant="16" id="JpQ-em-Y5m"/>
+                <constraint firstItem="DJS-pc-OIj" firstAttribute="trailing" secondItem="Amg-52-RqY" secondAttribute="leading" constant="16" id="OuP-CV-mNa"/>
+                <constraint firstItem="CYW-we-WkT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hd3-JQ-EVo"/>
+                <constraint firstItem="pOE-Wm-ATY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tId-Ng-SAd"/>
+                <constraint firstItem="Amg-52-RqY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="tgt-zv-E0T"/>
+                <constraint firstItem="DJS-pc-OIj" firstAttribute="bottom" secondItem="Amg-52-RqY" secondAttribute="top" constant="16" id="vdm-0I-B90"/>
+                <constraint firstItem="k9Q-1G-Uk9" firstAttribute="trailing" secondItem="pOE-Wm-ATY" secondAttribute="trailing" id="z8X-CE-GfK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="255.19999999999999" y="358.02098950524743"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewDurationView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="selection" destination="0j5-QO-7o6" id="HlM-wP-e21"/>
+                <outlet property="title" destination="wsN-w7-ApB" id="OMR-K5-WWf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Mfu-Sy-IWv">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j5-QO-7o6">
+                    <rect key="frame" x="320" y="26" width="30" height="30"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="E1P-Fi-4Fe"/>
+                        <constraint firstAttribute="width" constant="30" id="o3I-uf-MEw"/>
+                    </constraints>
+                    <state key="normal" image="check_off"/>
+                    <state key="selected" image="check_on"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventurous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsN-w7-ApB">
+                    <rect key="frame" x="25" y="30" width="283" height="22"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wsN-w7-ApB" firstAttribute="centerY" secondItem="Mfu-Sy-IWv" secondAttribute="centerY" id="3Wr-zF-08L"/>
+                <constraint firstItem="0j5-QO-7o6" firstAttribute="leading" secondItem="wsN-w7-ApB" secondAttribute="trailing" constant="12" id="FFM-kp-8Ge"/>
+                <constraint firstItem="wsN-w7-ApB" firstAttribute="leading" secondItem="Mfu-Sy-IWv" secondAttribute="leading" constant="25" id="cuM-vY-6cm"/>
+                <constraint firstAttribute="trailing" secondItem="0j5-QO-7o6" secondAttribute="trailing" constant="25" id="gWz-Px-wHc"/>
+                <constraint firstItem="0j5-QO-7o6" firstAttribute="centerY" secondItem="Mfu-Sy-IWv" secondAttribute="centerY" id="oVK-Bt-vz7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="416.49175412293857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_off" width="15" height="11"/>
+        <image name="check_on" width="15" height="11"/>
+    </resources>
+</document>

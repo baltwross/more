@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalClaimBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="ribbon" destination="C3X-br-eE2" id="3cI-1S-ayJ"/>
+                <outlet property="shareButton" destination="2kY-FW-C61" id="VVo-d7-96I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zLV-Pu-0cY">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHX-3Z-7k6" customClass="BackgroundWithOval" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="37" width="368" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3X-br-eE2" customClass="ExploreClaimRibbon" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="117.5" y="-22" width="133" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="133" id="IL1-dD-2xB"/>
+                                <constraint firstAttribute="height" constant="30" id="gEQ-wV-zMy"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kY-FW-C61">
+                            <rect key="frame" x="196" y="8" width="156" height="53"/>
+                            <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="otq-UK-25p"/>
+                                <constraint firstAttribute="width" constant="156" id="yjQ-LJ-sfN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                            <state key="normal" title="SHARE SIGNAL"/>
+                            <connections>
+                                <action selector="shareTouch:" destination="-1" eventType="touchUpInside" id="o4l-q4-9tf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to do this?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-nt-iKJ">
+                            <rect key="frame" x="25" y="22.5" width="117" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="t9B-UW-tGw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="14"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="C3X-br-eE2" firstAttribute="centerX" secondItem="MHX-3Z-7k6" secondAttribute="centerX" id="NdW-Ba-E2H"/>
+                        <constraint firstItem="C3X-br-eE2" firstAttribute="top" secondItem="MHX-3Z-7k6" secondAttribute="top" constant="-22" id="Poj-vq-LwK"/>
+                        <constraint firstAttribute="trailing" secondItem="2kY-FW-C61" secondAttribute="trailing" constant="16" id="TMQ-Jm-MfC"/>
+                        <constraint firstItem="kKZ-nt-iKJ" firstAttribute="centerY" secondItem="2kY-FW-C61" secondAttribute="centerY" id="daa-Ir-Xmn"/>
+                        <constraint firstItem="kKZ-nt-iKJ" firstAttribute="leading" secondItem="MHX-3Z-7k6" secondAttribute="leading" constant="25" id="kT7-dm-0fD"/>
+                        <constraint firstItem="2kY-FW-C61" firstAttribute="top" secondItem="MHX-3Z-7k6" secondAttribute="top" constant="8" id="mQY-Kb-oec"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ovalSize">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ovalPosition">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="semicircleColor">
+                            <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MHX-3Z-7k6" firstAttribute="top" secondItem="v9w-ST-Yv9" secondAttribute="top" constant="37" id="4mS-E3-BCB"/>
+                <constraint firstItem="MHX-3Z-7k6" firstAttribute="trailing" secondItem="v9w-ST-Yv9" secondAttribute="trailing" id="7e6-8F-psI"/>
+                <constraint firstItem="MHX-3Z-7k6" firstAttribute="leading" secondItem="v9w-ST-Yv9" secondAttribute="leading" id="7uU-lL-7kr"/>
+                <constraint firstItem="MHX-3Z-7k6" firstAttribute="bottom" secondItem="v9w-ST-Yv9" secondAttribute="bottom" constant="80" id="gmY-vx-b7Z"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="v9w-ST-Yv9"/>
+            <point key="canvasLocation" x="132.80000000000001" y="375.11244377811096"/>
+        </view>
+    </objects>
+</document>

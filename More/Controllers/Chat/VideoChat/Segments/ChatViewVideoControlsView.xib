@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewVideoControlsView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="callButton" destination="jk3-yy-xVo" id="RKE-gB-TO4"/>
+                <outlet property="callLabel" destination="Qpv-H0-4zA" id="L0y-nQ-mYu"/>
+                <outlet property="cameraBlur" destination="Mk3-Bl-9Xa" id="uy7-5v-uSU"/>
+                <outlet property="cameraButton" destination="Sv8-Jo-oG5" id="5Yw-kq-lvS"/>
+                <outlet property="cameraLabel" destination="upt-BS-14N" id="Xw0-eY-mPV"/>
+                <outlet property="flipBlur" destination="KX4-XQ-BMw" id="KWy-gg-9kX"/>
+                <outlet property="flipButton" destination="PSy-FD-lKp" id="asg-Sn-7hF"/>
+                <outlet property="flipLabel" destination="3nC-mk-Ozq" id="jKZ-Xb-MLR"/>
+                <outlet property="micBlur" destination="GPv-Zt-DZ7" id="IfB-Jd-AJQ"/>
+                <outlet property="micButton" destination="8BA-kL-yDe" id="ebi-KF-7Au"/>
+                <outlet property="micLabel" destination="Toi-YR-ZPd" id="eZ3-Kx-wi1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-Zt-DZ7">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eh4-zn-Vyt">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemThinMaterial"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-kL-yDe">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MJR-o1-iwm"/>
+                        <constraint firstAttribute="width" constant="50" id="sad-za-xEu"/>
+                    </constraints>
+                    <state key="normal" image="chat-video-unmute"/>
+                    <state key="selected" image="chat-video-mute"/>
+                    <connections>
+                        <action selector="micButtonTouch:" destination="-1" eventType="touchUpInside" id="2eT-Hd-fuM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toi-YR-ZPd">
+                    <rect key="frame" x="11" y="60" width="28" height="12.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-pP-V7q">
+                    <rect key="frame" x="50" y="0.0" width="71.5" height="93"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-Bl-9Xa">
+                    <rect key="frame" x="121.5" y="0.0" width="50" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ddp-B4-WFf">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemThinMaterial"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv8-Jo-oG5">
+                    <rect key="frame" x="121.5" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6ee-po-dsp"/>
+                        <constraint firstAttribute="width" constant="50" id="E3Y-In-zRP"/>
+                    </constraints>
+                    <state key="normal" image="chat-video-camera-off"/>
+                    <state key="selected" image="chat-video-camera"/>
+                    <connections>
+                        <action selector="cameraButtonTouch:" destination="-1" eventType="touchUpInside" id="l6e-Wx-UPt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upt-BS-14N">
+                    <rect key="frame" x="130" y="60" width="33" height="12.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd2-Wy-UWX">
+                    <rect key="frame" x="171.5" y="0.0" width="71" height="93"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KX4-XQ-BMw">
+                    <rect key="frame" x="242.5" y="0.0" width="50" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8QS-OL-mmY">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemThinMaterial"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSy-FD-lKp">
+                    <rect key="frame" x="242.5" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bkx-LW-aWa"/>
+                        <constraint firstAttribute="width" constant="50" id="qcG-Hb-cZ8"/>
+                    </constraints>
+                    <state key="normal" image="chat-video-flip"/>
+                    <connections>
+                        <action selector="flipButtonTouch:" destination="-1" eventType="touchUpInside" id="U4Y-xx-O8o"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-mk-Ozq">
+                    <rect key="frame" x="257" y="60" width="21.5" height="12.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPL-sO-0JM">
+                    <rect key="frame" x="292.5" y="0.0" width="71.5" height="93"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk3-yy-xVo">
+                    <rect key="frame" x="364" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Tpp-ay-tvM"/>
+                        <constraint firstAttribute="width" constant="50" id="bdK-Ok-GaR"/>
+                    </constraints>
+                    <state key="normal" image="chat-video-end-call"/>
+                    <connections>
+                        <action selector="callButtonTouch:" destination="-1" eventType="touchUpInside" id="i0x-qT-GM1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpv-H0-4zA">
+                    <rect key="frame" x="372.5" y="60" width="33" height="13"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Mk3-Bl-9Xa" firstAttribute="bottom" secondItem="Sv8-Jo-oG5" secondAttribute="bottom" id="02S-Jf-rue"/>
+                <constraint firstItem="GPv-Zt-DZ7" firstAttribute="leading" secondItem="8BA-kL-yDe" secondAttribute="leading" id="3du-jE-6cm"/>
+                <constraint firstItem="8BA-kL-yDe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Cf-pY-Vb8"/>
+                <constraint firstItem="fd2-Wy-UWX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Gw-hf-YMz"/>
+                <constraint firstItem="PSy-FD-lKp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8mD-sx-4ko"/>
+                <constraint firstAttribute="bottom" secondItem="sPL-sO-0JM" secondAttribute="bottom" id="8wd-fG-VDL"/>
+                <constraint firstItem="jk3-yy-xVo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9ic-3i-nnb"/>
+                <constraint firstItem="KX4-XQ-BMw" firstAttribute="trailing" secondItem="PSy-FD-lKp" secondAttribute="trailing" id="Anv-B4-SO8"/>
+                <constraint firstItem="PSy-FD-lKp" firstAttribute="leading" secondItem="fd2-Wy-UWX" secondAttribute="trailing" id="CAO-id-Bzf"/>
+                <constraint firstItem="Mk3-Bl-9Xa" firstAttribute="top" secondItem="Sv8-Jo-oG5" secondAttribute="top" id="CPJ-Vj-FaO"/>
+                <constraint firstItem="cPX-pP-V7q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ctu-ku-0Is"/>
+                <constraint firstItem="8BA-kL-yDe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D8Z-Nk-pos"/>
+                <constraint firstItem="3nC-mk-Ozq" firstAttribute="centerX" secondItem="PSy-FD-lKp" secondAttribute="centerX" id="Ef8-Fi-qe8"/>
+                <constraint firstItem="jk3-yy-xVo" firstAttribute="leading" secondItem="sPL-sO-0JM" secondAttribute="trailing" id="HN7-og-dcF"/>
+                <constraint firstItem="GPv-Zt-DZ7" firstAttribute="top" secondItem="8BA-kL-yDe" secondAttribute="top" id="Hq5-9F-oRm"/>
+                <constraint firstItem="Qpv-H0-4zA" firstAttribute="centerX" secondItem="jk3-yy-xVo" secondAttribute="centerX" id="Kek-HW-35x"/>
+                <constraint firstItem="cPX-pP-V7q" firstAttribute="leading" secondItem="GPv-Zt-DZ7" secondAttribute="trailing" id="L0g-WP-BL2"/>
+                <constraint firstItem="Qpv-H0-4zA" firstAttribute="top" secondItem="jk3-yy-xVo" secondAttribute="bottom" constant="10" id="LQM-oc-MPq"/>
+                <constraint firstItem="fd2-Wy-UWX" firstAttribute="width" secondItem="sPL-sO-0JM" secondAttribute="width" id="MRr-Ip-jvm"/>
+                <constraint firstItem="GPv-Zt-DZ7" firstAttribute="trailing" secondItem="8BA-kL-yDe" secondAttribute="trailing" id="PUk-vg-OiC"/>
+                <constraint firstItem="KX4-XQ-BMw" firstAttribute="top" secondItem="PSy-FD-lKp" secondAttribute="top" id="Q0e-RB-Jgh"/>
+                <constraint firstItem="upt-BS-14N" firstAttribute="top" secondItem="Sv8-Jo-oG5" secondAttribute="bottom" constant="10" id="SEQ-nx-Gyn"/>
+                <constraint firstItem="cPX-pP-V7q" firstAttribute="width" secondItem="fd2-Wy-UWX" secondAttribute="width" id="Ta8-ww-mcv"/>
+                <constraint firstItem="sPL-sO-0JM" firstAttribute="leading" secondItem="PSy-FD-lKp" secondAttribute="trailing" id="XQQ-dx-OAt"/>
+                <constraint firstItem="sPL-sO-0JM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xh9-E0-kG4"/>
+                <constraint firstItem="3nC-mk-Ozq" firstAttribute="top" secondItem="PSy-FD-lKp" secondAttribute="bottom" constant="10" id="bUm-96-9Xp"/>
+                <constraint firstItem="GPv-Zt-DZ7" firstAttribute="bottom" secondItem="8BA-kL-yDe" secondAttribute="bottom" id="c9f-DE-xgt"/>
+                <constraint firstItem="KX4-XQ-BMw" firstAttribute="leading" secondItem="PSy-FD-lKp" secondAttribute="leading" id="dU1-oY-LMD"/>
+                <constraint firstItem="Toi-YR-ZPd" firstAttribute="top" secondItem="GPv-Zt-DZ7" secondAttribute="bottom" constant="10" id="iFL-eX-QyP"/>
+                <constraint firstItem="Mk3-Bl-9Xa" firstAttribute="trailing" secondItem="Sv8-Jo-oG5" secondAttribute="trailing" id="lc7-B7-7ZJ"/>
+                <constraint firstAttribute="bottom" secondItem="fd2-Wy-UWX" secondAttribute="bottom" id="loj-VO-11j"/>
+                <constraint firstItem="upt-BS-14N" firstAttribute="centerX" secondItem="Sv8-Jo-oG5" secondAttribute="centerX" id="mtm-aq-Vyt"/>
+                <constraint firstItem="Sv8-Jo-oG5" firstAttribute="leading" secondItem="cPX-pP-V7q" secondAttribute="trailing" id="sIi-j1-jFU"/>
+                <constraint firstItem="Sv8-Jo-oG5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sMn-Ks-5hK"/>
+                <constraint firstItem="KX4-XQ-BMw" firstAttribute="bottom" secondItem="PSy-FD-lKp" secondAttribute="bottom" id="sXU-5j-1dz"/>
+                <constraint firstItem="Mk3-Bl-9Xa" firstAttribute="leading" secondItem="Sv8-Jo-oG5" secondAttribute="leading" id="uSF-xs-x9u"/>
+                <constraint firstItem="fd2-Wy-UWX" firstAttribute="leading" secondItem="Sv8-Jo-oG5" secondAttribute="trailing" id="ucs-1l-K1A"/>
+                <constraint firstAttribute="trailing" secondItem="jk3-yy-xVo" secondAttribute="trailing" id="vgD-HJ-UIj"/>
+                <constraint firstItem="Toi-YR-ZPd" firstAttribute="centerX" secondItem="8BA-kL-yDe" secondAttribute="centerX" id="wDe-jM-tf6"/>
+                <constraint firstAttribute="bottom" secondItem="cPX-pP-V7q" secondAttribute="bottom" id="y0f-kC-fZn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="350.55803571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat-video-camera" width="20" height="16"/>
+        <image name="chat-video-camera-off" width="20" height="21"/>
+        <image name="chat-video-end-call" width="26" height="8"/>
+        <image name="chat-video-flip" width="25" height="20"/>
+        <image name="chat-video-mute" width="15" height="23"/>
+        <image name="chat-video-unmute" width="15" height="23"/>
+    </resources>
+</document>

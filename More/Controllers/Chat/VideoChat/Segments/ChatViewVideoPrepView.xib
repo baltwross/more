@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN-Bold.ttf">
+            <string>DIN-Bold</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewVideoPrepView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="time" destination="CEn-EU-Fy5" id="wBg-4k-G0Y"/>
+                <outlet property="title" destination="Ld8-Oy-cnc" id="41r-1Q-gYO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Joining in..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld8-Oy-cnc">
+                    <rect key="frame" x="0.0" y="0.0" width="265" height="28.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEn-EU-Fy5" customClass="CountdownLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="124" y="48.5" width="17.5" height="39.5"/>
+                    <fontDescription key="fontDescription" name="DIN-Bold" family="DIN" pointSize="32"/>
+                    <color key="textColor" red="0.01176470588" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ld8-Oy-cnc" secondAttribute="trailing" id="HDQ-rf-Ui2"/>
+                <constraint firstItem="CEn-EU-Fy5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HrV-0g-xgY"/>
+                <constraint firstItem="CEn-EU-Fy5" firstAttribute="top" secondItem="Ld8-Oy-cnc" secondAttribute="bottom" constant="20" id="IW9-Wk-xPE"/>
+                <constraint firstItem="Ld8-Oy-cnc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jh9-UF-hkC"/>
+                <constraint firstAttribute="bottom" secondItem="CEn-EU-Fy5" secondAttribute="bottom" id="O6N-FX-hWV"/>
+                <constraint firstItem="Ld8-Oy-cnc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rtM-31-ww6"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="29.710144927536234" y="393.75"/>
+        </view>
+    </objects>
+</document>

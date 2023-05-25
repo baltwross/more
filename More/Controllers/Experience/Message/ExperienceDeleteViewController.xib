@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceDeleteViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="delete" destination="6Cg-3h-znc" id="ZI4-42-LV3"/>
+                <outlet property="deleteContainer" destination="Eoh-ob-7bN" id="Bdu-aR-9a9"/>
+                <outlet property="view" destination="wZr-BM-L1H" id="X7n-Ne-jBc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wZr-BM-L1H" customClass="ExperienceOverlayViewControllerView" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-ob-7bN">
+                    <rect key="frame" x="0.0" y="789" width="414" height="107"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-3h-znc" customClass="ExperienceStartBar" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="73" id="isq-dY-VHX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6Cg-3h-znc" firstAttribute="top" secondItem="Eoh-ob-7bN" secondAttribute="top" id="KEJ-4I-gxU"/>
+                        <constraint firstAttribute="trailing" secondItem="6Cg-3h-znc" secondAttribute="trailing" id="ri3-93-BZR"/>
+                        <constraint firstItem="6Cg-3h-znc" firstAttribute="leading" secondItem="Eoh-ob-7bN" secondAttribute="leading" id="wUf-MY-gE8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Eoh-ob-7bN" firstAttribute="top" secondItem="wKn-d8-93E" secondAttribute="bottom" constant="-73" id="XRw-8q-Tbo"/>
+                <constraint firstItem="Eoh-ob-7bN" firstAttribute="trailing" secondItem="wKn-d8-93E" secondAttribute="trailing" id="ejM-yG-svI"/>
+                <constraint firstAttribute="bottom" secondItem="Eoh-ob-7bN" secondAttribute="bottom" id="lXs-hy-stA"/>
+                <constraint firstItem="Eoh-ob-7bN" firstAttribute="leading" secondItem="wKn-d8-93E" secondAttribute="leading" id="tyF-n6-cPH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wKn-d8-93E"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

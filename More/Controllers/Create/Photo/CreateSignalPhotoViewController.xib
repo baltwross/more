@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalPhotoViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="done" destination="alT-aa-BZz" id="8cb-lw-lbO"/>
+                <outlet property="selector" destination="Mg1-6I-t3z" id="aKq-jP-Qes"/>
+                <outlet property="selectorTop" destination="EC6-P9-RK8" id="mUz-Dr-Jdb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mg1-6I-t3z" customClass="CreateSignalPhotoSelectorView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="419" width="414" height="477"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alT-aa-BZz" customClass="BottomButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Mg1-6I-t3z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="375" id="EC6-P9-RK8"/>
+                <constraint firstItem="alT-aa-BZz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F6Z-vE-7jt"/>
+                <constraint firstItem="Mg1-6I-t3z" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KYO-ro-cc9"/>
+                <constraint firstItem="Mg1-6I-t3z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V8E-L4-5lq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="alT-aa-BZz" secondAttribute="trailing" id="gNU-la-FF2"/>
+                <constraint firstAttribute="bottom" secondItem="alT-aa-BZz" secondAttribute="bottom" id="nnE-uI-XP6"/>
+                <constraint firstAttribute="bottom" secondItem="Mg1-6I-t3z" secondAttribute="bottom" id="oUK-bF-JNU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </view>
+    </objects>
+</document>

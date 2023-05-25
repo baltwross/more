@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteCancelMessageView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="UgB-i8-1C8" id="jub-Sg-yvb"/>
+                <outlet property="confirmButton" destination="TxG-Rz-WAq" id="KMr-KK-vSS"/>
+                <outlet property="input" destination="1PL-gj-9XH" id="g1h-wv-80d"/>
+                <outlet property="messagingViewHeight" destination="Xrj-b5-cZM" id="vCQ-8R-6NB"/>
+                <outlet property="tableView" destination="5wx-ZJ-rc1" id="pPX-Dv-sb4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="368"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-Ho-HiZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1eM-Kg-5Kw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="15"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-i8-1C8">
+                    <rect key="frame" x="25" y="0.0" width="36" height="60"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                    <state key="normal" title="BACK">
+                        <color key="titleColor" red="0.74901960784313726" green="0.76470588235294112" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backTouch:" destination="-1" eventType="touchUpInside" id="GZS-8I-5kA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-sL-77G">
+                    <rect key="frame" x="0.0" y="60" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oNt-gx-DyA"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wx-ZJ-rc1" customClass="MessagingTableView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="61" width="375" height="232"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="500" constant="201" id="Xrj-b5-cZM"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcN-5r-HY9">
+                    <rect key="frame" x="0.0" y="293" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZuW-5R-7u9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1PL-gj-9XH" customClass="MessagingInputBar" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="294" width="375" height="74"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" placeholder="YES" id="zDL-io-LtR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-Rz-WAq">
+                    <rect key="frame" x="0.0" y="294" width="375" height="134"/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="134" id="6GI-1O-dTD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="60"/>
+                    <state key="normal" title="CONFIRM CANCELLATION">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmTouch:" destination="-1" eventType="touchUpInside" id="8wF-I7-beM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EcN-5r-HY9" secondAttribute="trailing" id="0J6-o4-grC"/>
+                <constraint firstItem="TxG-Rz-WAq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1gP-UE-iq5"/>
+                <constraint firstItem="bwb-Ho-HiZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CGm-X4-I2w"/>
+                <constraint firstAttribute="bottom" secondItem="1PL-gj-9XH" secondAttribute="bottom" id="Klx-05-paF"/>
+                <constraint firstItem="UgB-i8-1C8" firstAttribute="top" secondItem="bwb-Ho-HiZ" secondAttribute="top" id="MAf-ps-cbv"/>
+                <constraint firstAttribute="trailing" secondItem="1PL-gj-9XH" secondAttribute="trailing" id="MDs-uP-vTb"/>
+                <constraint firstItem="Fzf-sL-77G" firstAttribute="top" secondItem="bwb-Ho-HiZ" secondAttribute="bottom" id="Tf4-9L-0au"/>
+                <constraint firstAttribute="trailing" secondItem="TxG-Rz-WAq" secondAttribute="trailing" id="WNm-rW-KrP"/>
+                <constraint firstAttribute="trailing" secondItem="bwb-Ho-HiZ" secondAttribute="trailing" id="Xn2-md-jMf"/>
+                <constraint firstItem="UgB-i8-1C8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="YNX-4O-QsH"/>
+                <constraint firstItem="EcN-5r-HY9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YWg-L1-RuF"/>
+                <constraint firstAttribute="bottom" secondItem="TxG-Rz-WAq" secondAttribute="bottom" constant="-60" id="ZHo-wl-eNF"/>
+                <constraint firstItem="Fzf-sL-77G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bKx-Ix-5aW"/>
+                <constraint firstAttribute="trailing" secondItem="Fzf-sL-77G" secondAttribute="trailing" id="c6E-WN-k3n"/>
+                <constraint firstItem="UgB-i8-1C8" firstAttribute="bottom" secondItem="bwb-Ho-HiZ" secondAttribute="bottom" id="dpI-dA-i0j"/>
+                <constraint firstItem="EcN-5r-HY9" firstAttribute="top" secondItem="5wx-ZJ-rc1" secondAttribute="bottom" id="lrx-mn-Kjc"/>
+                <constraint firstItem="5wx-ZJ-rc1" firstAttribute="top" secondItem="Fzf-sL-77G" secondAttribute="bottom" id="mEh-r5-5Qd"/>
+                <constraint firstAttribute="trailing" secondItem="5wx-ZJ-rc1" secondAttribute="trailing" id="qVv-WS-F6i"/>
+                <constraint firstItem="5wx-ZJ-rc1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s9E-cW-2nb"/>
+                <constraint firstItem="1PL-gj-9XH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ujH-Q2-DfT"/>
+                <constraint firstItem="bwb-Ho-HiZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vya-EQ-uAF"/>
+                <constraint firstItem="1PL-gj-9XH" firstAttribute="top" secondItem="EcN-5r-HY9" secondAttribute="bottom" id="zoB-ZH-YB1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="286.95652173913044"/>
+        </view>
+    </objects>
+</document>

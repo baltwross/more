@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatReviewTopBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="HgG-FA-oYt" id="AVC-yw-wYW"/>
+                <outlet property="label" destination="NTQ-VH-572" id="sDN-dX-tV6"/>
+                <outlet property="myAvatar" destination="amS-rb-Ptc" id="mO9-6I-1eW"/>
+                <outlet property="otherAvatar" destination="vJS-hq-hLO" id="jDi-eG-yrG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="amS-rb-Ptc" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="15" y="9.5" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="013-Uw-6Jy"/>
+                        <constraint firstAttribute="height" constant="34" id="xml-ZI-aGa"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vJS-hq-hLO" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="45" y="9.5" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="0rU-ug-PWD"/>
+                        <constraint firstAttribute="width" constant="34" id="VPg-dH-Moo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-VH-572">
+                    <rect key="frame" x="89" y="16" width="191" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgG-FA-oYt">
+                    <rect key="frame" x="290" y="8.5" width="114" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="OqL-uB-E7a"/>
+                        <constraint firstAttribute="width" constant="114" id="f14-NY-rre"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                    <state key="normal" title="Write Review">
+                        <color key="titleColor" red="0.58431372549019611" green="0.71372549019607845" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="6i1-En-RLg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="amS-rb-Ptc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="2Sg-f5-fRV"/>
+                <constraint firstItem="amS-rb-Ptc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5kw-6Z-Vcs"/>
+                <constraint firstItem="vJS-hq-hLO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Cwx-dE-wNV"/>
+                <constraint firstItem="vJS-hq-hLO" firstAttribute="leading" secondItem="amS-rb-Ptc" secondAttribute="leading" constant="30" id="Gga-PD-RCn"/>
+                <constraint firstItem="HgG-FA-oYt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TLn-GY-GW6"/>
+                <constraint firstItem="HgG-FA-oYt" firstAttribute="leading" secondItem="NTQ-VH-572" secondAttribute="trailing" constant="10" id="ZVp-Cd-f3W"/>
+                <constraint firstItem="NTQ-VH-572" firstAttribute="leading" secondItem="vJS-hq-hLO" secondAttribute="trailing" constant="10" id="b3L-Dl-w7V"/>
+                <constraint firstAttribute="trailing" secondItem="HgG-FA-oYt" secondAttribute="trailing" constant="10" id="g1f-wh-Jq5"/>
+                <constraint firstItem="NTQ-VH-572" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mFV-r2-SFM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

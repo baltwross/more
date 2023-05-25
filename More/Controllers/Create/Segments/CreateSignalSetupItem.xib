@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalSetupItem" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="cLD-kk-XrG" id="yW1-CL-Ol1"/>
+                <outlet property="caret" destination="DdN-BM-JAV" id="KLT-fM-97M"/>
+                <outlet property="icon" destination="t70-GG-WVv" id="Uxt-Rq-SvL"/>
+                <outlet property="subtitle" destination="FF0-gs-YV3" id="dzI-Yr-H8X"/>
+                <outlet property="tick" destination="qA7-5N-Hci" id="fBg-g2-030"/>
+                <outlet property="title" destination="ZDZ-Uq-V9h" id="Va1-0V-pLQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mQL-pP-Wqb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t70-GG-WVv">
+                    <rect key="frame" x="25" y="30" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Lt9-it-wfi"/>
+                        <constraint firstAttribute="width" constant="22" id="qsy-FV-TzY"/>
+                    </constraints>
+                </button>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDR-31-puo">
+                    <rect key="frame" x="63" y="19" width="53" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ashley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDZ-Uq-V9h">
+                            <rect key="frame" x="0.0" y="0.0" width="53" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF0-gs-YV3">
+                            <rect key="frame" x="0.0" y="31.5" width="53" height="12.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="11"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="FF0-gs-YV3" secondAttribute="bottom" id="4h2-KT-hVp"/>
+                        <constraint firstItem="FF0-gs-YV3" firstAttribute="leading" secondItem="qDR-31-puo" secondAttribute="leading" id="7qZ-x0-hkZ"/>
+                        <constraint firstItem="ZDZ-Uq-V9h" firstAttribute="leading" secondItem="qDR-31-puo" secondAttribute="leading" id="GMT-4h-7AS"/>
+                        <constraint firstAttribute="trailing" secondItem="FF0-gs-YV3" secondAttribute="trailing" id="O6U-qS-2lC"/>
+                        <constraint firstAttribute="trailing" secondItem="ZDZ-Uq-V9h" secondAttribute="trailing" id="RNi-T9-w8i"/>
+                        <constraint firstItem="FF0-gs-YV3" firstAttribute="top" secondItem="ZDZ-Uq-V9h" secondAttribute="bottom" constant="8" id="Yqf-gd-xpK"/>
+                        <constraint firstItem="ZDZ-Uq-V9h" firstAttribute="top" secondItem="qDR-31-puo" secondAttribute="top" id="qUI-sB-efr"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mood-down" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-BM-JAV">
+                    <rect key="frame" x="341" y="31" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="b8O-lE-9DK"/>
+                        <constraint firstAttribute="height" constant="12" id="iaM-Kf-VRq"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qA7-5N-Hci">
+                    <rect key="frame" x="334" y="35" width="16" height="12"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="kSz-bR-Vul"/>
+                        <constraint firstAttribute="width" constant="16" id="nTH-8Y-ZYX"/>
+                    </constraints>
+                    <state key="normal" image="create-tick-off"/>
+                    <state key="selected" image="create-tick-on"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLD-kk-XrG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="touched:" destination="-1" eventType="touchUpInside" id="YKR-N8-bNT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qA7-5N-Hci" firstAttribute="centerY" secondItem="mQL-pP-Wqb" secondAttribute="centerY" id="0zt-zi-66r"/>
+                <constraint firstItem="qDR-31-puo" firstAttribute="centerY" secondItem="mQL-pP-Wqb" secondAttribute="centerY" id="6JG-kt-e9c"/>
+                <constraint firstItem="t70-GG-WVv" firstAttribute="centerY" secondItem="mQL-pP-Wqb" secondAttribute="centerY" id="Do2-qV-x5J"/>
+                <constraint firstItem="cLD-kk-XrG" firstAttribute="leading" secondItem="mQL-pP-Wqb" secondAttribute="leading" id="LJT-3u-dzu"/>
+                <constraint firstAttribute="bottom" secondItem="cLD-kk-XrG" secondAttribute="bottom" id="Tgu-wJ-VuL"/>
+                <constraint firstAttribute="trailing" secondItem="cLD-kk-XrG" secondAttribute="trailing" id="b1c-7a-I40"/>
+                <constraint firstItem="qDR-31-puo" firstAttribute="leading" secondItem="t70-GG-WVv" secondAttribute="trailing" constant="16" id="cXZ-b1-60t"/>
+                <constraint firstAttribute="trailing" secondItem="DdN-BM-JAV" secondAttribute="trailing" constant="22" id="kkC-lh-eQh"/>
+                <constraint firstItem="DdN-BM-JAV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qDR-31-puo" secondAttribute="trailing" constant="12" id="mve-us-kHE"/>
+                <constraint firstItem="cLD-kk-XrG" firstAttribute="top" secondItem="mQL-pP-Wqb" secondAttribute="top" id="noN-VM-C3c"/>
+                <constraint firstItem="DdN-BM-JAV" firstAttribute="centerY" secondItem="mQL-pP-Wqb" secondAttribute="centerY" constant="-4" id="qln-Mi-btr"/>
+                <constraint firstAttribute="trailing" secondItem="qA7-5N-Hci" secondAttribute="trailing" constant="25" id="y0Q-13-HLX"/>
+                <constraint firstItem="t70-GG-WVv" firstAttribute="leading" secondItem="mQL-pP-Wqb" secondAttribute="leading" constant="25" id="yPh-od-CdA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="141.30434782608697" y="412.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="create-tick-off" width="15" height="12"/>
+        <image name="create-tick-on" width="15" height="12"/>
+        <image name="mood-down" width="52" height="52"/>
+    </resources>
+</document>

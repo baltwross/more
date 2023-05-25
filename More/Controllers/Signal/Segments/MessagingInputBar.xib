@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessagingInputBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="dsx-I7-K1v" id="rdj-0P-5nP"/>
+                <outlet property="camera" destination="Dyq-nX-lCt" id="L1P-fD-oUX"/>
+                <outlet property="send" destination="McJ-DA-qaY" id="IO2-xx-TAM"/>
+                <outlet property="textContainer" destination="2MC-VI-nIK" id="ErS-26-oW3"/>
+                <outlet property="textView" destination="Pgt-6W-hvT" id="miO-kx-UO8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyq-nX-lCt">
+                    <rect key="frame" x="16" y="14" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0Db-r1-YZ3"/>
+                        <constraint firstAttribute="height" constant="40" id="Og2-HF-5st"/>
+                    </constraints>
+                    <state key="normal" image="camera"/>
+                    <connections>
+                        <action selector="cameraTouch:" destination="-1" eventType="touchUpInside" id="paW-oW-DD4"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsx-I7-K1v" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="15" y="13" width="42" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="K55-q8-oi8"/>
+                        <constraint firstAttribute="height" constant="42" id="bNf-T0-1PP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="2MC-VI-nIK">
+                    <rect key="frame" x="64" y="9" width="303" height="54"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pgt-6W-hvT" customClass="AutoGrowingTextView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="25" y="16" width="231" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="C1G-zY-kYh"/>
+                                <constraint firstAttribute="height" constant="22" id="acg-fh-eGX"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="bxm-H9-Vo8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McJ-DA-qaY">
+                            <rect key="frame" x="256" y="7" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="I5o-zb-lZE"/>
+                                <constraint firstAttribute="width" constant="40" id="T5e-TL-ZQT"/>
+                            </constraints>
+                            <state key="normal" image="send"/>
+                            <connections>
+                                <action selector="sendTouch:" destination="-1" eventType="touchUpInside" id="jet-bb-JLX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="McJ-DA-qaY" secondAttribute="trailing" constant="7" id="9p8-Lq-gzS"/>
+                        <constraint firstItem="Pgt-6W-hvT" firstAttribute="top" secondItem="2MC-VI-nIK" secondAttribute="top" constant="16" id="9zT-nl-oe8"/>
+                        <constraint firstItem="Pgt-6W-hvT" firstAttribute="leading" secondItem="2MC-VI-nIK" secondAttribute="leading" constant="25" id="Gj9-Ul-BLJ"/>
+                        <constraint firstAttribute="bottom" secondItem="McJ-DA-qaY" secondAttribute="bottom" constant="7" id="edj-yd-QwP"/>
+                        <constraint firstItem="McJ-DA-qaY" firstAttribute="leading" secondItem="Pgt-6W-hvT" secondAttribute="trailing" id="pdf-qe-aUz"/>
+                        <constraint firstAttribute="bottom" secondItem="Pgt-6W-hvT" secondAttribute="bottom" constant="16" id="s2F-p4-dhv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2MC-VI-nIK" firstAttribute="leading" secondItem="Dyq-nX-lCt" secondAttribute="trailing" constant="8" id="ElM-2C-YBq"/>
+                <constraint firstItem="dsx-I7-K1v" firstAttribute="centerX" secondItem="Dyq-nX-lCt" secondAttribute="centerX" id="EwE-BJ-60K"/>
+                <constraint firstItem="Dyq-nX-lCt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="L01-06-C2c"/>
+                <constraint firstItem="2MC-VI-nIK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="9" id="Lrp-gu-m16"/>
+                <constraint firstItem="dsx-I7-K1v" firstAttribute="centerY" secondItem="Dyq-nX-lCt" secondAttribute="centerY" id="Pxn-Hm-ZS2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2MC-VI-nIK" secondAttribute="trailing" constant="8" id="S9x-TF-tMu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2MC-VI-nIK" secondAttribute="bottom" constant="9" id="eY8-No-bjd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dyq-nX-lCt" secondAttribute="bottom" constant="18" id="fVF-0I-5EC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="28" y="48.575712143928037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" width="25" height="19"/>
+        <image name="send" width="31" height="31"/>
+    </resources>
+</document>

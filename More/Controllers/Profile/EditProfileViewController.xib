@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="2UE-c5-htn" id="iW0-ML-vIj"/>
+                <outlet property="doneButton" destination="BSz-jc-35d" id="LT5-7A-vmE"/>
+                <outlet property="scrollView" destination="D2x-2x-vZd" id="1lj-D3-DdV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSz-jc-35d">
+                    <rect key="frame" x="318" y="32" width="41" height="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="13"/>
+                    <state key="normal" title="DONE">
+                        <color key="titleColor" red="0.3803921569" green="0.56862745100000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneTouch:" destination="-1" eventType="touchUpInside" id="fTO-tb-H2w"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zi-Bp-ypA">
+                    <rect key="frame" x="0.0" y="80" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="m70-on-PsW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1e-xO-XoN">
+                    <rect key="frame" x="142.5" y="32" width="90" height="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="16"/>
+                    <color key="textColor" red="0.24313725489999999" green="0.25490196079999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2x-2x-vZd">
+                    <rect key="frame" x="0.0" y="81" width="375" height="586"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UE-c5-htn" customClass="EditProfileContentView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="911.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2UE-c5-htn" firstAttribute="top" secondItem="D2x-2x-vZd" secondAttribute="top" id="Fzv-JV-tZP"/>
+                        <constraint firstItem="2UE-c5-htn" firstAttribute="leading" secondItem="D2x-2x-vZd" secondAttribute="leading" id="QXf-a8-pHA"/>
+                        <constraint firstAttribute="bottom" secondItem="2UE-c5-htn" secondAttribute="bottom" id="TMl-sr-tyq"/>
+                        <constraint firstAttribute="trailing" secondItem="2UE-c5-htn" secondAttribute="trailing" id="WXt-eQ-K6P"/>
+                        <constraint firstItem="2UE-c5-htn" firstAttribute="width" secondItem="D2x-2x-vZd" secondAttribute="width" id="dUz-yL-vby"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Zi-Bp-ypA" firstAttribute="top" secondItem="BSz-jc-35d" secondAttribute="bottom" constant="12" id="8yO-bv-sAL"/>
+                <constraint firstItem="D2x-2x-vZd" firstAttribute="top" secondItem="5Zi-Bp-ypA" secondAttribute="bottom" id="D68-08-RZn"/>
+                <constraint firstAttribute="trailing" secondItem="5Zi-Bp-ypA" secondAttribute="trailing" id="Fzj-q5-Gjm"/>
+                <constraint firstItem="5Zi-Bp-ypA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oks-ll-NWs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D2x-2x-vZd" secondAttribute="trailing" id="U9f-BP-nH5"/>
+                <constraint firstItem="J1e-xO-XoN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="WS2-3k-Yjk"/>
+                <constraint firstItem="BSz-jc-35d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="Wbi-uY-gp8"/>
+                <constraint firstItem="D2x-2x-vZd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bLQ-gK-D2O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D2x-2x-vZd" secondAttribute="bottom" id="e20-aD-g3z"/>
+                <constraint firstItem="J1e-xO-XoN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="icF-wP-YVo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BSz-jc-35d" secondAttribute="trailing" constant="16" id="usV-yA-ZXx"/>
+                <constraint firstItem="5Zi-Bp-ypA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="vjZ-jI-iFq"/>
+                <constraint firstItem="5Zi-Bp-ypA" firstAttribute="top" secondItem="J1e-xO-XoN" secondAttribute="bottom" constant="12" id="x9v-en-pjm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

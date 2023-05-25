@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalPlaceSearchPanel" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="search" destination="SfO-qD-3Wt" id="BZa-u9-3Og"/>
+                <outlet property="searchResults" destination="uUd-3p-ska" id="E3W-i5-h4T"/>
+                <outlet property="suggestions" destination="dHd-sS-V1P" id="Mni-X0-fkd"/>
+                <outlet property="suggestionsLabel" destination="P76-0U-dRS" id="9gh-bL-L7F"/>
+                <outlet property="topBar" destination="oae-z2-YMw" id="arY-DA-9C4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4p-FS-XSP">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oae-z2-YMw" customClass="CreateSignalPlaceSearchPanelTopBar" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="dMP-7i-WSc"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTG-7B-LD6">
+                    <rect key="frame" x="0.0" y="57" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="K6x-Sc-iKF"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfO-qD-3Wt" customClass="CreateSignalPlaceSearchView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="10" y="68" width="394" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="h1s-Fv-Fqd"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5v-0f-ICh">
+                    <rect key="frame" x="0.0" y="118" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="sNB-QQ-YbM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neighborhoods" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P76-0U-dRS">
+                    <rect key="frame" x="21" y="144" width="142" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="18"/>
+                    <color key="textColor" red="0.26274511220000002" green="0.29019609089999998" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-sS-V1P" customClass="CreateSignalPlaceSuggestionView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="193" width="414" height="71"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="QPM-bk-KTr"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HdX-U4-XcW">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uUd-3p-ska" customClass="CreateSignalPlaceSearchResultView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="119" width="414" height="777"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SfO-qD-3Wt" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" constant="10" id="2aR-Js-pek"/>
+                <constraint firstAttribute="trailing" secondItem="SfO-qD-3Wt" secondAttribute="trailing" constant="10" id="DBt-c7-5ua"/>
+                <constraint firstItem="P76-0U-dRS" firstAttribute="top" secondItem="E5v-0f-ICh" secondAttribute="bottom" constant="25" id="FBr-PZ-wlK"/>
+                <constraint firstItem="uUd-3p-ska" firstAttribute="top" secondItem="E5v-0f-ICh" secondAttribute="bottom" id="Gne-LM-uoJ"/>
+                <constraint firstItem="SfO-qD-3Wt" firstAttribute="top" secondItem="PTG-7B-LD6" secondAttribute="bottom" constant="10" id="HOr-Pa-Sy2"/>
+                <constraint firstItem="P76-0U-dRS" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" constant="21" id="IkD-eB-pA0"/>
+                <constraint firstItem="dHd-sS-V1P" firstAttribute="top" secondItem="E5v-0f-ICh" secondAttribute="bottom" constant="74" id="Nks-at-ZaK"/>
+                <constraint firstItem="oae-z2-YMw" firstAttribute="top" secondItem="l4p-FS-XSP" secondAttribute="top" id="Q6a-c3-5yD"/>
+                <constraint firstItem="oae-z2-YMw" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" id="RUJ-lF-RfG"/>
+                <constraint firstAttribute="height" constant="560" id="Srq-K1-apF"/>
+                <constraint firstItem="dHd-sS-V1P" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" id="UzW-7W-xf6"/>
+                <constraint firstAttribute="trailing" secondItem="E5v-0f-ICh" secondAttribute="trailing" id="YVm-30-bnY"/>
+                <constraint firstItem="uUd-3p-ska" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" id="ZwS-p1-dwq"/>
+                <constraint firstItem="E5v-0f-ICh" firstAttribute="top" secondItem="SfO-qD-3Wt" secondAttribute="bottom" constant="10" id="d4p-Cz-F4g"/>
+                <constraint firstItem="PTG-7B-LD6" firstAttribute="top" secondItem="oae-z2-YMw" secondAttribute="bottom" id="eZi-6d-qBo"/>
+                <constraint firstAttribute="trailing" secondItem="PTG-7B-LD6" secondAttribute="trailing" id="foZ-Wj-cQx"/>
+                <constraint firstAttribute="trailing" secondItem="oae-z2-YMw" secondAttribute="trailing" id="lF8-Ao-Kl2"/>
+                <constraint firstItem="E5v-0f-ICh" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" id="m0Y-WF-wB2"/>
+                <constraint firstAttribute="trailing" secondItem="dHd-sS-V1P" secondAttribute="trailing" id="nzw-t6-AgY"/>
+                <constraint firstAttribute="trailing" secondItem="uUd-3p-ska" secondAttribute="trailing" id="pMf-nc-4SF"/>
+                <constraint firstItem="PTG-7B-LD6" firstAttribute="leading" secondItem="l4p-FS-XSP" secondAttribute="leading" id="rgS-re-aKN"/>
+                <constraint firstAttribute="bottom" secondItem="uUd-3p-ska" secondAttribute="bottom" id="xdf-Q2-Uea"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="799.55357142857144"/>
+        </view>
+    </objects>
+</document>

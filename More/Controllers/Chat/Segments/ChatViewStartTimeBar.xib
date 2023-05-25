@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewStartTimeBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="meetButton" destination="0Mr-xW-lNf" id="PaC-cE-9gd"/>
+                <outlet property="meetIcon" destination="4Nt-3Q-yqd" id="Itm-9I-q3N"/>
+                <outlet property="meetLabel" destination="P9E-Wz-vlE" id="IZO-zD-f4h"/>
+                <outlet property="meetView" destination="De7-Pu-6iM" id="d5z-bO-6Yz"/>
+                <outlet property="startButton" destination="EI1-0W-Jl1" id="KjI-kU-eIm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BHU-Do-WJd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI1-0W-Jl1" customClass="PurpleGradientButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="295" y="8.5" width="109" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="DwN-Ze-5Ye"/>
+                        <constraint firstAttribute="width" constant="109" id="pCI-fd-TBJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="START"/>
+                    <connections>
+                        <action selector="startButtonTouch:" destination="-1" eventType="touchUpInside" id="q71-BO-c2e"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="De7-Pu-6iM">
+                    <rect key="frame" x="15" y="12" width="179.5" height="29.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="time-meet-destination" translatesAutoresizingMaskIntoConstraints="NO" id="4Nt-3Q-yqd">
+                            <rect key="frame" x="0.0" y="-1" width="40" height="31"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="500" text="MEETING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-aG-qcc">
+                            <rect key="frame" x="55" y="0.0" width="124.5" height="11"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="10"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="500" text="Gramercy Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9E-Wz-vlE">
+                            <rect key="frame" x="55" y="14" width="104.5" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="14"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="252" image="mood-down" translatesAutoresizingMaskIntoConstraints="NO" id="cZ1-aj-zqu">
+                            <rect key="frame" x="167.5" y="13.5" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="HXu-OP-vAr"/>
+                                <constraint firstAttribute="height" constant="12" id="Sl3-ci-abp"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mr-xW-lNf">
+                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="29.5"/>
+                            <connections>
+                                <action selector="meetButtonTouch:" destination="-1" eventType="touchUpInside" id="L6M-Gk-OrD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Mr-xW-lNf" secondAttribute="trailing" id="07N-HG-dFU"/>
+                        <constraint firstAttribute="bottom" secondItem="0Mr-xW-lNf" secondAttribute="bottom" id="4Iq-Vb-Oiu"/>
+                        <constraint firstAttribute="bottom" secondItem="P9E-Wz-vlE" secondAttribute="bottom" id="Bq3-BD-oRh"/>
+                        <constraint firstItem="4Nt-3Q-yqd" firstAttribute="centerY" secondItem="De7-Pu-6iM" secondAttribute="centerY" id="ESx-bA-LV0"/>
+                        <constraint firstAttribute="trailing" secondItem="cZ1-aj-zqu" secondAttribute="trailing" id="KXZ-Em-b5O"/>
+                        <constraint firstItem="0TK-aG-qcc" firstAttribute="leading" secondItem="4Nt-3Q-yqd" secondAttribute="trailing" constant="15" id="L5b-TB-Vgk"/>
+                        <constraint firstItem="cZ1-aj-zqu" firstAttribute="centerY" secondItem="P9E-Wz-vlE" secondAttribute="centerY" constant="-2" id="Mfh-vg-Bxf"/>
+                        <constraint firstItem="0TK-aG-qcc" firstAttribute="top" secondItem="De7-Pu-6iM" secondAttribute="top" id="N27-qq-Otc"/>
+                        <constraint firstItem="P9E-Wz-vlE" firstAttribute="top" secondItem="0TK-aG-qcc" secondAttribute="bottom" constant="3" id="X0O-tF-cv7"/>
+                        <constraint firstAttribute="trailing" secondItem="0TK-aG-qcc" secondAttribute="trailing" id="Z5c-gb-dNM"/>
+                        <constraint firstItem="4Nt-3Q-yqd" firstAttribute="leading" secondItem="De7-Pu-6iM" secondAttribute="leading" id="jFa-lu-dts"/>
+                        <constraint firstItem="0Mr-xW-lNf" firstAttribute="leading" secondItem="De7-Pu-6iM" secondAttribute="leading" id="jVc-EU-eTu"/>
+                        <constraint firstItem="cZ1-aj-zqu" firstAttribute="leading" secondItem="P9E-Wz-vlE" secondAttribute="trailing" constant="8" id="sPZ-bU-hvI"/>
+                        <constraint firstItem="0Mr-xW-lNf" firstAttribute="top" secondItem="De7-Pu-6iM" secondAttribute="top" id="vfv-vU-aHd"/>
+                        <constraint firstItem="P9E-Wz-vlE" firstAttribute="leading" secondItem="4Nt-3Q-yqd" secondAttribute="trailing" constant="15" id="x5c-lA-QCb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EI1-0W-Jl1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="De7-Pu-6iM" secondAttribute="trailing" constant="12" id="1Ac-cD-YG5"/>
+                <constraint firstItem="De7-Pu-6iM" firstAttribute="leading" secondItem="BHU-Do-WJd" secondAttribute="leading" constant="15" id="DSH-Fp-Dip"/>
+                <constraint firstItem="EI1-0W-Jl1" firstAttribute="centerY" secondItem="BHU-Do-WJd" secondAttribute="centerY" id="XFs-NU-BDH"/>
+                <constraint firstAttribute="trailing" secondItem="EI1-0W-Jl1" secondAttribute="trailing" constant="10" id="ZAj-wQ-Sgm"/>
+                <constraint firstItem="De7-Pu-6iM" firstAttribute="centerY" secondItem="BHU-Do-WJd" secondAttribute="centerY" id="ckM-DS-kiW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mood-down" width="52" height="52"/>
+        <image name="time-meet-destination" width="40" height="31"/>
+    </resources>
+</document>

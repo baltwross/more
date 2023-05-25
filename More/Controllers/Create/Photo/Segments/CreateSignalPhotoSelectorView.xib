@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalPhotoSelectorView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="allButton" destination="EFX-cb-MZz" id="7lg-p2-Y4E"/>
+                <outlet property="collectionView" destination="BRC-ha-cve" id="aha-fx-y9o"/>
+                <outlet property="recentButton" destination="0l3-b3-Cu9" id="UPp-rM-v7B"/>
+                <outlet property="search" destination="Who-jg-Q86" id="C4C-b1-nAU"/>
+                <outlet property="searchButton" destination="n0x-Zp-rLP" id="h4E-Hl-NRY"/>
+                <outlet property="takeButton" destination="kz1-GZ-QeO" id="Crh-f4-mvS"/>
+                <outlet property="tip" destination="bDE-CP-Trd" id="yC6-cm-r74"/>
+                <outlet property="uploadButton" destination="iox-JN-RZ9" id="oUh-Xt-F5s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-CP-Trd">
+                    <rect key="frame" x="182" y="10" width="50" height="3"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="LgX-Hp-Sme"/>
+                        <constraint firstAttribute="height" constant="3" id="N3g-89-eIg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0x-Zp-rLP" customClass="CreateSignalPhotoSourceButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="20" y="38" width="78" height="61"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="Ey0-il-vgQ"/>
+                        <constraint firstAttribute="width" constant="78" id="jMx-M2-0a3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iox-JN-RZ9" customClass="CreateSignalPhotoSourceButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="168" y="38" width="78" height="61"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="3I0-cq-5Aq"/>
+                        <constraint firstAttribute="height" constant="61" id="rg5-50-jL6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kz1-GZ-QeO" customClass="CreateSignalPhotoSourceButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="316" y="38" width="78" height="61"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="ThE-Tn-59G"/>
+                        <constraint firstAttribute="height" constant="61" id="cqe-Zl-acQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeG-gY-heP">
+                    <rect key="frame" x="0.0" y="124" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TPj-Ed-dmR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Who-jg-Q86" customClass="CreateSignalPlaceSearchView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="10" y="135" width="394" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-b3-Cu9">
+                    <rect key="frame" x="24" y="125" width="110" height="60"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="15"/>
+                    <state key="normal" title="Recent Photos">
+                        <color key="titleColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.38039216399999998" green="0.56862747670000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="recentTouch:" destination="-1" eventType="touchUpInside" id="5Rc-56-fke"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFX-cb-MZz">
+                    <rect key="frame" x="304" y="125" width="86" height="60"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="15"/>
+                    <state key="normal" title="All Content">
+                        <color key="titleColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.38039216399999998" green="0.56862747670000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="allTouch:" destination="-1" eventType="touchUpInside" id="PUt-5Z-Sgt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCA-JE-dye">
+                    <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="CF3-xl-jqg"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BRC-ha-cve">
+                    <rect key="frame" x="0.0" y="186" width="414" height="710"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="UeV-VW-wtX">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Who-jg-Q86" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="09O-1l-pg5"/>
+                <constraint firstAttribute="trailing" secondItem="FeG-gY-heP" secondAttribute="trailing" id="0LC-UK-f1H"/>
+                <constraint firstItem="TCA-JE-dye" firstAttribute="top" secondItem="FeG-gY-heP" secondAttribute="bottom" constant="60" id="0bV-eV-z98"/>
+                <constraint firstItem="BRC-ha-cve" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1bL-P8-lah"/>
+                <constraint firstItem="BRC-ha-cve" firstAttribute="top" secondItem="TCA-JE-dye" secondAttribute="bottom" id="5cz-Is-AkA"/>
+                <constraint firstItem="FeG-gY-heP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5ma-yq-GM6"/>
+                <constraint firstItem="Who-jg-Q86" firstAttribute="top" secondItem="FeG-gY-heP" secondAttribute="bottom" constant="10" id="68z-Fc-7JX"/>
+                <constraint firstItem="FeG-gY-heP" firstAttribute="top" secondItem="n0x-Zp-rLP" secondAttribute="bottom" constant="25" id="7Lm-W0-d7Y"/>
+                <constraint firstItem="TCA-JE-dye" firstAttribute="top" secondItem="EFX-cb-MZz" secondAttribute="bottom" id="FFV-Hm-6NM"/>
+                <constraint firstAttribute="trailing" secondItem="Who-jg-Q86" secondAttribute="trailing" constant="10" id="Io4-R3-3Rn"/>
+                <constraint firstItem="FeG-gY-heP" firstAttribute="top" secondItem="iox-JN-RZ9" secondAttribute="bottom" constant="25" id="Nhb-k7-gSl"/>
+                <constraint firstItem="TCA-JE-dye" firstAttribute="top" secondItem="Who-jg-Q86" secondAttribute="bottom" constant="10" id="P8Y-nC-UOA"/>
+                <constraint firstItem="FeG-gY-heP" firstAttribute="top" secondItem="kz1-GZ-QeO" secondAttribute="bottom" constant="25" id="PZW-AF-hFG"/>
+                <constraint firstItem="n0x-Zp-rLP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="QlD-sl-fJv"/>
+                <constraint firstItem="iox-JN-RZ9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WUb-YC-5UT"/>
+                <constraint firstAttribute="trailing" secondItem="kz1-GZ-QeO" secondAttribute="trailing" constant="20" id="Wmh-Td-HOr"/>
+                <constraint firstItem="TCA-JE-dye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xk7-gA-FAH"/>
+                <constraint firstItem="EFX-cb-MZz" firstAttribute="top" secondItem="FeG-gY-heP" secondAttribute="bottom" id="Z7v-e1-xab"/>
+                <constraint firstAttribute="trailing" secondItem="TCA-JE-dye" secondAttribute="trailing" id="Z95-sO-z9q"/>
+                <constraint firstAttribute="trailing" secondItem="EFX-cb-MZz" secondAttribute="trailing" constant="24" id="ZnV-Yl-kYS"/>
+                <constraint firstItem="0l3-b3-Cu9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="aTf-Dq-zJF"/>
+                <constraint firstAttribute="bottom" secondItem="BRC-ha-cve" secondAttribute="bottom" id="ak5-bX-dzY"/>
+                <constraint firstAttribute="trailing" secondItem="BRC-ha-cve" secondAttribute="trailing" id="e3L-lI-0Jn"/>
+                <constraint firstItem="FeG-gY-heP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="124" id="jJM-TL-hBK"/>
+                <constraint firstItem="0l3-b3-Cu9" firstAttribute="top" secondItem="FeG-gY-heP" secondAttribute="bottom" id="mEY-Wa-l3U"/>
+                <constraint firstItem="bDE-CP-Trd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rkd-rW-3PT"/>
+                <constraint firstItem="bDE-CP-Trd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="uiG-CK-dfe"/>
+                <constraint firstItem="TCA-JE-dye" firstAttribute="top" secondItem="0l3-b3-Cu9" secondAttribute="bottom" id="zN2-kO-mHM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </view>
+    </objects>
+</document>

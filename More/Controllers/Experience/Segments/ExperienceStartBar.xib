@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceStartBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="ELQ-88-T4m" id="ECz-7b-aio"/>
+                <outlet property="startButton" destination="1jv-Sj-6jm" id="4Vp-K3-7IL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kd3-L0-xtc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jv-Sj-6jm" customClass="PurpleGradientButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="278" y="11" width="120" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TR6-E4-bV1"/>
+                        <constraint firstAttribute="width" constant="120" id="r7G-Gy-sAg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="START">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startTouch:" destination="-1" eventType="touchUpInside" id="BR4-Is-lft"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Would you like to do this right now?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELQ-88-T4m" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="25" y="20.5" width="180" height="31"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="14"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ELQ-88-T4m" firstAttribute="centerY" secondItem="1jv-Sj-6jm" secondAttribute="centerY" id="IXO-2A-zZ6"/>
+                <constraint firstAttribute="trailing" secondItem="1jv-Sj-6jm" secondAttribute="trailing" constant="16" id="T8u-j7-psY"/>
+                <constraint firstItem="1jv-Sj-6jm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ELQ-88-T4m" secondAttribute="trailing" constant="12" id="dhU-Ke-OG5"/>
+                <constraint firstItem="1jv-Sj-6jm" firstAttribute="top" secondItem="Kd3-L0-xtc" secondAttribute="top" constant="11" id="vA8-Ed-oBB"/>
+                <constraint firstItem="ELQ-88-T4m" firstAttribute="leading" secondItem="Kd3-L0-xtc" secondAttribute="leading" constant="25" id="wVH-BK-zL5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="oGa-rr-ZBT"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-6.0267857142857144"/>
+        </view>
+    </objects>
+</document>

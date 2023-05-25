@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatMeetingSearchPanel" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="search" destination="UaG-HT-wFf" id="nlr-YI-Uj4"/>
+                <outlet property="searchResults" destination="icd-Fj-ba0" id="6HS-Ka-Dbk"/>
+                <outlet property="suggestions" destination="hE7-xB-TPM" id="jtA-hj-n5l"/>
+                <outlet property="topBar" destination="m9H-hF-OYz" id="zsK-n0-939"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I7-v1-W5A">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-hF-OYz" customClass="ChatMeetingSearchPanelTopBar" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="KVF-on-Pha"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgL-jt-CAq">
+                    <rect key="frame" x="0.0" y="57" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bBi-eL-0Qm"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-HT-wFf" customClass="CreateSignalPlaceSearchView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="10" y="68" width="394" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="SWz-vx-bUI"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDE-cj-BkA">
+                    <rect key="frame" x="0.0" y="118" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cfR-LB-PPv"/>
+                    </constraints>
+                </view>
+                <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-xB-TPM" customClass="ChatMeetingSuggestionsView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="119" width="414" height="190"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="BfL-7u-iCq"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Os-iw-5Gm">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="icd-Fj-ba0" customClass="CreateSignalPlaceSearchResultView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="119" width="414" height="777"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hE7-xB-TPM" firstAttribute="top" secondItem="uDE-cj-BkA" secondAttribute="bottom" id="Ado-a7-3Jz"/>
+                <constraint firstAttribute="trailing" secondItem="hE7-xB-TPM" secondAttribute="trailing" id="AiA-cj-UDe"/>
+                <constraint firstAttribute="trailing" secondItem="m9H-hF-OYz" secondAttribute="trailing" id="GJh-8T-tEi"/>
+                <constraint firstAttribute="trailing" secondItem="UaG-HT-wFf" secondAttribute="trailing" constant="10" id="GbS-7m-Vaf"/>
+                <constraint firstAttribute="bottom" secondItem="icd-Fj-ba0" secondAttribute="bottom" id="Hk3-Hu-NcI"/>
+                <constraint firstAttribute="height" constant="560" id="JsJ-Pi-Xht"/>
+                <constraint firstItem="uDE-cj-BkA" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" id="KaK-h6-CnN"/>
+                <constraint firstItem="icd-Fj-ba0" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" id="Lu2-5x-lTT"/>
+                <constraint firstItem="uDE-cj-BkA" firstAttribute="top" secondItem="UaG-HT-wFf" secondAttribute="bottom" constant="10" id="Nbe-NV-z7L"/>
+                <constraint firstItem="UaG-HT-wFf" firstAttribute="top" secondItem="VgL-jt-CAq" secondAttribute="bottom" constant="10" id="PM1-Nw-g5x"/>
+                <constraint firstAttribute="trailing" secondItem="icd-Fj-ba0" secondAttribute="trailing" id="Wdt-rq-p64"/>
+                <constraint firstItem="m9H-hF-OYz" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" id="Zdc-fg-RGL"/>
+                <constraint firstAttribute="trailing" secondItem="VgL-jt-CAq" secondAttribute="trailing" id="baZ-9Y-EiY"/>
+                <constraint firstItem="hE7-xB-TPM" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" id="hnb-Jd-C3r"/>
+                <constraint firstAttribute="trailing" secondItem="uDE-cj-BkA" secondAttribute="trailing" id="jp0-ge-1O6"/>
+                <constraint firstItem="m9H-hF-OYz" firstAttribute="top" secondItem="3I7-v1-W5A" secondAttribute="top" id="lhX-OK-BdS"/>
+                <constraint firstItem="icd-Fj-ba0" firstAttribute="top" secondItem="uDE-cj-BkA" secondAttribute="bottom" id="mK3-Ue-twh"/>
+                <constraint firstItem="UaG-HT-wFf" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" constant="10" id="p8f-lP-oqX"/>
+                <constraint firstItem="VgL-jt-CAq" firstAttribute="leading" secondItem="3I7-v1-W5A" secondAttribute="leading" id="v74-9C-nWn"/>
+                <constraint firstItem="VgL-jt-CAq" firstAttribute="top" secondItem="m9H-hF-OYz" secondAttribute="bottom" id="v7d-lt-Ctn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1JC-Ya-LHm"/>
+            <point key="canvasLocation" x="137.68115942028987" y="799.55357142857144"/>
+        </view>
+    </objects>
+</document>

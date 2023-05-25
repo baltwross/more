@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="3kY-aS-TOv" customClass="MessagingViewOutgoingCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3kY-aS-TOv" id="QRa-KV-O76">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-8F-bop" customClass="MessageBubble" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="229.5" y="8" width="47.5" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-1C-4fe" userLabel="Message">
+                                <rect key="frame" x="8" y="8" width="31.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZPO-1C-4fe" secondAttribute="trailing" constant="8" id="56C-jD-GOb"/>
+                            <constraint firstItem="ZPO-1C-4fe" firstAttribute="leading" secondItem="4Q8-8F-bop" secondAttribute="leading" constant="8" id="QkE-A7-a43"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="Rx8-fH-Rvb"/>
+                            <constraint firstItem="ZPO-1C-4fe" firstAttribute="top" secondItem="4Q8-8F-bop" secondAttribute="top" constant="8" id="lra-sL-UqU"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPO-1C-4fe" secondAttribute="bottom" constant="8" id="udw-eh-GCQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Read 7:06PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-1n-hpb">
+                        <rect key="frame" x="214" y="58" width="63" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ru2-4v-of6" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="293" y="6" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Ixd-xa-nQ0"/>
+                            <constraint firstAttribute="height" constant="44" id="nPj-24-KUf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H7-RN-cLR">
+                        <rect key="frame" x="16" y="7" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="cyq-N1-XLd"/>
+                            <constraint firstAttribute="width" constant="40" id="xRX-jf-3TV"/>
+                        </constraints>
+                        <state key="normal" image="edit"/>
+                        <connections>
+                            <action selector="editTouch:" destination="3kY-aS-TOv" eventType="touchUpInside" id="H2Z-o7-KXf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9H7-RN-cLR" firstAttribute="leading" secondItem="QRa-KV-O76" secondAttribute="leading" constant="16" id="1bR-ib-nHr"/>
+                    <constraint firstItem="4Q8-8F-bop" firstAttribute="top" secondItem="QRa-KV-O76" secondAttribute="top" constant="8" id="9se-ib-VjF"/>
+                    <constraint firstItem="Rlc-1n-hpb" firstAttribute="trailing" secondItem="4Q8-8F-bop" secondAttribute="trailing" id="I5w-fn-gJ7"/>
+                    <constraint firstItem="ru2-4v-of6" firstAttribute="leading" secondItem="4Q8-8F-bop" secondAttribute="trailing" constant="16" id="Ork-gS-5bw"/>
+                    <constraint firstItem="Rlc-1n-hpb" firstAttribute="top" secondItem="4Q8-8F-bop" secondAttribute="bottom" constant="12" id="SkX-W8-3Ac"/>
+                    <constraint firstAttribute="trailing" secondItem="ru2-4v-of6" secondAttribute="trailing" constant="16" id="Z9q-Za-j6z"/>
+                    <constraint firstItem="9H7-RN-cLR" firstAttribute="centerY" secondItem="4Q8-8F-bop" secondAttribute="centerY" id="dk4-4n-PSg"/>
+                    <constraint firstItem="4Q8-8F-bop" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QRa-KV-O76" secondAttribute="leading" constant="60" id="kGs-5D-Foy"/>
+                    <constraint firstItem="ru2-4v-of6" firstAttribute="bottom" secondItem="4Q8-8F-bop" secondAttribute="bottom" constant="4" id="twU-e0-bMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatar" destination="ru2-4v-of6" id="1DM-yX-Xrf"/>
+                <outlet property="editButton" destination="9H7-RN-cLR" id="roi-wb-6KX"/>
+                <outlet property="message" destination="ZPO-1C-4fe" id="Wj5-xz-qSo"/>
+                <outlet property="time" destination="Rlc-1n-hpb" id="SuO-vm-H9W"/>
+            </connections>
+            <point key="canvasLocation" x="164" y="181.25937031484258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="20" height="20"/>
+    </resources>
+</document>

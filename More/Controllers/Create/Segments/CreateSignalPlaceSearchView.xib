@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalPlaceSearchView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="search" destination="ur7-we-jr2" id="L0J-fb-3O4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create-search" translatesAutoresizingMaskIntoConstraints="NO" id="ZSM-Nh-7NG">
+                    <rect key="frame" x="26" y="47" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="auO-kD-rLn"/>
+                        <constraint firstAttribute="width" constant="20" id="jfR-QT-0Do"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search places" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ur7-we-jr2">
+                    <rect key="frame" x="61" y="46.5" width="303" height="21"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enh-kW-bsM">
+                    <rect key="frame" x="369" y="39.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Yd3-bM-UKI"/>
+                        <constraint firstAttribute="width" constant="35" id="uIp-p6-RB2"/>
+                    </constraints>
+                    <state key="normal" image="create-cancel"/>
+                    <connections>
+                        <action selector="cancelTouch:" destination="-1" eventType="touchUpInside" id="LVL-t2-lWa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZSM-Nh-7NG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5v6-x4-Hft"/>
+                <constraint firstItem="ur7-we-jr2" firstAttribute="leading" secondItem="ZSM-Nh-7NG" secondAttribute="trailing" constant="15" id="8xy-wp-j9b"/>
+                <constraint firstItem="ur7-we-jr2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DoJ-2u-oSW"/>
+                <constraint firstAttribute="trailing" secondItem="enh-kW-bsM" secondAttribute="trailing" constant="10" id="hhu-tK-bdR"/>
+                <constraint firstItem="enh-kW-bsM" firstAttribute="leading" secondItem="ur7-we-jr2" secondAttribute="trailing" constant="5" id="r32-M5-rZX"/>
+                <constraint firstItem="ZSM-Nh-7NG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="udL-Pd-c8y"/>
+                <constraint firstItem="enh-kW-bsM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zhQ-2I-idd"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="147.82608695652175" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="create-cancel" width="15" height="15"/>
+        <image name="create-search" width="20" height="20"/>
+    </resources>
+</document>

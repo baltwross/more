@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "destination",
+      "type": "geopoint"
+    },
+    {
+      "name": "destinationName",
+      "type": "string"
+    },
+    {
+      "name": "neighbourhood",
+      "type": "string"
+    },
+    {
+      "name": "city",
+      "type": "string"
+    },
+    {
+      "name": "state",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteCancelledView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="pWv-Qx-syc" id="HEa-0z-HGy"/>
+                <outlet property="subTitle" destination="KSO-Gx-66e" id="KDO-AI-Lyn"/>
+                <outlet property="title" destination="J5a-rb-oCH" id="uqm-V2-6g3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5a-rb-oCH">
+                    <rect key="frame" x="172" y="0.0" width="70.5" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="9g0-eC-YL9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="16"/>
+                    <color key="textColor" red="0.26274511220000002" green="0.29019609089999998" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibd-bP-leG">
+                    <rect key="frame" x="0.0" y="57" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TjE-Li-HoV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSO-Gx-66e">
+                    <rect key="frame" x="25" y="78" width="364" height="22"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWv-Qx-syc" customClass="BottomButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="120" width="414" height="224"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J5a-rb-oCH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3hp-jZ-2QY"/>
+                <constraint firstAttribute="trailing" secondItem="Ibd-bP-leG" secondAttribute="trailing" id="8rA-Qq-BB1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KSO-Gx-66e" secondAttribute="trailing" constant="25" id="GsJ-JX-sSq"/>
+                <constraint firstItem="pWv-Qx-syc" firstAttribute="top" secondItem="KSO-Gx-66e" secondAttribute="bottom" constant="20" id="I2o-Tw-RUW"/>
+                <constraint firstItem="Ibd-bP-leG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Izc-8F-DBN"/>
+                <constraint firstItem="KSO-Gx-66e" firstAttribute="top" secondItem="Ibd-bP-leG" secondAttribute="bottom" constant="20" id="JYz-fs-JAj"/>
+                <constraint firstItem="Ibd-bP-leG" firstAttribute="top" secondItem="J5a-rb-oCH" secondAttribute="bottom" id="NLL-gZ-Q1B"/>
+                <constraint firstItem="KSO-Gx-66e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="RVT-8i-4cf"/>
+                <constraint firstItem="pWv-Qx-syc" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Wgz-nF-7Mk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pWv-Qx-syc" secondAttribute="trailing" id="dAa-hG-a8p"/>
+                <constraint firstItem="pWv-Qx-syc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fX6-ww-RNr"/>
+                <constraint firstItem="J5a-rb-oCH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iQO-ac-B7u"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="337.5"/>
+        </view>
+    </objects>
+</document>

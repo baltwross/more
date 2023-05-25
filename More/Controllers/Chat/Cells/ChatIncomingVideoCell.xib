@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="287" id="Jrx-Ui-NPr" customClass="ChatIncomingVideoCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="287"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jrx-Ui-NPr" id="au6-Op-HP3">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HJ-5y-ZUb" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="16" y="165" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="11g-OI-dQn"/>
+                            <constraint firstAttribute="height" constant="44" id="Ogn-a1-3Yu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-Tn-ciD">
+                        <rect key="frame" x="76" y="8" width="150" height="201"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="M4C-PP-IZn"/>
+                            <constraint firstAttribute="height" constant="201" id="T0p-R6-GqY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="7:06PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F77-N7-Gdn">
+                        <rect key="frame" x="84" y="221" width="36.5" height="66"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-nN-3Im">
+                        <rect key="frame" x="133.5" y="91" width="35" height="35"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IeH-Ti-cu5">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat-video-play" translatesAutoresizingMaskIntoConstraints="NO" id="FGo-eJ-MSk">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="FGo-eJ-MSk" firstAttribute="leading" secondItem="IeH-Ti-cu5" secondAttribute="leading" id="Ve3-jh-jXf"/>
+                                <constraint firstAttribute="bottom" secondItem="FGo-eJ-MSk" secondAttribute="bottom" id="W68-qk-3fz"/>
+                                <constraint firstItem="FGo-eJ-MSk" firstAttribute="top" secondItem="IeH-Ti-cu5" secondAttribute="top" id="cu1-ke-Uz6"/>
+                                <constraint firstAttribute="trailing" secondItem="FGo-eJ-MSk" secondAttribute="trailing" id="puZ-3B-GZq"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="jyW-RP-gof"/>
+                            <constraint firstAttribute="height" constant="35" id="ksw-hL-Spl"/>
+                        </constraints>
+                        <blurEffect style="systemThinMaterial"/>
+                    </visualEffectView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="b5H-nN-3Im" firstAttribute="centerX" secondItem="BVn-Tn-ciD" secondAttribute="centerX" id="1iI-eM-Sr6"/>
+                    <constraint firstItem="7HJ-5y-ZUb" firstAttribute="leading" secondItem="au6-Op-HP3" secondAttribute="leading" constant="16" id="MlY-KY-aJ6"/>
+                    <constraint firstAttribute="bottom" secondItem="F77-N7-Gdn" secondAttribute="bottom" id="QY0-iA-haC"/>
+                    <constraint firstItem="F77-N7-Gdn" firstAttribute="leading" secondItem="BVn-Tn-ciD" secondAttribute="leading" constant="8" id="Rm4-M2-3dg"/>
+                    <constraint firstItem="F77-N7-Gdn" firstAttribute="top" secondItem="BVn-Tn-ciD" secondAttribute="bottom" constant="12" id="XS5-Ss-12p"/>
+                    <constraint firstItem="BVn-Tn-ciD" firstAttribute="leading" secondItem="7HJ-5y-ZUb" secondAttribute="trailing" constant="16" id="eGu-dV-A2w"/>
+                    <constraint firstItem="BVn-Tn-ciD" firstAttribute="top" secondItem="au6-Op-HP3" secondAttribute="top" constant="8" id="evE-hN-0hc"/>
+                    <constraint firstItem="BVn-Tn-ciD" firstAttribute="bottom" secondItem="7HJ-5y-ZUb" secondAttribute="bottom" id="kUY-Ss-7hi"/>
+                    <constraint firstItem="b5H-nN-3Im" firstAttribute="centerY" secondItem="BVn-Tn-ciD" secondAttribute="centerY" id="n8w-Vt-ljt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatar" destination="7HJ-5y-ZUb" id="inm-BI-LJt"/>
+                <outlet property="button" destination="b5H-nN-3Im" id="avS-hK-To3"/>
+                <outlet property="photo" destination="BVn-Tn-ciD" id="M3V-Nt-sRf"/>
+                <outlet property="time" destination="F77-N7-Gdn" id="D5l-2M-LQ5"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="241.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat-video-play" width="10" height="12"/>
+    </resources>
+</document>

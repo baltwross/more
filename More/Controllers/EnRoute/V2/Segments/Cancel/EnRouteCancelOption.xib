@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteCancelOption" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="KlG-Qi-FIZ" id="ZVw-Ty-Flj"/>
+                <outlet property="icon" destination="s91-j7-6wD" id="V82-5T-9JG"/>
+                <outlet property="subTitle" destination="o0e-qb-pnl" id="bLr-Mp-gSs"/>
+                <outlet property="title" destination="p7i-Nr-fcv" id="CnM-gm-lkN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carret_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="s91-j7-6wD">
+                    <rect key="frame" x="374" y="70.5" width="10" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Yrh-pR-lph"/>
+                        <constraint firstAttribute="width" constant="10" id="lnl-WI-w92"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrU-ke-iUR">
+                    <rect key="frame" x="25" y="58.5" width="324" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I WISH TO CANCEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7i-Nr-fcv">
+                            <rect key="frame" x="0.0" y="0.0" width="324" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="13"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You changed your mind." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0e-qb-pnl">
+                            <rect key="frame" x="0.0" y="19.5" width="324" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="p7i-Nr-fcv" secondAttribute="trailing" id="2wO-TC-iIF"/>
+                        <constraint firstItem="p7i-Nr-fcv" firstAttribute="leading" secondItem="qrU-ke-iUR" secondAttribute="leading" id="Ar6-Pc-98f"/>
+                        <constraint firstItem="o0e-qb-pnl" firstAttribute="leading" secondItem="qrU-ke-iUR" secondAttribute="leading" id="MpL-o1-cAs"/>
+                        <constraint firstItem="p7i-Nr-fcv" firstAttribute="top" secondItem="qrU-ke-iUR" secondAttribute="top" id="WdQ-De-cY5"/>
+                        <constraint firstAttribute="trailing" secondItem="o0e-qb-pnl" secondAttribute="trailing" id="jl6-Wy-cdF"/>
+                        <constraint firstAttribute="bottom" secondItem="o0e-qb-pnl" secondAttribute="bottom" id="lMP-rk-O8b"/>
+                        <constraint firstItem="o0e-qb-pnl" firstAttribute="top" secondItem="p7i-Nr-fcv" secondAttribute="bottom" constant="5" id="qwd-7s-fk9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlG-Qi-FIZ">
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="157"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="0xZ-Hu-HBv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="s91-j7-6wD" firstAttribute="leading" secondItem="qrU-ke-iUR" secondAttribute="trailing" constant="25" id="1Y1-h6-kZL"/>
+                <constraint firstItem="s91-j7-6wD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Xc-Wm-eiu"/>
+                <constraint firstAttribute="trailing" secondItem="KlG-Qi-FIZ" secondAttribute="trailing" id="9Iq-Wo-ep1"/>
+                <constraint firstItem="qrU-ke-iUR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Uv-Fm-fgR"/>
+                <constraint firstItem="qrU-ke-iUR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="RBf-Nb-E2g"/>
+                <constraint firstItem="KlG-Qi-FIZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hDQ-TL-iCH"/>
+                <constraint firstItem="KlG-Qi-FIZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jbP-ut-0BG"/>
+                <constraint firstAttribute="bottom" secondItem="KlG-Qi-FIZ" secondAttribute="bottom" id="wXo-Sc-R78"/>
+                <constraint firstAttribute="trailing" secondItem="s91-j7-6wD" secondAttribute="trailing" constant="25" id="wms-eU-0o8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="134.05797101449275" y="400.11160714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carret_right_gray" width="7" height="11"/>
+    </resources>
+</document>

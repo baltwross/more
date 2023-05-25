@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewVideoConferenceViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="back" destination="2Y7-Vi-9fa" id="o2A-0w-ENt"/>
+                <outlet property="bottomFade" destination="y0h-78-Zup" id="ja6-Hc-0Pa"/>
+                <outlet property="bottomPadding" destination="tVg-p4-1J1" id="nCG-nG-kyw"/>
+                <outlet property="conference" destination="nbf-G0-bG7" id="IFy-Rs-Xrw"/>
+                <outlet property="controls" destination="gTf-3p-s1K" id="Is7-eU-ANa"/>
+                <outlet property="topFade" destination="izl-VX-0yo" id="uNR-vT-Wlt"/>
+                <outlet property="topPadding" destination="AmF-ih-w7a" id="1tV-3J-UxW"/>
+                <outlet property="userTag" destination="XQR-C2-BVo" id="jVv-BT-24c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ChatViewVideoConferenceViewControllerView" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-G0-bG7" customClass="ChatViewVideoConferenceView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izl-VX-0yo" customClass="VerticalGradientView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="195" id="EAT-Ny-k7t"/>
+                    </constraints>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0h-78-Zup" customClass="VerticalGradientView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="701" width="414" height="195"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="195" id="HH6-ow-zKr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-Vi-9fa">
+                    <rect key="frame" x="0.0" y="44" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="T6i-Ot-As5"/>
+                        <constraint firstAttribute="height" constant="50" id="Tgz-zA-3Fh"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="back_white"/>
+                    <connections>
+                        <action selector="backTouch:" destination="-1" eventType="touchUpInside" id="14k-Lx-Hyv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-C2-BVo" customClass="ChatViewVideoUserTag" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="60" y="44" width="204" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZiF-Up-3hP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTf-3p-s1K" customClass="ChatViewVideoControlsView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="43" y="762" width="328" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="eVY-pI-W8E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="izl-VX-0yo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1az-mB-g1m"/>
+                <constraint firstItem="XQR-C2-BVo" firstAttribute="leading" secondItem="2Y7-Vi-9fa" secondAttribute="trailing" constant="10" id="5iZ-xi-yG3"/>
+                <constraint firstItem="XQR-C2-BVo" firstAttribute="centerY" secondItem="2Y7-Vi-9fa" secondAttribute="centerY" id="9IM-jw-OeT"/>
+                <constraint firstItem="2Y7-Vi-9fa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="AmF-ih-w7a"/>
+                <constraint firstItem="nbf-G0-bG7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DEK-sU-Rh7"/>
+                <constraint firstItem="nbf-G0-bG7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DYi-CJ-051"/>
+                <constraint firstItem="gTf-3p-s1K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="Ge8-h6-fpQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gTf-3p-s1K" secondAttribute="trailing" constant="43" id="HRD-It-m3L"/>
+                <constraint firstAttribute="bottom" secondItem="y0h-78-Zup" secondAttribute="bottom" id="I2R-Wg-NK1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XQR-C2-BVo" secondAttribute="trailing" constant="150" id="LEn-bo-2fm"/>
+                <constraint firstItem="y0h-78-Zup" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="LSg-PT-YVW"/>
+                <constraint firstItem="izl-VX-0yo" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Tzx-hF-l7O"/>
+                <constraint firstItem="y0h-78-Zup" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b8J-LZ-0FH"/>
+                <constraint firstItem="nbf-G0-bG7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cKP-rM-P9i"/>
+                <constraint firstItem="2Y7-Vi-9fa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lWs-Sg-BaS"/>
+                <constraint firstAttribute="bottom" secondItem="nbf-G0-bG7" secondAttribute="bottom" id="n1n-vJ-OGg"/>
+                <constraint firstItem="izl-VX-0yo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rLZ-H2-b0o"/>
+                <constraint firstAttribute="bottom" secondItem="gTf-3p-s1K" secondAttribute="bottom" constant="54" id="tVg-p4-1J1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_white" width="9" height="15"/>
+    </resources>
+</document>

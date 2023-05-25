@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AvatarStackView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar1" destination="0EX-MF-s8b" id="wkk-32-aZ7"/>
+                <outlet property="avatar2" destination="7Ce-Yv-V9b" id="Sfj-bt-9DH"/>
+                <outlet property="avatar3" destination="ozA-vX-iPv" id="lxP-qC-zj0"/>
+                <outlet property="right1" destination="4nZ-7Q-EiD" id="DAF-JN-Yia"/>
+                <outlet property="right2" destination="XXs-uQ-jxw" id="k9e-Kc-Y5E"/>
+                <outlet property="right3" destination="6vW-Oj-9WB" id="OFp-Wr-jp8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0EX-MF-s8b" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="92" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0EX-MF-s8b" secondAttribute="height" multiplier="1:1" id="l5f-Fb-osi"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-Yv-V9b" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="16" y="0.0" width="76" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozA-vX-iPv" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="32" y="0.0" width="60" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ozA-vX-iPv" secondAttribute="height" multiplier="1:1" id="P1Y-Rh-6zd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7Ce-Yv-V9b" firstAttribute="leading" secondItem="0EX-MF-s8b" secondAttribute="leading" constant="16" id="1h4-QP-y5h"/>
+                <constraint firstAttribute="trailing" secondItem="0EX-MF-s8b" secondAttribute="trailing" id="4nZ-7Q-EiD"/>
+                <constraint firstAttribute="trailing" secondItem="ozA-vX-iPv" secondAttribute="trailing" id="6vW-Oj-9WB"/>
+                <constraint firstAttribute="bottom" secondItem="0EX-MF-s8b" secondAttribute="bottom" id="Btt-zm-rfa"/>
+                <constraint firstAttribute="bottom" secondItem="7Ce-Yv-V9b" secondAttribute="bottom" id="FUg-LH-0bG"/>
+                <constraint firstItem="7Ce-Yv-V9b" firstAttribute="width" secondItem="7Ce-Yv-V9b" secondAttribute="height" multiplier="1:1" id="MFk-v0-fiu"/>
+                <constraint firstItem="ozA-vX-iPv" firstAttribute="leading" secondItem="7Ce-Yv-V9b" secondAttribute="leading" constant="16" id="T9o-j1-Tgn"/>
+                <constraint firstAttribute="bottom" secondItem="ozA-vX-iPv" secondAttribute="bottom" id="WFc-Sk-8T6"/>
+                <constraint firstAttribute="trailing" secondItem="7Ce-Yv-V9b" secondAttribute="trailing" id="XXs-uQ-jxw"/>
+                <constraint firstItem="0EX-MF-s8b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k3f-xw-DCm"/>
+                <constraint firstItem="0EX-MF-s8b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="myv-ZO-fNS"/>
+                <constraint firstItem="ozA-vX-iPv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rIq-zV-78a"/>
+                <constraint firstItem="7Ce-Yv-V9b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yUY-pE-oaY"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-44.799999999999997" y="422.78860569715147"/>
+        </view>
+    </objects>
+</document>

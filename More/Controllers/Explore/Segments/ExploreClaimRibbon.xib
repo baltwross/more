@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExploreClaimRibbon" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="xq4-XB-gVh" id="xK3-hY-bRc"/>
+                <outlet property="ribbon" destination="1Ea-IC-zNE" id="tYt-CH-kSK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ea-IC-zNE">
+                    <rect key="frame" x="0.0" y="0.0" width="296" height="48.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1Ea-IC-zNE" secondAttribute="height" multiplier="1244:204" id="0gN-tq-aNi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq4-XB-gVh">
+                    <rect key="frame" x="148" y="0.0" width="0.0" height="34.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Ea-IC-zNE" secondAttribute="trailing" id="G7o-6F-5XM"/>
+                <constraint firstItem="xq4-XB-gVh" firstAttribute="height" secondItem="1Ea-IC-zNE" secondAttribute="height" multiplier="0.7108" id="G9e-lB-zii"/>
+                <constraint firstItem="1Ea-IC-zNE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lb9-5g-9rP"/>
+                <constraint firstItem="xq4-XB-gVh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NbI-cY-CwJ"/>
+                <constraint firstItem="1Ea-IC-zNE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z9h-tl-78i"/>
+                <constraint firstItem="xq4-XB-gVh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e2e-lc-2d3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="12.800000000000001" y="205.99700149925039"/>
+        </view>
+    </objects>
+</document>

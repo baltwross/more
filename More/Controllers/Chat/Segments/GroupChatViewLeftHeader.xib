@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupChatViewLeftHeader" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="additional" destination="MMc-eF-o6d" id="pc8-Wo-6Gk"/>
+                <outlet property="additionalWidth" destination="ERh-z9-WfY" id="iiK-f7-fQv"/>
+                <outlet property="avatarStack" destination="hgo-5O-zIA" id="r6Z-2g-tMO"/>
+                <outlet property="button" destination="Dnf-7Z-6Ma" id="LHT-wk-E2o"/>
+                <outlet property="buttonWidth" destination="bsp-7i-JrM" id="XsH-NL-n8u"/>
+                <outlet property="groupButton" destination="45M-eR-pej" id="tCc-HY-2Ms"/>
+                <outlet property="names" destination="UQz-mM-LgA" id="PMd-i6-Us7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EuZ-7k-ygM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnf-7Z-6Ma">
+                    <rect key="frame" x="0.0" y="40" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bsp-7i-JrM"/>
+                        <constraint firstAttribute="height" constant="40" id="qB8-Gk-Qi9"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                    <state key="normal" image="backward-arrow"/>
+                    <connections>
+                        <action selector="buttonTouch:" destination="-1" eventType="touchUpInside" id="D7O-r8-nSo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMc-eF-o6d">
+                    <rect key="frame" x="48" y="42.5" width="35" height="35"/>
+                    <color key="backgroundColor" red="0.73333333329999995" green="0.79215686269999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="ERh-z9-WfY"/>
+                        <constraint firstAttribute="height" constant="35" id="oAo-en-or5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgo-5O-zIA" customClass="AvatarStackView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="52" y="40" width="0.0" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="s0B-Yx-j6N"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Gemma" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQz-mM-LgA" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="103" y="52.5" width="54.5" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="14"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45M-eR-pej">
+                    <rect key="frame" x="52" y="40" width="105.5" height="40"/>
+                    <connections>
+                        <action selector="groupTouch:" destination="-1" eventType="touchUpInside" id="LNe-kn-1ah"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="45M-eR-pej" firstAttribute="leading" secondItem="hgo-5O-zIA" secondAttribute="leading" id="1l0-ba-qUL"/>
+                <constraint firstItem="UQz-mM-LgA" firstAttribute="centerY" secondItem="EuZ-7k-ygM" secondAttribute="centerY" id="5BW-Ev-rr9"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UQz-mM-LgA" secondAttribute="trailing" id="Fbw-Pr-WUg"/>
+                <constraint firstItem="45M-eR-pej" firstAttribute="bottom" secondItem="hgo-5O-zIA" secondAttribute="bottom" id="Fyc-B2-joG"/>
+                <constraint firstItem="hgo-5O-zIA" firstAttribute="centerY" secondItem="EuZ-7k-ygM" secondAttribute="centerY" id="I6g-bl-jvT"/>
+                <constraint firstItem="45M-eR-pej" firstAttribute="trailing" secondItem="UQz-mM-LgA" secondAttribute="trailing" id="MLz-AH-vNA"/>
+                <constraint firstItem="MMc-eF-o6d" firstAttribute="leading" secondItem="hgo-5O-zIA" secondAttribute="trailing" constant="-4" id="RVs-65-B8j"/>
+                <constraint firstItem="Dnf-7Z-6Ma" firstAttribute="centerY" secondItem="EuZ-7k-ygM" secondAttribute="centerY" id="ZJJ-eC-fX3"/>
+                <constraint firstItem="UQz-mM-LgA" firstAttribute="leading" secondItem="MMc-eF-o6d" secondAttribute="trailing" constant="20" id="rcv-vs-Zlw"/>
+                <constraint firstItem="MMc-eF-o6d" firstAttribute="centerY" secondItem="hgo-5O-zIA" secondAttribute="centerY" id="t3A-d5-Xa8"/>
+                <constraint firstItem="Dnf-7Z-6Ma" firstAttribute="leading" secondItem="EuZ-7k-ygM" secondAttribute="leading" id="thk-RG-f6O"/>
+                <constraint firstItem="hgo-5O-zIA" firstAttribute="leading" secondItem="Dnf-7Z-6Ma" secondAttribute="trailing" constant="12" id="tii-oo-N3J"/>
+                <constraint firstItem="45M-eR-pej" firstAttribute="top" secondItem="hgo-5O-zIA" secondAttribute="top" id="xaf-AJ-PTg"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-6.0267857142857144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backward-arrow" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewJoinCallBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="callLabel" destination="vnj-7M-R97" id="hAX-CR-fFz"/>
+                <outlet property="callView" destination="W7G-95-09U" id="c8i-WW-hYB"/>
+                <outlet property="joinButton" destination="r1A-3d-lUi" id="mrE-s0-jBp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kO2-xH-Ufr">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1A-3d-lUi" customClass="PurpleGradientAndRedButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="295" y="8.5" width="109" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="KPg-Ap-JQs"/>
+                        <constraint firstAttribute="width" constant="109" id="zeN-FZ-FXF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="JOIN CALL"/>
+                    <connections>
+                        <action selector="joinButtonTouch:" destination="-1" eventType="touchUpInside" id="hqK-lA-OB1"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="W7G-95-09U">
+                    <rect key="frame" x="15" y="12" width="151.5" height="29.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chat-video-call" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-EG-iTc">
+                            <rect key="frame" x="0.0" y="5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="ZP2-eQ-NrP"/>
+                                <constraint firstAttribute="width" constant="25" id="p7P-ts-Q35"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chat-video-nw" translatesAutoresizingMaskIntoConstraints="NO" id="ukT-38-KSF">
+                            <rect key="frame" x="11" y="0.0" width="20" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="3Bc-Az-r78"/>
+                                <constraint firstAttribute="height" constant="15" id="AnY-C1-Nng"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="500" text="CALL STARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqQ-f1-xLM">
+                            <rect key="frame" x="47" y="0.0" width="104.5" height="11"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="10"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="500" text="Gramercy Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-7M-R97">
+                            <rect key="frame" x="47" y="14" width="104.5" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="14"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKO-PB-cPa">
+                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="29.5"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vnj-7M-R97" secondAttribute="bottom" id="1O8-vw-9P0"/>
+                        <constraint firstItem="vnj-7M-R97" firstAttribute="top" secondItem="HqQ-f1-xLM" secondAttribute="bottom" constant="3" id="3B3-Ux-RMI"/>
+                        <constraint firstAttribute="trailing" secondItem="gKO-PB-cPa" secondAttribute="trailing" id="C72-Wn-lLx"/>
+                        <constraint firstItem="gKO-PB-cPa" firstAttribute="leading" secondItem="W7G-95-09U" secondAttribute="leading" id="D8C-YB-bfg"/>
+                        <constraint firstItem="gmU-EG-iTc" firstAttribute="centerY" secondItem="W7G-95-09U" secondAttribute="centerY" constant="3" id="J6S-GT-Q0n"/>
+                        <constraint firstAttribute="bottom" secondItem="gKO-PB-cPa" secondAttribute="bottom" id="ORh-rz-tFV"/>
+                        <constraint firstItem="HqQ-f1-xLM" firstAttribute="top" secondItem="W7G-95-09U" secondAttribute="top" id="Wvo-N5-U4E"/>
+                        <constraint firstItem="ukT-38-KSF" firstAttribute="leading" secondItem="W7G-95-09U" secondAttribute="leading" constant="11" id="ZFf-FL-0M1"/>
+                        <constraint firstAttribute="trailing" secondItem="vnj-7M-R97" secondAttribute="trailing" id="c4E-nJ-ZTy"/>
+                        <constraint firstItem="vnj-7M-R97" firstAttribute="leading" secondItem="gmU-EG-iTc" secondAttribute="trailing" constant="22" id="fZI-a4-eQh"/>
+                        <constraint firstItem="ukT-38-KSF" firstAttribute="top" secondItem="W7G-95-09U" secondAttribute="top" id="gxp-cZ-Czw"/>
+                        <constraint firstItem="gKO-PB-cPa" firstAttribute="top" secondItem="W7G-95-09U" secondAttribute="top" id="gzP-6N-dUr"/>
+                        <constraint firstAttribute="trailing" secondItem="HqQ-f1-xLM" secondAttribute="trailing" id="h4f-mD-O5P"/>
+                        <constraint firstItem="HqQ-f1-xLM" firstAttribute="leading" secondItem="gmU-EG-iTc" secondAttribute="trailing" constant="22" id="vNk-pe-naw"/>
+                        <constraint firstItem="gmU-EG-iTc" firstAttribute="leading" secondItem="W7G-95-09U" secondAttribute="leading" id="wLu-YX-cdv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="r1A-3d-lUi" secondAttribute="trailing" constant="10" id="8qb-Pe-Xpv"/>
+                <constraint firstItem="W7G-95-09U" firstAttribute="centerY" secondItem="kO2-xH-Ufr" secondAttribute="centerY" id="NAP-xI-U7Q"/>
+                <constraint firstItem="W7G-95-09U" firstAttribute="leading" secondItem="kO2-xH-Ufr" secondAttribute="leading" constant="15" id="ZhN-Hd-B4n"/>
+                <constraint firstItem="r1A-3d-lUi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="W7G-95-09U" secondAttribute="trailing" constant="12" id="eLB-TU-CS0"/>
+                <constraint firstItem="r1A-3d-lUi" firstAttribute="centerY" secondItem="kO2-xH-Ufr" secondAttribute="centerY" id="ouF-C3-iG3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="2bi-Lk-3RG"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat-video-call" width="25" height="25"/>
+        <image name="chat-video-nw" width="16" height="15"/>
+    </resources>
+</document>

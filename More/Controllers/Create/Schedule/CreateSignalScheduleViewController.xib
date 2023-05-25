@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalScheduleViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="schedule" destination="NZs-yu-or3" id="SBY-k7-lrG"/>
+                <outlet property="scheduleContainer" destination="q0Y-Ae-Mxy" id="8mw-tW-yML"/>
+                <outlet property="selector" destination="gZe-UH-eRQ" id="NB4-7P-UbQ"/>
+                <outlet property="selectorContainer" destination="Vam-0Q-mbL" id="Ixh-ba-6FB"/>
+                <outlet property="startStop" destination="BGs-75-6le" id="5M5-OM-CqR"/>
+                <outlet property="startStopContainer" destination="ZlW-mC-PjS" id="wj2-MI-lwo"/>
+                <outlet property="timebox" destination="fBP-Gu-MXh" id="4br-uF-7VB"/>
+                <outlet property="timeboxContainer" destination="7Zq-rr-NpT" id="2KP-JG-ft5"/>
+                <outlet property="view" destination="BSC-Ee-jL9" id="SNQ-B0-NrA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-Ee-jL9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vam-0Q-mbL">
+                    <rect key="frame" x="0.0" y="648" width="414" height="248"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZe-UH-eRQ" customClass="CreateSignalScheduleSelectorView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="214" id="sQM-VP-4Qk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gZe-UH-eRQ" firstAttribute="leading" secondItem="Vam-0Q-mbL" secondAttribute="leading" id="1Os-SV-LxJ"/>
+                        <constraint firstAttribute="trailing" secondItem="gZe-UH-eRQ" secondAttribute="trailing" id="Q1E-b0-AQg"/>
+                        <constraint firstItem="gZe-UH-eRQ" firstAttribute="top" secondItem="Vam-0Q-mbL" secondAttribute="top" id="niY-wE-kJA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0Y-Ae-Mxy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZs-yu-or3" customClass="CreateSignalScheduleSetupView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NZs-yu-or3" firstAttribute="leading" secondItem="q0Y-Ae-Mxy" secondAttribute="leading" id="1v2-J5-Ngw"/>
+                        <constraint firstAttribute="trailing" secondItem="NZs-yu-or3" secondAttribute="trailing" id="rp7-Vm-bjJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zq-rr-NpT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBP-Gu-MXh" customClass="CreateSignalScheduleTimeboxView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fBP-Gu-MXh" secondAttribute="trailing" id="bAQ-np-Fha"/>
+                        <constraint firstItem="fBP-Gu-MXh" firstAttribute="leading" secondItem="7Zq-rr-NpT" secondAttribute="leading" id="oj2-a3-7JU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZlW-mC-PjS">
+                    <rect key="frame" x="0.0" y="416" width="414" height="480"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-75-6le" customClass="CreateSignalScheduleStartStopView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BGs-75-6le" firstAttribute="leading" secondItem="ZlW-mC-PjS" secondAttribute="leading" id="CR7-rd-Sqo"/>
+                        <constraint firstAttribute="trailing" secondItem="BGs-75-6le" secondAttribute="trailing" id="JqO-dA-Rgp"/>
+                        <constraint firstItem="BGs-75-6le" firstAttribute="top" secondItem="ZlW-mC-PjS" secondAttribute="top" id="crN-Iu-RPw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="L8y-gX-jhL" firstAttribute="bottom" secondItem="fBP-Gu-MXh" secondAttribute="bottom" id="4ii-LY-fuE"/>
+                <constraint firstItem="L8y-gX-jhL" firstAttribute="bottom" secondItem="NZs-yu-or3" secondAttribute="bottom" id="8ar-iB-aeB"/>
+                <constraint firstAttribute="bottom" secondItem="q0Y-Ae-Mxy" secondAttribute="bottom" id="9lm-oN-gUU"/>
+                <constraint firstItem="L8y-gX-jhL" firstAttribute="top" relation="lessThanOrEqual" secondItem="BGs-75-6le" secondAttribute="top" id="EDV-4l-eDD"/>
+                <constraint firstItem="7Zq-rr-NpT" firstAttribute="trailing" secondItem="L8y-gX-jhL" secondAttribute="trailing" id="Eae-qx-Vto"/>
+                <constraint firstItem="L8y-gX-jhL" firstAttribute="bottom" secondItem="BGs-75-6le" secondAttribute="bottom" id="FDz-jI-gff"/>
+                <constraint firstItem="L8y-gX-jhL" firstAttribute="top" secondItem="NZs-yu-or3" secondAttribute="top" placeholder="YES" id="FXX-rT-Q0w"/>
+                <constraint firstItem="q0Y-Ae-Mxy" firstAttribute="leading" secondItem="L8y-gX-jhL" secondAttribute="leading" id="Jmn-HF-9FX"/>
+                <constraint firstAttribute="trailing" secondItem="Vam-0Q-mbL" secondAttribute="trailing" id="KgM-bA-ipj"/>
+                <constraint firstItem="Vam-0Q-mbL" firstAttribute="leading" secondItem="BSC-Ee-jL9" secondAttribute="leading" id="LdP-Dn-WbX"/>
+                <constraint firstItem="7Zq-rr-NpT" firstAttribute="top" secondItem="BSC-Ee-jL9" secondAttribute="top" id="Moc-jJ-ocb"/>
+                <constraint firstAttribute="bottom" secondItem="7Zq-rr-NpT" secondAttribute="bottom" id="U1g-fH-3qQ"/>
+                <constraint firstItem="7Zq-rr-NpT" firstAttribute="leading" secondItem="L8y-gX-jhL" secondAttribute="leading" id="Wit-ni-JrG"/>
+                <constraint firstAttribute="bottom" secondItem="ZlW-mC-PjS" secondAttribute="bottom" id="XDR-y5-BQ4"/>
+                <constraint firstItem="ZlW-mC-PjS" firstAttribute="leading" secondItem="L8y-gX-jhL" secondAttribute="leading" id="aG6-pZ-ilf"/>
+                <constraint firstItem="gZe-UH-eRQ" firstAttribute="bottom" secondItem="L8y-gX-jhL" secondAttribute="bottom" id="eDv-L7-SYo"/>
+                <constraint firstItem="ZlW-mC-PjS" firstAttribute="trailing" secondItem="L8y-gX-jhL" secondAttribute="trailing" id="eTk-kF-tNT"/>
+                <constraint firstAttribute="bottom" secondItem="Vam-0Q-mbL" secondAttribute="bottom" id="fCY-1c-MKV"/>
+                <constraint firstItem="q0Y-Ae-Mxy" firstAttribute="trailing" secondItem="L8y-gX-jhL" secondAttribute="trailing" id="jkd-cq-6cA"/>
+                <constraint firstItem="fBP-Gu-MXh" firstAttribute="top" secondItem="L8y-gX-jhL" secondAttribute="top" id="rXF-o4-pFZ"/>
+                <constraint firstItem="q0Y-Ae-Mxy" firstAttribute="top" secondItem="BSC-Ee-jL9" secondAttribute="top" id="zXP-fK-83r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="L8y-gX-jhL"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.00892857142856"/>
+        </view>
+    </objects>
+</document>

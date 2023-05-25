@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHMBOK.TTF">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnRouteSafetyOptionView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="subtitle" destination="8uo-th-Bbb" id="v8M-t7-ys9"/>
+                <outlet property="title" destination="MJw-cB-ypG" id="89k-vN-bhb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carret_right_gray" translatesAutoresizingMaskIntoConstraints="NO" id="u0v-e9-yBl">
+                    <rect key="frame" x="335" y="82.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="AU2-VS-AUz"/>
+                        <constraint firstAttribute="width" constant="24" id="bdr-aw-caG"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bih-4V-SAm">
+                    <rect key="frame" x="25" y="73" width="260" height="43.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="500" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJw-cB-ypG">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="15"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham-Book" pointSize="13"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uo-th-Bbb" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="23" width="260" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="specialLineHeight">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8uo-th-Bbb" secondAttribute="trailing" id="4O5-tx-wUn"/>
+                        <constraint firstAttribute="bottom" secondItem="8uo-th-Bbb" secondAttribute="bottom" id="Tf1-ch-MRr"/>
+                        <constraint firstAttribute="trailing" secondItem="MJw-cB-ypG" secondAttribute="trailing" id="aAf-Rt-iDt"/>
+                        <constraint firstItem="8uo-th-Bbb" firstAttribute="leading" secondItem="bih-4V-SAm" secondAttribute="leading" id="aVq-nh-a8g"/>
+                        <constraint firstItem="MJw-cB-ypG" firstAttribute="top" secondItem="bih-4V-SAm" secondAttribute="top" id="c6s-Fz-YBA"/>
+                        <constraint firstItem="MJw-cB-ypG" firstAttribute="leading" secondItem="bih-4V-SAm" secondAttribute="leading" id="omh-9e-WnB"/>
+                        <constraint firstItem="8uo-th-Bbb" firstAttribute="top" secondItem="MJw-cB-ypG" secondAttribute="bottom" constant="8" id="pTe-RY-DcO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="u0v-e9-yBl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="E1c-iI-z0v"/>
+                <constraint firstItem="u0v-e9-yBl" firstAttribute="leading" secondItem="bih-4V-SAm" secondAttribute="trailing" constant="50" id="Eqe-vm-sde"/>
+                <constraint firstAttribute="trailing" secondItem="u0v-e9-yBl" secondAttribute="trailing" constant="16" id="H6e-Jr-fVN"/>
+                <constraint firstItem="bih-4V-SAm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="msY-Nr-FAZ"/>
+                <constraint firstItem="bih-4V-SAm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rfO-pc-Szc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="231" y="158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carret_right_gray" width="7" height="11"/>
+    </resources>
+</document>

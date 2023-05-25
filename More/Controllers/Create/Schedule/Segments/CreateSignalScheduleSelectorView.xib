@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSignalScheduleSelectorView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="anytimeView" destination="T6H-s9-dOo" id="Q8J-Ty-r4B"/>
+                <outlet property="sometimeView" destination="LQc-h6-6X8" id="EuH-GV-n4k"/>
+                <outlet property="topBar" destination="Ltt-Ah-mAe" id="uz5-ob-JqO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmd-3h-u73">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltt-Ah-mAe" customClass="CreateSignalScheduleSelectorTopBar" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="OOb-hW-zHG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqr-HG-2eg">
+                    <rect key="frame" x="0.0" y="57" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7GM-bj-0oN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6H-s9-dOo" customClass="CreateSignalScheduleAnytimeItem" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="57" width="414" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Hdd-qm-Obz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcs-tu-0jv">
+                    <rect key="frame" x="0.0" y="137" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bZe-aL-AAr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-h6-6X8" customClass="CreateSignalScheduleSometimeItem" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="137" width="414" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="eh0-I1-Pe0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ltt-Ah-mAe" firstAttribute="top" secondItem="dmd-3h-u73" secondAttribute="top" id="3e2-Z0-fB8"/>
+                <constraint firstItem="Qqr-HG-2eg" firstAttribute="leading" secondItem="dmd-3h-u73" secondAttribute="leading" id="6RD-W8-Zu8"/>
+                <constraint firstItem="vcs-tu-0jv" firstAttribute="top" secondItem="T6H-s9-dOo" secondAttribute="bottom" id="7d8-Vm-lUZ"/>
+                <constraint firstItem="Ltt-Ah-mAe" firstAttribute="leading" secondItem="dmd-3h-u73" secondAttribute="leading" id="8tg-8G-jV3"/>
+                <constraint firstItem="LQc-h6-6X8" firstAttribute="leading" secondItem="dmd-3h-u73" secondAttribute="leading" id="KNq-MN-6e6"/>
+                <constraint firstItem="T6H-s9-dOo" firstAttribute="top" secondItem="Ltt-Ah-mAe" secondAttribute="bottom" id="TeQ-tf-WtL"/>
+                <constraint firstAttribute="trailing" secondItem="Ltt-Ah-mAe" secondAttribute="trailing" id="WTe-Pe-cAU"/>
+                <constraint firstItem="Qqr-HG-2eg" firstAttribute="top" secondItem="Ltt-Ah-mAe" secondAttribute="bottom" id="Z6p-jX-8Gn"/>
+                <constraint firstItem="vcs-tu-0jv" firstAttribute="leading" secondItem="dmd-3h-u73" secondAttribute="leading" id="aeC-MU-DVU"/>
+                <constraint firstAttribute="trailing" secondItem="LQc-h6-6X8" secondAttribute="trailing" id="ggt-ZV-x9x"/>
+                <constraint firstAttribute="trailing" secondItem="T6H-s9-dOo" secondAttribute="trailing" id="k2N-6D-pr8"/>
+                <constraint firstAttribute="trailing" secondItem="Qqr-HG-2eg" secondAttribute="trailing" id="nW8-vp-vhq"/>
+                <constraint firstItem="T6H-s9-dOo" firstAttribute="leading" secondItem="dmd-3h-u73" secondAttribute="leading" id="uOs-1S-rWa"/>
+                <constraint firstItem="LQc-h6-6X8" firstAttribute="top" secondItem="T6H-s9-dOo" secondAttribute="bottom" id="ykb-gr-KQz"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-28.794642857142854"/>
+        </view>
+    </objects>
+</document>

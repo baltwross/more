@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfilePhotosView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="KLr-dw-WTF" id="3Nn-ue-WN5"/>
+                <outlet property="addLabel" destination="I2O-N2-oD5" id="gAS-ci-wkg"/>
+                <outlet property="dragLabel" destination="ztm-dK-IXr" id="f3T-h3-kq9"/>
+                <outlet property="maskingView" destination="PX6-66-0bG" id="dJ1-Oc-Tnm"/>
+                <outlet property="photosView" destination="GJL-W0-E8M" id="Wb3-ky-sTY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX6-66-0bG">
+                    <rect key="frame" x="-75" y="-188" width="525" height="525"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAG TO ORDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-dK-IXr" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="218.5" y="449" width="88.5" height="11"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="10"/>
+                            <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-dw-WTF">
+                            <rect key="frame" x="202.5" y="228" width="120" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="UPk-s5-RAE"/>
+                                <constraint firstAttribute="width" constant="120" id="h6F-Ik-Jb0"/>
+                            </constraints>
+                            <state key="normal" image="camera_gray_big"/>
+                            <connections>
+                                <action selector="addTouch:" destination="-1" eventType="touchUpInside" id="KWu-Cd-Tha"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="ADD PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-N2-oD5" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="202.5" y="321" width="120" height="11"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="10"/>
+                            <color key="textColor" red="0.74901960784313726" green="0.76470588235294112" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GJL-W0-E8M" customClass="EditProfilePhotosCollectionView" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="75" y="212" width="375" height="213"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="d32-Js-1AX">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="KLr-dw-WTF" firstAttribute="centerX" secondItem="PX6-66-0bG" secondAttribute="centerX" id="4wN-Mx-Acv"/>
+                        <constraint firstItem="I2O-N2-oD5" firstAttribute="bottom" secondItem="KLr-dw-WTF" secondAttribute="bottom" constant="4" id="8X2-QF-ktg"/>
+                        <constraint firstAttribute="bottom" secondItem="GJL-W0-E8M" secondAttribute="bottom" constant="100" id="AFn-R6-6jq"/>
+                        <constraint firstAttribute="width" secondItem="PX6-66-0bG" secondAttribute="height" id="ISg-p9-LaU"/>
+                        <constraint firstItem="ztm-dK-IXr" firstAttribute="centerX" secondItem="PX6-66-0bG" secondAttribute="centerX" id="RMv-Q3-6Zg"/>
+                        <constraint firstItem="ztm-dK-IXr" firstAttribute="top" secondItem="GJL-W0-E8M" secondAttribute="bottom" constant="24" id="Wdw-g0-g8V"/>
+                        <constraint firstItem="I2O-N2-oD5" firstAttribute="leading" secondItem="KLr-dw-WTF" secondAttribute="leading" id="cTA-jY-1Y7"/>
+                        <constraint firstItem="I2O-N2-oD5" firstAttribute="trailing" secondItem="KLr-dw-WTF" secondAttribute="trailing" id="uHu-5y-OoA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PX6-66-0bG" secondAttribute="bottom" id="CRv-JK-doz"/>
+                <constraint firstItem="PX6-66-0bG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1.4" id="FtQ-st-ucF"/>
+                <constraint firstItem="GJL-W0-E8M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O8F-PU-2Yu"/>
+                <constraint firstItem="KLr-dw-WTF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="TrO-tM-ZjJ"/>
+                <constraint firstItem="PX6-66-0bG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aDM-Zw-PTr"/>
+                <constraint firstItem="GJL-W0-E8M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="cbA-fy-4Sg"/>
+                <constraint firstAttribute="trailing" secondItem="GJL-W0-E8M" secondAttribute="trailing" id="g8D-p3-pWY"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="301.79910044977515"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_gray_big" width="47" height="35"/>
+    </resources>
+</document>

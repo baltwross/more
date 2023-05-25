@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>signalExpiration</key>
+	<integer>1800</integer>
+	<key>signalRequestExpiration</key>
+	<integer>300</integer>
+	<key>signalSearchRadius</key>
+	<integer>10000</integer>
+	<key>experiencePostExpiration</key>
+	<integer>1800</integer>
+	<key>experienceRequestExpiration</key>
+	<integer>300</integer>
+	<key>experienceSearchRadius</key>
+	<real>1000</real>
+	<key>experienceLimit</key>
+	<integer>15</integer>
+	<key>experienceRefreshTime</key>
+	<integer>180</integer>
+	<key>experienceRefreshLocation</key>
+	<integer>200</integer>
+	<key>experienceTopBarVariation</key>
+	<false/>
+	<key>likesThreshold</key>
+	<integer>5</integer>
+	<key>canRemoveLike</key>
+	<true/>
+	<key>sharesThreshold</key>
+	<integer>5</integer>
+	<key>chatPhotoEnabled</key>
+	<true/>
+	<key>chatVideoEnabled</key>
+	<true/>
+	<key>chatVideoDuration</key>
+	<integer>15</integer>
+	<key>chatVideoQuality</key>
+	<string>low</string>
+	<key>removeWhenAndWhereFromCreate</key>
+	<true/>
+	<key>experienceVideoEnabled</key>
+	<true/>
+	<key>experienceVideoDuration</key>
+	<integer>15</integer>
+	<key>experienceVideoQuality</key>
+	<string>low</string>
+	<key>showTutorials</key>
+	<false/>
+</dict>
+</plist>

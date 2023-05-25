@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="275" id="KGk-i7-Jjw" customClass="ProfileQuoteCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-r5-ty2">
+                        <rect key="frame" x="18" y="16" width="20" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="0Jd-CQ-PJP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="34"/>
+                        <color key="textColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-qF-S9P">
+                        <rect key="frame" x="56" y="32" width="246" height="18"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="JACK KEROUAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us8-UJ-DsL">
+                        <rect key="frame" x="56" y="58" width="74.5" height="10"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="9"/>
+                        <color key="textColor" red="0.48627450980392156" green="0.54509803921568623" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Us8-UJ-DsL" secondAttribute="bottom" constant="18" id="3En-OZ-XuM"/>
+                    <constraint firstItem="Pye-qF-S9P" firstAttribute="leading" secondItem="XaL-r5-ty2" secondAttribute="trailing" constant="18" id="B1Z-5H-rpg"/>
+                    <constraint firstItem="Us8-UJ-DsL" firstAttribute="leading" secondItem="Pye-qF-S9P" secondAttribute="leading" id="LXJ-wA-oGx"/>
+                    <constraint firstItem="Pye-qF-S9P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="eHU-eS-AAz"/>
+                    <constraint firstItem="Us8-UJ-DsL" firstAttribute="top" secondItem="Pye-qF-S9P" secondAttribute="bottom" constant="8" id="eoP-LE-2gW"/>
+                    <constraint firstAttribute="trailing" secondItem="Pye-qF-S9P" secondAttribute="trailing" constant="18" id="fuA-zK-aRk"/>
+                    <constraint firstItem="XaL-r5-ty2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="h4S-VD-dgE"/>
+                    <constraint firstItem="XaL-r5-ty2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="wZW-Ec-XFE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="author" destination="Us8-UJ-DsL" id="QpF-HS-gvm"/>
+                <outlet property="quote" destination="Pye-qF-S9P" id="aqA-Qe-VKy"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="257.72113943028489"/>
+        </tableViewCell>
+    </objects>
+</document>

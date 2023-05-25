@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceTierInfo" customModule="More" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="593"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uly-Jc-3mq">
+                    <rect key="frame" x="182" y="10" width="50" height="3"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="WuC-Vn-F09"/>
+                        <constraint firstAttribute="height" constant="3" id="gUW-04-lOT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What’s Included?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpA-jg-Y1y">
+                    <rect key="frame" x="25" y="35" width="139" height="18"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="16"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-C0-TqU">
+                    <rect key="frame" x="25" y="63" width="374" height="131.5"/>
+                    <string key="text">Premium Times are intimate virtual gatherings of only 12 people or less. Your purchase gives you access to join the room for video chatting and messaging for the duration of the Time. Typically, Premium Times last between 45 minutes to 2 hours.</string>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How It Works" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-jO-yDT">
+                    <rect key="frame" x="25" y="219.5" width="109" height="18"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="16"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With your purchase, you’ll have complete access to the room from now until the Time ends." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbN-KU-mii">
+                    <rect key="frame" x="25" y="247.5" width="364" height="44"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can I Redeem Later?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f95-5M-8ax">
+                    <rect key="frame" x="25" y="316.5" width="167.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="16"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKJ-Z6-JoQ">
+                    <rect key="frame" x="25" y="344.5" width="364" height="198.5"/>
+                    <string key="text">Because all Times are different, your purchase gives you access to this Time, which is happening now. Your purchase can’t be saved for a later date.</string>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="0.97999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KpA-jg-Y1y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="FGl-Zl-BS1"/>
+                <constraint firstItem="KpA-jg-Y1y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="IJn-Eq-LM9"/>
+                <constraint firstItem="dPq-jO-yDT" firstAttribute="top" secondItem="SS6-C0-TqU" secondAttribute="bottom" constant="25" id="IKe-yj-mMM"/>
+                <constraint firstItem="ZKJ-Z6-JoQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="Jj4-si-H2V"/>
+                <constraint firstItem="uly-Jc-3mq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RFU-S0-Yyn"/>
+                <constraint firstItem="xbN-KU-mii" firstAttribute="top" secondItem="dPq-jO-yDT" secondAttribute="bottom" constant="10" id="SlK-Ke-gdw"/>
+                <constraint firstItem="f95-5M-8ax" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="UtG-8h-XnT"/>
+                <constraint firstItem="ZKJ-Z6-JoQ" firstAttribute="top" secondItem="f95-5M-8ax" secondAttribute="bottom" constant="10" id="WVQ-Af-bE9"/>
+                <constraint firstItem="f95-5M-8ax" firstAttribute="top" secondItem="xbN-KU-mii" secondAttribute="bottom" constant="25" id="XsE-na-tCm"/>
+                <constraint firstItem="SS6-C0-TqU" firstAttribute="top" secondItem="KpA-jg-Y1y" secondAttribute="bottom" constant="10" id="aeY-XY-mG9"/>
+                <constraint firstAttribute="trailing" secondItem="xbN-KU-mii" secondAttribute="trailing" constant="25" id="ahE-dj-Vl4"/>
+                <constraint firstItem="dPq-jO-yDT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="ebc-S5-T1l"/>
+                <constraint firstAttribute="trailing" secondItem="ZKJ-Z6-JoQ" secondAttribute="trailing" constant="25" id="erU-ZH-oa6"/>
+                <constraint firstAttribute="bottom" secondItem="ZKJ-Z6-JoQ" secondAttribute="bottom" constant="50" id="jOP-yq-PfE"/>
+                <constraint firstItem="xbN-KU-mii" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="mGX-f0-m1g"/>
+                <constraint firstItem="SS6-C0-TqU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="mzE-l0-Di0"/>
+                <constraint firstAttribute="trailing" secondItem="SS6-C0-TqU" secondAttribute="trailing" constant="15" id="yyK-6u-NJD"/>
+                <constraint firstItem="uly-Jc-3mq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="zkl-gr-Iut"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="280.24553571428572"/>
+        </view>
+    </objects>
+</document>

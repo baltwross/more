@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="input" destination="GZt-3s-yMe" id="h8j-y3-dRR"/>
+                <outlet property="tableView" destination="kke-nL-L1R" id="jnd-BH-gLS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NVQ-D5-IWI">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="592"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kke-nL-L1R" customClass="ChatTableView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="483"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-sC-7HM">
+                    <rect key="frame" x="0.0" y="483" width="361" height="1"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fe6-da-QJG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-3s-yMe" customClass="MessagingInputBar" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="484" width="361" height="74"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" placeholder="YES" id="Ydj-Lt-5FH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WC0-sC-7HM" firstAttribute="top" secondItem="kke-nL-L1R" secondAttribute="bottom" id="4sh-wH-TEP"/>
+                <constraint firstAttribute="trailing" secondItem="WC0-sC-7HM" secondAttribute="trailing" id="8gf-5e-SPl"/>
+                <constraint firstItem="GZt-3s-yMe" firstAttribute="bottom" secondItem="Tjr-ft-meC" secondAttribute="bottom" id="ARN-uy-YgL"/>
+                <constraint firstItem="GZt-3s-yMe" firstAttribute="top" secondItem="WC0-sC-7HM" secondAttribute="bottom" id="Eto-81-9Yi"/>
+                <constraint firstItem="kke-nL-L1R" firstAttribute="leading" secondItem="Tjr-ft-meC" secondAttribute="leading" id="K65-4M-Pk3"/>
+                <constraint firstItem="GZt-3s-yMe" firstAttribute="trailing" secondItem="Tjr-ft-meC" secondAttribute="trailing" id="NXV-lW-xGq"/>
+                <constraint firstItem="GZt-3s-yMe" firstAttribute="leading" secondItem="Tjr-ft-meC" secondAttribute="leading" id="RK3-Z5-NF5"/>
+                <constraint firstItem="kke-nL-L1R" firstAttribute="trailing" secondItem="Tjr-ft-meC" secondAttribute="trailing" id="ggE-mk-zo0"/>
+                <constraint firstItem="kke-nL-L1R" firstAttribute="top" secondItem="NVQ-D5-IWI" secondAttribute="top" id="opA-XH-aV7"/>
+                <constraint firstItem="WC0-sC-7HM" firstAttribute="leading" secondItem="NVQ-D5-IWI" secondAttribute="leading" id="sCz-RN-CEd"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Tjr-ft-meC"/>
+            <point key="canvasLocation" x="127.2" y="187.1064467766117"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="404" id="KGk-i7-Jjw" customClass="SignalDetailsTipsCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZf-0T-mQ6">
+                        <rect key="frame" x="270" y="264.5" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Ie3-UW-RzB"/>
+                            <constraint firstAttribute="height" constant="30" id="JAN-dT-WiQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="11"/>
+                        <state key="normal" image="add-tip">
+                            <color key="titleColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hdI-Xu-D1D"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em3-Go-19P" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="25" y="25" width="38.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="18"/>
+                        <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oXI-S3-1aI" customClass="SignalTipsView" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="70" width="320" height="176"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="176" id="ctc-sP-dce"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="15" id="WLu-KU-NS6">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tips yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhO-2R-GEp">
+                        <rect key="frame" x="123" y="148.5" width="74.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="oXI-S3-1aI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="70" id="4gH-mB-8hz"/>
+                    <constraint firstAttribute="trailing" secondItem="oXI-S3-1aI" secondAttribute="trailing" id="5TL-1a-Yci"/>
+                    <constraint firstAttribute="bottom" secondItem="oXI-S3-1aI" secondAttribute="bottom" constant="70" id="73O-t9-Csu"/>
+                    <constraint firstItem="oXI-S3-1aI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CCj-Pb-r1r"/>
+                    <constraint firstAttribute="trailing" secondItem="iZf-0T-mQ6" secondAttribute="trailing" constant="20" id="PRw-Ai-nlD"/>
+                    <constraint firstItem="LhO-2R-GEp" firstAttribute="centerY" secondItem="oXI-S3-1aI" secondAttribute="centerY" id="W6C-2Q-H6A"/>
+                    <constraint firstItem="em3-Go-19P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="k7q-W1-j77"/>
+                    <constraint firstItem="em3-Go-19P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="tH9-sy-isX"/>
+                    <constraint firstAttribute="bottom" secondItem="iZf-0T-mQ6" secondAttribute="bottom" constant="20" id="ylZ-XV-4Hw"/>
+                    <constraint firstItem="LhO-2R-GEp" firstAttribute="centerX" secondItem="oXI-S3-1aI" secondAttribute="centerX" id="zk1-0R-Vdd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addButton" destination="iZf-0T-mQ6" id="cwA-vn-nQy"/>
+                <outlet property="addButtonWidth" destination="Ie3-UW-RzB" id="l2g-aE-h04"/>
+                <outlet property="emptyLabel" destination="LhO-2R-GEp" id="Kj7-EU-7B6"/>
+                <outlet property="tipsView" destination="oXI-S3-1aI" id="yGF-qR-fOS"/>
+                <outlet property="tipsViewHeight" destination="ctc-sP-dce" id="vBg-4U-nrq"/>
+                <outlet property="title" destination="em3-Go-19P" id="acJ-7b-Llt"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="132.92410714285714"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="em3-Go-19P">
+            <size key="intrinsicContentSize" width="38.5" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="add-tip" width="15" height="15"/>
+    </resources>
+</document>

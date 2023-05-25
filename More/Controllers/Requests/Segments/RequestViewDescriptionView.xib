@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestViewDescriptionView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="info" destination="O9V-3K-0Vo" id="dZ3-Hp-wLf"/>
+                <outlet property="message" destination="GT4-O2-i7M" id="CpB-6H-OKf"/>
+                <outlet property="name" destination="5rI-Jm-QrO" id="kCg-fq-fZb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rI-Jm-QrO" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-O2-i7M">
+                    <rect key="frame" x="0.0" y="44" width="414" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9V-3K-0Vo">
+                    <rect key="frame" x="0.0" y="123" width="414" height="21"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="10"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.71372549019607845" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O9V-3K-0Vo" secondAttribute="bottom" id="0TR-3A-Si8"/>
+                <constraint firstItem="5rI-Jm-QrO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GbQ-9d-tdF"/>
+                <constraint firstAttribute="trailing" secondItem="GT4-O2-i7M" secondAttribute="trailing" id="KHi-Sp-f02"/>
+                <constraint firstAttribute="trailing" secondItem="5rI-Jm-QrO" secondAttribute="trailing" id="WLF-Ri-IFU"/>
+                <constraint firstItem="5rI-Jm-QrO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eKh-Wa-lrl"/>
+                <constraint firstItem="O9V-3K-0Vo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="foC-VO-KDL"/>
+                <constraint firstItem="O9V-3K-0Vo" firstAttribute="top" secondItem="GT4-O2-i7M" secondAttribute="bottom" constant="5" id="hVQ-x2-GkV"/>
+                <constraint firstItem="GT4-O2-i7M" firstAttribute="top" secondItem="5rI-Jm-QrO" secondAttribute="bottom" constant="3" id="qwl-ZP-aX9"/>
+                <constraint firstItem="GT4-O2-i7M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zFR-J4-CdQ"/>
+                <constraint firstAttribute="trailing" secondItem="O9V-3K-0Vo" secondAttribute="trailing" id="zuo-gS-bFq"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </view>
+    </objects>
+</document>

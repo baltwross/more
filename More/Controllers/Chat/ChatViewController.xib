@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomPadding" destination="wnZ-1J-Ym9" id="9bu-Kw-vwm"/>
+                <outlet property="chatView" destination="8dM-Ff-Izf" id="WdJ-gN-8eB"/>
+                <outlet property="floatingButton" destination="zQD-Nm-k3S" id="D6P-aZ-jHZ"/>
+                <outlet property="startCallButton" destination="eyv-Fx-JtQ" id="1ll-Rn-mHw"/>
+                <outlet property="topBarContainer" destination="SUy-SV-V7l" id="Oi7-wk-1vC"/>
+                <outlet property="topBarHeight" destination="Oeh-Sy-iNb" id="uvL-5S-tuI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Sf-3u-xdC">
+                    <rect key="frame" x="0.0" y="48" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zkW-cV-jnw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-Ff-Izf" customClass="ChatView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="102" width="414" height="760"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-Nm-k3S">
+                    <rect key="frame" x="136.5" y="122" width="141" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="buo-h1-7QL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    <state key="normal" title="New Requests!">
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="floatingButtonTouch:" destination="-1" eventType="touchUpInside" id="evk-hj-lfb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyv-Fx-JtQ" customClass="PurpleGradientButton" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="152.5" y="122" width="109" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="10L-zz-tyR"/>
+                        <constraint firstAttribute="width" constant="109" id="y7I-Ce-Vx7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="11"/>
+                    <state key="normal" title="START CALL"/>
+                    <connections>
+                        <action selector="startCallButtonTouch:" destination="-1" eventType="touchUpInside" id="Au1-RK-PNU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUy-SV-V7l">
+                    <rect key="frame" x="0.0" y="49" width="414" height="53"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="Oeh-Sy-iNb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Sf-3u-xdC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3UM-M1-Zrm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SUy-SV-V7l" secondAttribute="trailing" id="5Ol-cr-2fY"/>
+                <constraint firstItem="eyv-Fx-JtQ" firstAttribute="top" secondItem="SUy-SV-V7l" secondAttribute="bottom" constant="20" id="6BG-Cn-7ui"/>
+                <constraint firstItem="SUy-SV-V7l" firstAttribute="top" secondItem="6Sf-3u-xdC" secondAttribute="bottom" id="NlG-gS-eJe"/>
+                <constraint firstItem="8dM-Ff-Izf" firstAttribute="top" secondItem="SUy-SV-V7l" secondAttribute="bottom" id="VZw-nn-EAP"/>
+                <constraint firstItem="zQD-Nm-k3S" firstAttribute="top" secondItem="SUy-SV-V7l" secondAttribute="bottom" constant="20" id="fis-3f-rVz"/>
+                <constraint firstItem="zQD-Nm-k3S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ieO-7K-MNw"/>
+                <constraint firstItem="eyv-Fx-JtQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lGw-kV-oYQ"/>
+                <constraint firstItem="8dM-Ff-Izf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mJX-fZ-X7s"/>
+                <constraint firstAttribute="trailing" secondItem="6Sf-3u-xdC" secondAttribute="trailing" id="tHx-OV-A4z"/>
+                <constraint firstItem="SUy-SV-V7l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vK9-zC-hg8"/>
+                <constraint firstItem="6Sf-3u-xdC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wAa-aC-7zy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8dM-Ff-Izf" secondAttribute="bottom" id="wnZ-1J-Ym9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8dM-Ff-Izf" secondAttribute="trailing" id="zP0-ZS-bTs"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="eyv-Fx-JtQ">
+            <size key="intrinsicContentSize" width="64" height="25"/>
+        </designable>
+    </designables>
+</document>

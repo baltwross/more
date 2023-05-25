@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteLongView" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="acceptButton" destination="HXu-EM-6QO" id="HfR-AW-pHF"/>
+                <outlet property="rejectButton" destination="7Cs-ol-jG9" id="gsc-91-ng7"/>
+                <outlet property="subTitleLabel" destination="JtU-wB-2Zr" id="0gV-Rc-w89"/>
+                <outlet property="titleLabel" destination="uXX-tS-qVj" id="M0W-qA-uv9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-2P-31Q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-5y-4Ie">
+                            <rect key="frame" x="0.0" y="283.5" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ETs-XV-ubr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UeK-5y-4Ie" secondAttribute="bottom" id="8bc-LJ-9WU"/>
+                        <constraint firstItem="UeK-5y-4Ie" firstAttribute="leading" secondItem="9vI-2P-31Q" secondAttribute="leading" id="fGQ-sq-Ck1"/>
+                        <constraint firstAttribute="trailing" secondItem="UeK-5y-4Ie" secondAttribute="trailing" id="kjI-MK-PAY"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="friends" translatesAutoresizingMaskIntoConstraints="NO" id="RtQ-SR-jfl">
+                    <rect key="frame" x="170.5" y="54" width="34" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="RhY-MN-7vR"/>
+                        <constraint firstAttribute="width" constant="34" id="vs2-Rw-fIN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="You don't appear to have an invite." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-tS-qVj" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="74" y="104" width="227" height="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="18"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="specialLineHeight">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtU-wB-2Zr" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="52" y="165" width="271" height="71.5"/>
+                    <string key="text">Invites from trusted members help keep the More community safe and inspiring.
+
+Don't worry! You haven't received an invite, but you can request one now. </string>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="13"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="specialLineHeight">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="safety-map" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-aD-qae">
+                    <rect key="frame" x="167.5" y="320.5" width="40" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="EbN-Qc-YAl"/>
+                        <constraint firstAttribute="height" constant="50" id="wPz-XY-ouT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Before You Begin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZK-XP-bPC">
+                    <rect key="frame" x="118" y="389" width="139.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="All members must first read and commit to the pledge below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-l0-FdC" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="52" y="428.5" width="271" height="28.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="13"/>
+                    <color key="textColor" red="0.48627450980392156" green="0.54509803921568623" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="specialLineHeight">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lva-8w-Deo" customClass="SpecialLabel" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="25" y="492" width="325" height="630"/>
+                    <string key="text">More is a playground for the passionate, open, adventurous, curious, humble, raw, excited. 
+
+I commit to embodying these values. I understand that we rely on each other to keep the community safe, positive, and uplifting. I will treat others with respect.
+
+I will honor this pledge so that everyone can create the Time-stopping moments that make life worthwhile.</string>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="15"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="specialLineHeight">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cs-ol-jG9">
+                    <rect key="frame" x="15" y="1207" width="156" height="53"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="4I3-NC-Oua"/>
+                        <constraint firstAttribute="width" priority="500" constant="156" id="aYV-Lg-xN5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                    <state key="normal" title="REJECT">
+                        <color key="titleColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onRejectClicked:" destination="-1" eventType="touchUpInside" id="G8s-1d-hFy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXu-EM-6QO">
+                    <rect key="frame" x="204" y="1207" width="156" height="53"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                    <state key="normal" title="I ACCEPT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onAcceptClicked:" destination="-1" eventType="touchUpInside" id="YJk-6n-daA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HXu-EM-6QO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Cs-ol-jG9" secondAttribute="trailing" constant="33" id="1lp-j6-J8f"/>
+                <constraint firstItem="RWB-aD-qae" firstAttribute="top" secondItem="9vI-2P-31Q" secondAttribute="bottom" constant="36" id="2pe-2y-xDu"/>
+                <constraint firstItem="7Cs-ol-jG9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="33Q-Yz-NNs"/>
+                <constraint firstItem="9vI-2P-31Q" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3bI-FU-7AC"/>
+                <constraint firstItem="wZK-XP-bPC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Ch-cn-sHe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JtU-wB-2Zr" secondAttribute="trailing" constant="52" id="6lF-uk-QMu"/>
+                <constraint firstItem="7Cs-ol-jG9" firstAttribute="top" secondItem="lva-8w-Deo" secondAttribute="bottom" constant="85" id="8E7-If-vxt"/>
+                <constraint firstItem="uXX-tS-qVj" firstAttribute="top" secondItem="RtQ-SR-jfl" secondAttribute="bottom" constant="25" id="Cey-QR-1FO"/>
+                <constraint firstItem="HXu-EM-6QO" firstAttribute="top" secondItem="7Cs-ol-jG9" secondAttribute="top" id="Cht-L5-5lA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8hf-l0-FdC" secondAttribute="trailing" constant="52" id="DlT-0T-Kge"/>
+                <constraint firstItem="9vI-2P-31Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GQK-DW-pWr"/>
+                <constraint firstItem="JtU-wB-2Zr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Glp-cA-7I3"/>
+                <constraint firstItem="wZK-XP-bPC" firstAttribute="top" secondItem="RWB-aD-qae" secondAttribute="bottom" constant="18.5" id="Gt5-Hd-GdP"/>
+                <constraint firstItem="lva-8w-Deo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Nbb-jM-A9M"/>
+                <constraint firstItem="RWB-aD-qae" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OCL-i5-mmN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lva-8w-Deo" secondAttribute="trailing" constant="25" id="Pch-gJ-MRf"/>
+                <constraint firstItem="HXu-EM-6QO" firstAttribute="height" secondItem="7Cs-ol-jG9" secondAttribute="height" id="RoP-CZ-2Rh"/>
+                <constraint firstItem="RtQ-SR-jfl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="34" id="UcQ-s2-Xga"/>
+                <constraint firstItem="9vI-2P-31Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XTU-Kk-Fv7"/>
+                <constraint firstItem="8hf-l0-FdC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="c56-EJ-zSW"/>
+                <constraint firstItem="HXu-EM-6QO" firstAttribute="width" secondItem="7Cs-ol-jG9" secondAttribute="width" id="cxE-nh-Eb6"/>
+                <constraint firstItem="8hf-l0-FdC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="dQr-QI-M9Y"/>
+                <constraint firstItem="uXX-tS-qVj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="74" id="dqL-DZ-joS"/>
+                <constraint firstItem="8hf-l0-FdC" firstAttribute="top" secondItem="wZK-XP-bPC" secondAttribute="bottom" constant="16" id="e6D-de-Zev"/>
+                <constraint firstItem="JtU-wB-2Zr" firstAttribute="top" secondItem="uXX-tS-qVj" secondAttribute="bottom" constant="25" id="hb3-JX-its"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HXu-EM-6QO" secondAttribute="trailing" constant="15" id="iLs-1b-MYn"/>
+                <constraint firstItem="uXX-tS-qVj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jiv-kS-zUB"/>
+                <constraint firstItem="JtU-wB-2Zr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="kFF-qM-lak"/>
+                <constraint firstItem="RtQ-SR-jfl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ljh-GW-tHB"/>
+                <constraint firstItem="RWB-aD-qae" firstAttribute="top" secondItem="JtU-wB-2Zr" secondAttribute="bottom" constant="84" id="pBW-cr-m4f"/>
+                <constraint firstItem="lva-8w-Deo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rq5-vR-ikK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Cs-ol-jG9" secondAttribute="bottom" constant="24" id="v7j-A3-tsM"/>
+                <constraint firstItem="lva-8w-Deo" firstAttribute="top" secondItem="8hf-l0-FdC" secondAttribute="bottom" constant="35" id="vCY-Dt-RFZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="143.19999999999999" y="608.9955022488756"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friends" width="449" height="284"/>
+        <image name="safety-map" width="473" height="601"/>
+    </resources>
+</document>

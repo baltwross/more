@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="242" id="KGk-i7-Jjw" customClass="CreateSignalQuoteCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="242"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="241.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPe-uB-8hu">
+                        <rect key="frame" x="25" y="12" width="270" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-Jc-umc" customClass="UITextViewNoPadding" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="25" y="12" width="270" height="217.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZbG-Jc-umc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="0qp-ZE-OMF"/>
+                    <constraint firstItem="ZbG-Jc-umc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="7rB-jB-8IU"/>
+                    <constraint firstAttribute="bottom" secondItem="ZbG-Jc-umc" secondAttribute="bottom" constant="12" id="LlG-bY-8Ol"/>
+                    <constraint firstItem="LPe-uB-8hu" firstAttribute="leading" secondItem="ZbG-Jc-umc" secondAttribute="leading" id="V3R-3t-r4H"/>
+                    <constraint firstAttribute="trailing" secondItem="ZbG-Jc-umc" secondAttribute="trailing" constant="25" id="eOV-xf-RVp"/>
+                    <constraint firstItem="LPe-uB-8hu" firstAttribute="trailing" secondItem="ZbG-Jc-umc" secondAttribute="trailing" id="iJC-MA-zpm"/>
+                    <constraint firstItem="LPe-uB-8hu" firstAttribute="top" secondItem="ZbG-Jc-umc" secondAttribute="top" id="pzr-Rr-CNs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="placeholder" destination="LPe-uB-8hu" id="dbX-DZ-yic"/>
+                <outlet property="textView" destination="ZbG-Jc-umc" id="plP-A8-e5m"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="242.87856071964021"/>
+        </tableViewCell>
+    </objects>
+</document>

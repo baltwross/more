@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN-Bold.ttf">
+            <string>DIN-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0ba-2N-4Qg" customClass="GroupRequestTableViewCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ba-2N-4Qg" id="KPd-qm-DtX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czF-01-Wrn">
+                        <rect key="frame" x="0.0" y="94" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DPN-mX-QfB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bur-79-UU2" customClass="TimeAvatarView" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="4" y="14" width="38" height="38"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="K0r-0T-xZc"/>
+                            <constraint firstAttribute="height" constant="38" id="VuZ-HU-xeR"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRq-qO-GhX" customClass="TimeAvatarView" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="10" y="20.5" width="54" height="54"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="bg6-7P-6Jx"/>
+                            <constraint firstAttribute="height" constant="54" id="hVK-U5-JqZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1D-ha-FYL" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="8" y="18.5" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Oe1-H3-ksa"/>
+                            <constraint firstAttribute="height" constant="30" id="WlG-bC-ZiE"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-k8-Hkp" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="14" y="24.5" width="46" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="MOc-YQ-Eib"/>
+                            <constraint firstAttribute="width" constant="46" id="qsm-Td-1yC"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9s6-7B-qbf">
+                        <rect key="frame" x="48" y="16.5" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="5Fh-jF-2C5"/>
+                            <constraint firstAttribute="height" constant="20" id="DrR-FP-ZmF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DIN-Bold" family="DIN" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ox-5O-HB9" customClass="RequestViewDescriptionView" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="77" y="19" width="177.5" height="57"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-XB-ibe">
+                        <rect key="frame" x="259.5" y="45" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="8G7-4g-RMd"/>
+                            <constraint firstAttribute="height" constant="5" id="GKF-yF-SGO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6J3-sx-sZs"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK3-pG-v7s">
+                        <rect key="frame" x="279.5" y="40.5" width="25.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="7eU-XB-ibe" firstAttribute="leading" secondItem="5ox-5O-HB9" secondAttribute="trailing" constant="5" id="5CO-51-2SR"/>
+                    <constraint firstItem="X1D-ha-FYL" firstAttribute="leading" secondItem="LSc-k8-Hkp" secondAttribute="leading" constant="-6" id="854-k9-I2z"/>
+                    <constraint firstAttribute="bottom" secondItem="czF-01-Wrn" secondAttribute="bottom" id="9gM-qG-PG5"/>
+                    <constraint firstItem="LSc-k8-Hkp" firstAttribute="leading" secondItem="KPd-qm-DtX" secondAttribute="leading" constant="14" id="BBY-bC-hYK"/>
+                    <constraint firstAttribute="trailing" secondItem="ZK3-pG-v7s" secondAttribute="trailing" constant="15" id="L41-6G-f5L"/>
+                    <constraint firstItem="ZK3-pG-v7s" firstAttribute="leading" secondItem="7eU-XB-ibe" secondAttribute="trailing" constant="15" id="OhI-qq-FTQ"/>
+                    <constraint firstItem="LSc-k8-Hkp" firstAttribute="centerY" secondItem="KPd-qm-DtX" secondAttribute="centerY" id="Qmc-Ig-xaT"/>
+                    <constraint firstItem="czF-01-Wrn" firstAttribute="leading" secondItem="KPd-qm-DtX" secondAttribute="leading" id="VAa-Gh-fmX"/>
+                    <constraint firstItem="X1D-ha-FYL" firstAttribute="top" secondItem="LSc-k8-Hkp" secondAttribute="top" constant="-6" id="a9y-7f-14h"/>
+                    <constraint firstItem="bur-79-UU2" firstAttribute="leading" secondItem="KPd-qm-DtX" secondAttribute="leading" constant="4" id="dVL-GL-Sdg"/>
+                    <constraint firstItem="5ox-5O-HB9" firstAttribute="centerY" secondItem="KPd-qm-DtX" secondAttribute="centerY" id="e8S-L8-Eql"/>
+                    <constraint firstItem="ZK3-pG-v7s" firstAttribute="centerY" secondItem="KPd-qm-DtX" secondAttribute="centerY" id="pNd-G5-I3S"/>
+                    <constraint firstItem="9s6-7B-qbf" firstAttribute="top" secondItem="LSc-k8-Hkp" secondAttribute="top" constant="-8" id="q4b-AQ-Mnj"/>
+                    <constraint firstItem="nRq-qO-GhX" firstAttribute="leading" secondItem="KPd-qm-DtX" secondAttribute="leading" constant="10" id="roa-pQ-vb6"/>
+                    <constraint firstItem="9s6-7B-qbf" firstAttribute="trailing" secondItem="LSc-k8-Hkp" secondAttribute="trailing" constant="8" id="uoH-Uu-TlL"/>
+                    <constraint firstAttribute="trailing" secondItem="czF-01-Wrn" secondAttribute="trailing" id="urL-JA-1rJ"/>
+                    <constraint firstItem="bur-79-UU2" firstAttribute="top" secondItem="KPd-qm-DtX" secondAttribute="top" constant="14" id="vl2-sB-q62"/>
+                    <constraint firstItem="5ox-5O-HB9" firstAttribute="leading" secondItem="nRq-qO-GhX" secondAttribute="trailing" constant="13" id="xvH-Xz-xBs"/>
+                    <constraint firstItem="7eU-XB-ibe" firstAttribute="centerY" secondItem="KPd-qm-DtX" secondAttribute="centerY" id="yRF-OT-6gv"/>
+                    <constraint firstItem="nRq-qO-GhX" firstAttribute="centerY" secondItem="KPd-qm-DtX" secondAttribute="centerY" id="zuD-Cf-vcT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="HIi-h4-TYF"/>
+            <connections>
+                <outlet property="avatar" destination="LSc-k8-Hkp" id="SVS-Zt-amd"/>
+                <outlet property="badge" destination="9s6-7B-qbf" id="ePf-ky-wvx"/>
+                <outlet property="descriptionView" destination="5ox-5O-HB9" id="2DF-jD-xDX"/>
+                <outlet property="dot" destination="7eU-XB-ibe" id="dmy-Bs-8IJ"/>
+                <outlet property="smallAvatar" destination="X1D-ha-FYL" id="KeA-wW-4qZ"/>
+                <outlet property="smallTimeAvatar" destination="bur-79-UU2" id="FVl-Fl-AWK"/>
+                <outlet property="time" destination="ZK3-pG-v7s" id="fiB-po-Kl4"/>
+                <outlet property="timeAvatar" destination="nRq-qO-GhX" id="vn4-qG-YL1"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

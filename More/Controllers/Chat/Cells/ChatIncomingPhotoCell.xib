@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="287" id="cfu-Hi-vlC" customClass="ChatIncomingPhotoCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="287"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfu-Hi-vlC" id="kmc-je-cfx">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SU9-PR-YCK" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="16" y="165" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="dTN-bd-Kf8"/>
+                            <constraint firstAttribute="height" constant="44" id="eUV-VC-Eg4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGs-Ai-Z1M">
+                        <rect key="frame" x="76" y="8" width="150" height="201"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="FnZ-YI-FfR"/>
+                            <constraint firstAttribute="height" constant="201" id="c3D-br-yxr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="7:06PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a7-Td-i4Y">
+                        <rect key="frame" x="84" y="221" width="36.5" height="66"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="4a7-Td-i4Y" firstAttribute="top" secondItem="IGs-Ai-Z1M" secondAttribute="bottom" constant="12" id="3u1-29-k4X"/>
+                    <constraint firstItem="4a7-Td-i4Y" firstAttribute="leading" secondItem="IGs-Ai-Z1M" secondAttribute="leading" constant="8" id="AX4-Tx-fDH"/>
+                    <constraint firstItem="SU9-PR-YCK" firstAttribute="leading" secondItem="kmc-je-cfx" secondAttribute="leading" constant="16" id="P25-FI-SOU"/>
+                    <constraint firstItem="IGs-Ai-Z1M" firstAttribute="bottom" secondItem="SU9-PR-YCK" secondAttribute="bottom" id="WH2-Ds-m82"/>
+                    <constraint firstItem="IGs-Ai-Z1M" firstAttribute="leading" secondItem="SU9-PR-YCK" secondAttribute="trailing" constant="16" id="WQK-u2-MEt"/>
+                    <constraint firstAttribute="bottom" secondItem="4a7-Td-i4Y" secondAttribute="bottom" id="WWi-51-CBX"/>
+                    <constraint firstItem="IGs-Ai-Z1M" firstAttribute="top" secondItem="kmc-je-cfx" secondAttribute="top" constant="8" id="aSf-22-JhS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatar" destination="SU9-PR-YCK" id="RN1-6C-cEO"/>
+                <outlet property="photo" destination="IGs-Ai-Z1M" id="9EH-m7-qoR"/>
+                <outlet property="time" destination="4a7-Td-i4Y" id="9bY-HK-a9X"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="241.40625"/>
+        </tableViewCell>
+    </objects>
+</document>

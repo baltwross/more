@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewDurationPage" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="header" destination="DOr-TY-1HJ" id="NxT-3W-ArF"/>
+                <outlet property="oneToTwoHours" destination="Xei-aA-gLD" id="0jC-lW-N0b"/>
+                <outlet property="overFourHours" destination="cWd-4T-60G" id="x01-gc-bp4"/>
+                <outlet property="threeToFourHours" destination="Tft-yH-Cf1" id="bIK-rN-oJF"/>
+                <outlet property="underAnHour" destination="7Fr-gu-0tY" id="e1z-TL-tEc"/>
+                <outlet property="view" destination="nBw-ze-5ui" id="YaA-gT-4p8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nBw-ze-5ui">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-TY-1HJ" customClass="ReviewSegmentHeader" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="24" width="375" height="169"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fr-gu-0tY" customClass="ReviewDurationView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="217" width="375" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Nzg-HH-KLf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-aA-gLD" customClass="ReviewDurationView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="277" width="375" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="de1-Wl-hZs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-yH-Cf1" customClass="ReviewDurationView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="337" width="375" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Tk9-az-nL9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWd-4T-60G" customClass="ReviewDurationView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="397" width="375" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="TGF-pO-Qi4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7Fr-gu-0tY" firstAttribute="leading" secondItem="nBw-ze-5ui" secondAttribute="leading" id="061-1T-pCI"/>
+                <constraint firstItem="DOr-TY-1HJ" firstAttribute="top" secondItem="nBw-ze-5ui" secondAttribute="top" constant="24" id="9go-pT-ET5"/>
+                <constraint firstItem="Xei-aA-gLD" firstAttribute="leading" secondItem="nBw-ze-5ui" secondAttribute="leading" id="G7K-5k-gqO"/>
+                <constraint firstAttribute="trailing" secondItem="cWd-4T-60G" secondAttribute="trailing" id="HLY-RJ-O9U"/>
+                <constraint firstItem="cWd-4T-60G" firstAttribute="leading" secondItem="nBw-ze-5ui" secondAttribute="leading" id="HTK-ov-ict"/>
+                <constraint firstItem="Xei-aA-gLD" firstAttribute="top" secondItem="7Fr-gu-0tY" secondAttribute="bottom" id="HsF-rg-l9l"/>
+                <constraint firstAttribute="trailing" secondItem="Tft-yH-Cf1" secondAttribute="trailing" id="PiO-ZJ-Ejc"/>
+                <constraint firstAttribute="bottom" secondItem="cWd-4T-60G" secondAttribute="bottom" id="TxV-Mr-MGq"/>
+                <constraint firstAttribute="trailing" secondItem="DOr-TY-1HJ" secondAttribute="trailing" id="bCM-0p-hy7"/>
+                <constraint firstItem="Tft-yH-Cf1" firstAttribute="top" secondItem="Xei-aA-gLD" secondAttribute="bottom" id="fCY-MX-qcH"/>
+                <constraint firstAttribute="trailing" secondItem="Xei-aA-gLD" secondAttribute="trailing" id="haq-5B-Mt1"/>
+                <constraint firstItem="7Fr-gu-0tY" firstAttribute="top" secondItem="DOr-TY-1HJ" secondAttribute="bottom" constant="24" id="iOm-yz-Sme"/>
+                <constraint firstItem="Tft-yH-Cf1" firstAttribute="leading" secondItem="nBw-ze-5ui" secondAttribute="leading" id="jcS-Ko-ToD"/>
+                <constraint firstItem="cWd-4T-60G" firstAttribute="top" secondItem="Tft-yH-Cf1" secondAttribute="bottom" id="moK-I0-19d"/>
+                <constraint firstItem="DOr-TY-1HJ" firstAttribute="leading" secondItem="nBw-ze-5ui" secondAttribute="leading" id="sH0-TF-0Zd"/>
+                <constraint firstAttribute="trailing" secondItem="7Fr-gu-0tY" secondAttribute="trailing" id="zm5-iA-NFn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="176.80000000000001" y="127.28635682158921"/>
+        </view>
+    </objects>
+</document>

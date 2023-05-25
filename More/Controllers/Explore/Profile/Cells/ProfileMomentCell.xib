@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="Jj5-n4-ieO" customClass="ProfileMomentCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jj5-n4-ieO" id="9Og-el-TsB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="More Moment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-Ec-MaV">
+                        <rect key="frame" x="25" y="50" width="270" height="20"/>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="18"/>
+                        <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anW-KS-Fps">
+                        <rect key="frame" x="25" y="80" width="270" height="22"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3Jg-Ec-MaV" firstAttribute="top" secondItem="9Og-el-TsB" secondAttribute="top" constant="50" id="1Tw-Vq-1HC"/>
+                    <constraint firstItem="anW-KS-Fps" firstAttribute="top" secondItem="3Jg-Ec-MaV" secondAttribute="bottom" constant="10" id="578-2Q-85c"/>
+                    <constraint firstItem="anW-KS-Fps" firstAttribute="leading" secondItem="9Og-el-TsB" secondAttribute="leading" constant="25" id="6fB-D2-0Io"/>
+                    <constraint firstAttribute="trailing" secondItem="3Jg-Ec-MaV" secondAttribute="trailing" constant="25" id="hqE-rI-dbz"/>
+                    <constraint firstItem="3Jg-Ec-MaV" firstAttribute="leading" secondItem="9Og-el-TsB" secondAttribute="leading" constant="25" id="lNx-M6-xyb"/>
+                    <constraint firstAttribute="trailing" secondItem="anW-KS-Fps" secondAttribute="trailing" constant="25" id="wew-G8-cyE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="subtitle" destination="anW-KS-Fps" id="wl7-IK-Ann"/>
+                <outlet property="title" destination="3Jg-Ec-MaV" id="jU0-w8-tjw"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="194.30284857571215"/>
+        </tableViewCell>
+    </objects>
+</document>

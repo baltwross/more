@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gfL-YM-g8o" customClass="ProfileMoreCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gfL-YM-g8o" id="qPl-3d-1eS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TL0-kS-J93">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.28627450980000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WXT-NZ-jQ2"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal_more" translatesAutoresizingMaskIntoConstraints="NO" id="STT-z7-vRP">
+                        <rect key="frame" x="275" y="12" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="48L-Ny-CQa"/>
+                            <constraint firstAttribute="height" constant="20" id="pla-SA-ip9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-Q1-uWS">
+                        <rect key="frame" x="241" y="15" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="12"/>
+                        <color key="textColor" red="0.58431372550000005" green="0.71372549019999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-e4-LVn">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.28627450980000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="unv-z0-frG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.1843137255" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IyL-e4-LVn" secondAttribute="trailing" id="2kr-M8-5jZ"/>
+                    <constraint firstItem="TL0-kS-J93" firstAttribute="top" secondItem="qPl-3d-1eS" secondAttribute="top" id="6mv-DK-qWF"/>
+                    <constraint firstAttribute="bottom" secondItem="IyL-e4-LVn" secondAttribute="bottom" id="AwK-Y1-fBd"/>
+                    <constraint firstItem="g7s-Q1-uWS" firstAttribute="centerY" secondItem="qPl-3d-1eS" secondAttribute="centerY" id="BtB-86-jMC"/>
+                    <constraint firstAttribute="trailing" secondItem="TL0-kS-J93" secondAttribute="trailing" id="M4T-lu-r8j"/>
+                    <constraint firstItem="TL0-kS-J93" firstAttribute="leading" secondItem="qPl-3d-1eS" secondAttribute="leading" id="VjO-m8-yoG"/>
+                    <constraint firstItem="IyL-e4-LVn" firstAttribute="leading" secondItem="qPl-3d-1eS" secondAttribute="leading" id="cRL-rD-2KW"/>
+                    <constraint firstAttribute="trailing" secondItem="STT-z7-vRP" secondAttribute="trailing" constant="25" id="pag-3k-IVN"/>
+                    <constraint firstItem="STT-z7-vRP" firstAttribute="centerY" secondItem="qPl-3d-1eS" secondAttribute="centerY" id="qQH-QZ-L6K"/>
+                    <constraint firstItem="STT-z7-vRP" firstAttribute="leading" secondItem="g7s-Q1-uWS" secondAttribute="trailing" id="twx-50-37X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1843137255" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="label" destination="g7s-Q1-uWS" id="eYJ-vP-gBy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="signal_more" width="7" height="11"/>
+    </resources>
+</document>

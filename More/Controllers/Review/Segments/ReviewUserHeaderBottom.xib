@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewUserHeaderBottom" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="date" destination="BYl-7O-Dzc" id="4tX-SA-Bp4"/>
+                <outlet property="name" destination="dDt-tO-cvi" id="8Ek-wP-m2h"/>
+                <outlet property="submit" destination="qpc-EN-gCn" id="b8a-bz-h5i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDt-tO-cvi">
+                    <rect key="frame" x="25" y="29" width="141" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" text="DECEMBER 18, 6:14 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYl-7O-Dzc">
+                    <rect key="frame" x="178" y="34" width="117" height="11.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham-Bold" pointSize="10"/>
+                    <color key="textColor" red="0.011764705882352941" green="0.792156862745098" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your review was successfully submitted." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpc-EN-gCn">
+                    <rect key="frame" x="29.5" y="32.5" width="261.5" height="14.5"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham-Medium" pointSize="13"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDF-rD-xec">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="touch:" destination="-1" eventType="touchUpInside" id="wUe-yU-aqT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zDF-rD-xec" secondAttribute="trailing" id="865-3H-xmd"/>
+                <constraint firstItem="BYl-7O-Dzc" firstAttribute="leading" secondItem="dDt-tO-cvi" secondAttribute="trailing" constant="12" id="Dcb-6d-G8k"/>
+                <constraint firstItem="qpc-EN-gCn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L7i-Xy-6hx"/>
+                <constraint firstAttribute="bottom" secondItem="zDF-rD-xec" secondAttribute="bottom" id="LRq-lq-HGh"/>
+                <constraint firstItem="dDt-tO-cvi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="NFG-iI-XLx"/>
+                <constraint firstItem="zDF-rD-xec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c1a-q3-AFB"/>
+                <constraint firstItem="BYl-7O-Dzc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gvO-sS-dkD"/>
+                <constraint firstItem="qpc-EN-gCn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gxg-vJ-ZKW"/>
+                <constraint firstItem="dDt-tO-cvi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jie-i1-Qhg"/>
+                <constraint firstAttribute="trailing" secondItem="BYl-7O-Dzc" secondAttribute="trailing" constant="25" id="nrA-kX-RWM"/>
+                <constraint firstItem="zDF-rD-xec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="okS-ye-vhh"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.600000000000001" y="312.59370314842579"/>
+        </view>
+    </objects>
+</document>

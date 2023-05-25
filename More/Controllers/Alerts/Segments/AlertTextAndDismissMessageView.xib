@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertTextAndDismissMessageView" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-f1-hbb" customClass="AlertTextAndDismissContentView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="J0w-EP-ITI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Hz-f1-hbb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0eg-JA-QdN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4Hz-f1-hbb" secondAttribute="bottom" id="CjP-7t-nCO"/>
+                <constraint firstAttribute="trailing" secondItem="4Hz-f1-hbb" secondAttribute="trailing" id="UyV-GA-7AZ"/>
+                <constraint firstItem="4Hz-f1-hbb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pMx-eS-8py"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundView" destination="4Hz-f1-hbb" id="HGR-Cl-uod"/>
+                <outlet property="content" destination="4Hz-f1-hbb" id="KGX-Zu-1ew"/>
+            </connections>
+            <point key="canvasLocation" x="63.200000000000003" y="265.36731634182911"/>
+        </view>
+    </objects>
+</document>

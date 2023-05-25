@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Black.ttf">
+            <string>Gotham-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalResponseTopBar" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="countdown" destination="KTD-T5-88K" id="rx8-6S-Iwp"/>
+                <outlet property="down" destination="vgP-Kd-kkL" id="ey4-eQ-HIp"/>
+                <outlet property="label" destination="s3L-Cu-Oke" id="zp3-1y-XnD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bi6-fU-VX5" customClass="BackgroundWithOval" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="37" width="375" height="106"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-Kd-kkL">
+                            <rect key="frame" x="0.0" y="28" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Glv-ab-eYt"/>
+                                <constraint firstAttribute="height" constant="50" id="Spc-fi-v6h"/>
+                            </constraints>
+                            <state key="normal" image="caret_down_gray"/>
+                            <connections>
+                                <action selector="downTouch:" destination="-1" eventType="touchUpInside" id="T89-TU-UlR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3L-Cu-Oke">
+                            <rect key="frame" x="58" y="44" width="259" height="18"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="15:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTD-T5-88K" customClass="CountdownLabel" customModule="More" customModuleProvider="target">
+                            <rect key="frame" x="164.5" y="-23" width="46.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Gotham-Black" family="Gotham" pointSize="17"/>
+                            <color key="textColor" red="0.01176470588" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KTD-T5-88K" firstAttribute="centerX" secondItem="Bi6-fU-VX5" secondAttribute="centerX" id="0fM-dj-MBN"/>
+                        <constraint firstItem="vgP-Kd-kkL" firstAttribute="leading" secondItem="Bi6-fU-VX5" secondAttribute="leading" id="0gq-DJ-fh6"/>
+                        <constraint firstItem="vgP-Kd-kkL" firstAttribute="centerY" secondItem="Bi6-fU-VX5" secondAttribute="centerY" id="C4u-28-ELB"/>
+                        <constraint firstAttribute="top" secondItem="KTD-T5-88K" secondAttribute="bottom" constant="6" id="Jpy-ig-sGW"/>
+                        <constraint firstItem="s3L-Cu-Oke" firstAttribute="leading" secondItem="vgP-Kd-kkL" secondAttribute="trailing" constant="8" id="h2T-Qp-bei"/>
+                        <constraint firstItem="s3L-Cu-Oke" firstAttribute="centerY" secondItem="Bi6-fU-VX5" secondAttribute="centerY" id="wGV-rQ-FG0"/>
+                        <constraint firstItem="s3L-Cu-Oke" firstAttribute="centerX" secondItem="Bi6-fU-VX5" secondAttribute="centerX" id="wQj-pT-GoG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ovalPosition">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ovalSize">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="semicircleColor">
+                            <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Bi6-fU-VX5" secondAttribute="trailing" id="SVw-D0-UcB"/>
+                <constraint firstItem="Bi6-fU-VX5" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="XE1-yO-M7B"/>
+                <constraint firstItem="Bi6-fU-VX5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aXO-9i-RE5"/>
+                <constraint firstItem="Bi6-fU-VX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="37" id="bA4-Fz-ZHt"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="389.05547226386807"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="caret_down_gray" width="15" height="9"/>
+    </resources>
+</document>

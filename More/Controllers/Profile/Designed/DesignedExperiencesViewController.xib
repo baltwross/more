@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesignedExperiencesViewController" customModule="More" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="fwz-zY-FkD" id="WZQ-YI-DK2"/>
+                <outlet property="create" destination="F61-lq-Hmv" id="v3X-t1-3rh"/>
+                <outlet property="emptyView" destination="aSr-Fl-JAY" id="Nit-id-pjw"/>
+                <outlet property="view" destination="GSK-Ca-OFR" id="oek-ZH-3d2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GSK-Ca-OFR">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aec-E6-unf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Vuy-j0-hDV"/>
+                    </constraints>
+                </view>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-zY-FkD">
+                    <rect key="frame" x="0.0" y="41" width="414" height="617"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewLayout key="collectionViewLayout" id="ja1-hl-FJJ" customClass="ExploreCollectionViewLayout" customModule="More" customModuleProvider="target"/>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSr-Fl-JAY" customClass="ExploreEmptyView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laY-5t-K1T">
+                    <rect key="frame" x="0.0" y="687" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.94117647059999998" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="i70-WV-Hkh"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F61-lq-Hmv" customClass="ExploreCreateView" customModule="More" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="687" width="414" height="87"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="21z-HR-fHb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="laY-5t-K1T" firstAttribute="leading" secondItem="y7W-Cb-xRI" secondAttribute="leading" id="0ye-YG-k0T"/>
+                <constraint firstItem="F61-lq-Hmv" firstAttribute="leading" secondItem="y7W-Cb-xRI" secondAttribute="leading" id="BM2-fC-f7K"/>
+                <constraint firstItem="aSr-Fl-JAY" firstAttribute="leading" secondItem="y7W-Cb-xRI" secondAttribute="leading" id="Bh2-3s-30N"/>
+                <constraint firstItem="F61-lq-Hmv" firstAttribute="trailing" secondItem="y7W-Cb-xRI" secondAttribute="trailing" id="FLC-So-sGu"/>
+                <constraint firstItem="laY-5t-K1T" firstAttribute="top" secondItem="F61-lq-Hmv" secondAttribute="top" id="GsC-i4-QkJ"/>
+                <constraint firstItem="F61-lq-Hmv" firstAttribute="bottom" secondItem="y7W-Cb-xRI" secondAttribute="bottom" id="Pd6-Ui-Pih"/>
+                <constraint firstItem="fwz-zY-FkD" firstAttribute="leading" secondItem="y7W-Cb-xRI" secondAttribute="leading" id="R9N-wO-G7Y"/>
+                <constraint firstItem="aSr-Fl-JAY" firstAttribute="top" secondItem="y7W-Cb-xRI" secondAttribute="top" id="S7e-A2-nO6"/>
+                <constraint firstItem="F61-lq-Hmv" firstAttribute="top" secondItem="aSr-Fl-JAY" secondAttribute="bottom" id="ThV-oE-y5k"/>
+                <constraint firstAttribute="trailing" secondItem="Aec-E6-unf" secondAttribute="trailing" id="W3A-nt-LrJ"/>
+                <constraint firstItem="F61-lq-Hmv" firstAttribute="top" secondItem="fwz-zY-FkD" secondAttribute="bottom" constant="29" id="Xyy-zb-3Tl"/>
+                <constraint firstItem="Aec-E6-unf" firstAttribute="top" secondItem="y7W-Cb-xRI" secondAttribute="top" id="YCD-1Z-w5w"/>
+                <constraint firstItem="y7W-Cb-xRI" firstAttribute="trailing" secondItem="fwz-zY-FkD" secondAttribute="trailing" id="axh-h4-LZU"/>
+                <constraint firstItem="y7W-Cb-xRI" firstAttribute="trailing" secondItem="laY-5t-K1T" secondAttribute="trailing" id="edz-nc-shw"/>
+                <constraint firstItem="y7W-Cb-xRI" firstAttribute="trailing" secondItem="aSr-Fl-JAY" secondAttribute="trailing" id="kGD-oJ-Otl"/>
+                <constraint firstItem="fwz-zY-FkD" firstAttribute="top" secondItem="Aec-E6-unf" secondAttribute="bottom" constant="40" id="kzd-Oq-5KG"/>
+                <constraint firstItem="Aec-E6-unf" firstAttribute="leading" secondItem="GSK-Ca-OFR" secondAttribute="leading" id="mLH-vY-Ra7"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="y7W-Cb-xRI"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

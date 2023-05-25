@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb230132561105831</string>
+				<string>com.googleusercontent.apps.28217417910-p210pg07t9fjv7tji322gn2kdoll94dc</string>
+				<string>startwithmore</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.startwithmore.more</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>startwithmore</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>230132561105831</string>
+	<key>FacebookDisplayName</key>
+	<string>MoreTest</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>sk.eyJ1IjoibW9yZWFuYXN0YXNpeWEiLCJhIjoiY2xoNTlrdTM0MGRocDNlczA3ZTJrZ2dmZSJ9.JofPLdbQCkTlaDwTZQStHQ</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>More needs access to your photo library so you can update your profile and add photos to your posts.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Your calends will be used to schedule events</string>
+	<key>NSCameraUsageDescription</key>
+	<string>More needs access to your camera so you can take photos and update your profile or add photos to your posts.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This allows you to share what you want to do with other people nearby, even as you travel through your city. Your precise location is never shared with anyone, unless you choose to connect with a specific user.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your current location will be used to see if More is available in your area, to show you nearby adventures, and to provide directions.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your current location will be used to see if More is available in your area, to show you nearby adventures, and to provide directions.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>More needs access to the microphone to be able to attach voice notes.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>More needs access to your photo library so you can update your profile and add photos to your posts.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Gotham-Black.ttf</string>
+		<string>Avenir-Roman.ttf</string>
+		<string>Avenir-Medium.ttf</string>
+		<string>Gotham-Bold.ttf</string>
+		<string>Avenir-Black.ttf</string>
+		<string>DIN-Regular.ttf</string>
+		<string>Gotham-Medium.ttf</string>
+		<string>DIN-Bold.ttf</string>
+		<string>Stereopticon-Regular.ttf</string>
+		<string>Avenir-Book.ttf</string>
+		<string>AvenirNextCondensed-Medium.ttf</string>
+		<string>Gotham-MediumItalic.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>branch_key</key>
+	<dict>
+		<key>live</key>
+		<string>key_live_mcRoku7llacM77ziYLHvMfanExlPFywD</string>
+		<key>test</key>
+		<string>key_test_foQidq2gbfjP87sl6VOwOckbBwkUqxvo</string>
+	</dict>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="257" id="pRy-xJ-CgM" customClass="ChatOutgoingPhotoCell" customModule="More" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pRy-xJ-CgM" id="u83-Tf-sez">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="257"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-G0-EPc">
+                        <rect key="frame" x="127" y="8" width="150" height="201"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="201" id="8lP-3t-tn7"/>
+                            <constraint firstAttribute="width" constant="150" id="yFs-Da-Vnw"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XIz-mr-kVm" customClass="AvatarImage" customModule="More" customModuleProvider="target">
+                        <rect key="frame" x="293" y="165" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="aEA-nY-WDi"/>
+                            <constraint firstAttribute="height" constant="44" id="y1B-Iw-mpL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ringSize">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Read 7:06PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLN-mJ-Py9">
+                        <rect key="frame" x="206" y="221" width="63" height="36"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.76470588240000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bLN-mJ-Py9" firstAttribute="top" secondItem="mPg-G0-EPc" secondAttribute="bottom" constant="12" id="Dyr-tb-WPs"/>
+                    <constraint firstAttribute="trailing" secondItem="XIz-mr-kVm" secondAttribute="trailing" constant="16" id="Eki-df-gP6"/>
+                    <constraint firstItem="mPg-G0-EPc" firstAttribute="top" secondItem="u83-Tf-sez" secondAttribute="top" constant="8" id="QY8-9F-xOE"/>
+                    <constraint firstItem="XIz-mr-kVm" firstAttribute="bottom" secondItem="mPg-G0-EPc" secondAttribute="bottom" id="RaO-TW-t3T"/>
+                    <constraint firstItem="bLN-mJ-Py9" firstAttribute="trailing" secondItem="mPg-G0-EPc" secondAttribute="trailing" constant="-8" id="Wxv-Aj-At6"/>
+                    <constraint firstAttribute="bottom" secondItem="bLN-mJ-Py9" secondAttribute="bottom" id="aLT-6z-eO3"/>
+                    <constraint firstItem="XIz-mr-kVm" firstAttribute="leading" secondItem="mPg-G0-EPc" secondAttribute="trailing" constant="16" id="wav-lU-na4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatar" destination="XIz-mr-kVm" id="8iV-Vd-QqL"/>
+                <outlet property="photo" destination="mPg-G0-EPc" id="EOu-yB-oE1"/>
+                <outlet property="time" destination="bLN-mJ-Py9" id="I1Y-b3-EjV"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="307.70089285714283"/>
+        </tableViewCell>
+    </objects>
+</document>
