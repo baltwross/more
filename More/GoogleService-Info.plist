@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>28217417910-p210pg07t9fjv7tji322gn2kdoll94dc.apps.googleusercontent.com</string>
+	<string>[YOUR_CLIENT_ID]</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.28217417910-p210pg07t9fjv7tji322gn2kdoll94dc</string>
+	<string>[YOUR-REVERSED_CLINET_ID]</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAUTpvqpgwnMzlR-Zge7o-DDTEjhS-WGTY</string>
+	<string>[YOUR_API_KEY]</string>
 	<key>GCM_SENDER_ID</key>
-	<string>28217417910</string>
+	<string>[YOUR_GCM_SENDER_ID]</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:28217417910:ios:c7f2dc986c47e0ad</string>
+	<string>[INSERT_GOOGLE_APP_ID]/string>
 	<key>DATABASE_URL</key>
 	<string>https://moretest-274fe.firebaseio.com</string>
 </dict>
